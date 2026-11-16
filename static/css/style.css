@@ -1,0 +1,435 @@
+/* The Bite Chapter - Apple Enterprise Design System */
+/* Inspired by Apple.com, iOS Human Interface Guidelines, and Editorial Luxury */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Serif+Display:ital@0;1&family=Caveat:wght@600;700&display=swap');
+
+:root {
+  --apple-bg: #FBFBFD;
+  --apple-surface: #FFFFFF;
+  --apple-subtle: #F5F5F7;
+  --apple-border: rgba(0, 0, 0, 0.08);
+  --apple-border-strong: rgba(0, 0, 0, 0.14);
+  --apple-text-primary: #1D1D1F;
+  --apple-text-secondary: #86868B;
+  --apple-accent: #E15A3E;
+  --apple-accent-blue: #0071E3;
+  --apple-accent-hover: #D0482B;
+  --apple-green: #34C759;
+  --apple-gold: #D4A373;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  background-color: var(--apple-bg);
+  color: var(--apple-text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Plus Jakarta Sans", system-ui, sans-serif;
+  letter-spacing: -0.011em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  min-height: 100dvh;
+}
+
+/* Apple Typography Scale */
+h1, .font-display {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Playfair Display", serif;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+}
+
+h2, h3, .font-serif-headline {
+  font-family: 'DM Serif Display', -apple-system, Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+/* Glassmorphism / Apple Blur */
+.apple-glass {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--apple-border);
+}
+
+.apple-glass-dark {
+  background: rgba(29, 29, 31, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.apple-card {
+  background: var(--apple-surface);
+  border: 1px solid var(--apple-border);
+  border-radius: 24px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+}
+
+.apple-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--apple-border-strong);
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.08);
+}
+
+/* Segmented Control Pill (iOS / macOS style) */
+.segmented-control-container {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 4px;
+  border-radius: 9999px;
+  display: inline-flex;
+  gap: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.segmented-pill {
+  padding: 8px 18px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  color: var(--apple-text-secondary);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+.segmented-pill:hover {
+  color: var(--apple-text-primary);
+}
+
+.segmented-pill.active {
+  background: #FFFFFF;
+  color: var(--apple-text-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Horizontal Lookbook Momentum Scroll */
+.apple-lookbook-strip {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0.5rem 0 1.5rem 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.apple-lookbook-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.apple-lookbook-card {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 640px) {
+  .apple-lookbook-card {
+    flex: 0 0 320px;
+  }
+}
+
+/* Bento Grid */
+.bento-hero {
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.06);
+}
+
+.bento-hero:hover {
+  transform: scale-[1.01];
+  box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.12);
+}
+
+/* 3D Apple-Grade Hardcover Book Presentation */
+.apple-book-wrapper {
+  perspective: 1400px;
+}
+
+.apple-book {
+  width: 270px;
+  height: 380px;
+  border-radius: 4px 16px 16px 4px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: -15px 25px 50px -10px rgba(0, 0, 0, 0.15), 0 5px 15px rgba(0, 0, 0, 0.05);
+  transform: perspective(1200px) rotateY(-14deg) rotateX(3deg);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.apple-book:hover {
+  transform: perspective(1200px) rotateY(-6deg) rotateX(1deg) translateY(-8px);
+  box-shadow: -20px 35px 60px -10px rgba(0, 0, 0, 0.2), 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.apple-book-spine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.03) 60%, transparent);
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  z-index: 10;
+}
+
+/* iOS Bottom Sheet Modal (Mobile Friendly for Instagram in-app browser) */
+@media (max-width: 767px) {
+  .ios-bottom-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 92dvh;
+    border-radius: 28px 28px 0 0;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .ios-grab-handle {
+    width: 36px;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.18);
+    border-radius: 9999px;
+    margin: 8px auto 16px auto;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Floating Bottom Navigation Bar (Instagram Webview Friendly) */
+.floating-mobile-dock {
+  position: fixed;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 40;
+  padding: 6px 10px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Subtle Apple Pill Badges */
+.apple-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  padding: 0.3rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--apple-text-primary);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.apple-badge-accent {
+  background: #FFF1EE;
+  color: var(--apple-accent);
+  border-color: #FCD9D2;
+}
+
+/* Checkbox strikethrough for ingredients */
+.ingredient-check:checked + label {
+  text-decoration: line-through;
+  opacity: 0.35;
+  color: var(--apple-text-secondary);
+}
+
+/* ==========================================================================
+   ROYAL LUXURY ANIMATIONS & COMPACT MAGAZINE CARD SYSTEM
+   ========================================================================== */
+
+/* Royal Card Hover Physics */
+.royal-card {
+  position: relative;
+  background: var(--apple-surface);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px -2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, box-shadow;
+}
+
+.royal-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(212, 163, 115, 0.55);
+  box-shadow: 0 20px 42px -12px rgba(225, 90, 62, 0.16), 0 0 0 1px rgba(212, 163, 115, 0.35);
+}
+
+/* Royal Image Container & Shimmer Sheen */
+.royal-thumb {
+  position: relative;
+  overflow: hidden;
+  background: #F0EFEB;
+}
+
+.royal-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+}
+
+.royal-card:hover .royal-thumb img,
+.apple-lookbook-card:hover .royal-thumb img {
+  transform: scale(1.08);
+  filter: brightness(1.02) contrast(1.02);
+}
+
+/* Diagonal Light Sweep Across Images on Hover */
+.royal-thumb::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: skewX(-22deg);
+  pointer-events: none;
+  transition: none;
+  z-index: 5;
+}
+
+.royal-card:hover .royal-thumb::after,
+.apple-lookbook-card:hover .royal-thumb::after {
+  left: 150%;
+  transition: left 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Floating Play Button with Golden Pulse */
+.royal-play-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #1D1D1F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease, background-color 0.3s ease;
+}
+
+.royal-card:hover .royal-play-btn,
+.apple-lookbook-card:hover .royal-play-btn {
+  transform: scale(1.15) rotate(3deg);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 20px rgba(225, 90, 62, 0.45), 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Chapter Navigation Pill with Thumbnail */
+.segmented-pill-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Royal "View More Recipes" Button */
+.royal-load-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.85rem 2.25rem;
+  border-radius: 9999px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #1D1D1F;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  box-shadow: 0 4px 18px -2px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(212, 163, 115, 0.25);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.royal-load-more-btn:hover {
+  background: #1D1D1F;
+  color: #FFFFFF;
+  border-color: #1D1D1F;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px -6px rgba(0, 0, 0, 0.18), 0 0 20px rgba(212, 163, 115, 0.35);
+}
+
+.royal-load-more-btn:hover svg {
+  transform: translateY(3px);
+  color: #E15A3E;
+}
+
+/* Royal Crown Badge */
+.royal-crown-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #FFF8E7;
+  color: #B27715;
+  border: 1px solid #FFE4A0;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+}
+
+/* Fade-In-Up for dynamically loaded recipes */
+@keyframes fadeInUpSmooth {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUpSmooth 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Micro-interaction Canvas */
+#fx-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 99999;
+}

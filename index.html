@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0">
+    <title>The Bite Chapter — Culinary Dopamine by Nimisha</title>
+    <meta name="description" content="A masterclass in 15-minute comfort cooking. Explore viral pastas, golden protein cheelas, peanut butter noodles, and the debut cookbook by Nimisha.">
+    <meta name="theme-color" content="#FBFBFD">
+
+    <!-- Open Graph for Instagram, WhatsApp & iMessage -->
+    <meta property="og:title" content="The Bite Chapter — Life of Simple Treats by Nimisha">
+    <meta property="og:description" content="15-minute comfort cooking, viral pasta secrets, crispy high-protein cheelas & everyday food journal.">
+    <meta property="og:image" content="https://i.ytimg.com/vi/rTWw5yVLwnk/hqdefault.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍳</text></svg>">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        appleAccent: '#E15A3E',
+                        appleBg: '#FBFBFD',
+                        appleDark: '#1D1D1F',
+                        appleMuted: '#86868B'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="bg-[#FBFBFD] text-[#1D1D1F] antialiased selection:bg-[#E15A3E] selection:text-white pb-24 md:pb-12">
+
+    <!-- Micro-interaction Canvas -->
+    <canvas id="fx-canvas"></canvas>
+
+    <!-- Apple-Style Frosted Top Navigation Bar -->
+    <header class="sticky top-0 z-40 apple-glass border-b border-black/[0.06] transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+            
+            <!-- Brand Mark -->
+            <a href="#" class="flex items-center gap-3 group">
+                <span class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-neutral-900 text-white flex items-center justify-center text-lg shadow-sm group-hover:scale-105 transition">
+                    🍳
+                </span>
+                <div class="flex flex-col text-left">
+                    <span class="font-display text-lg sm:text-xl font-bold tracking-tight text-neutral-900 leading-none">
+                        The Bite Chapter
+                    </span>
+                    <span class="text-[10px] sm:text-[11px] text-[#86868B] font-medium tracking-tight mt-0.5">
+                        Food Journal • By Nimisha
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-xs font-semibold tracking-tight text-neutral-600">
+                <a href="#featured" class="hover:text-neutral-900 transition">Featured Spotlight</a>
+                <a href="#lookbook" class="hover:text-neutral-900 transition">Video Lookbook</a>
+                <a href="#recipes" class="hover:text-neutral-900 transition">Recipe Chapters</a>
+                <a href="#cookbook" class="hover:text-neutral-900 transition flex items-center gap-1.5">
+                    <span>The Cookbook</span>
+                    <span class="bg-orange-50 text-[#E15A3E] text-[10px] font-bold px-2 py-0.5 rounded-full border border-orange-100">Drop</span>
+                </a>
+                <a href="#about" class="hover:text-neutral-900 transition">Meet Nimisha</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="flex items-center gap-3">
+                <button onclick="openEbookModal()" class="px-4 sm:px-5 py-2 rounded-full bg-neutral-900 hover:bg-black text-white text-xs font-semibold tracking-tight transition shadow-sm hover:scale-105 active:scale-95">
+                    📖 Sample Book
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+
+        <!-- 1. APPLE KEYNOTE HERO SECTION -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-16 sm:py-20">
+            <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/[0.04] border border-black/[0.06] text-xs font-semibold text-neutral-600 mb-4 sm:mb-6">
+                    <span class="w-2 h-2 rounded-full bg-[#E15A3E]"></span>
+                    Volume 01 • Curated Table
+                </div>
+
+                <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-neutral-900 leading-[1.05]">
+                    Culinary dopamine. <br>
+                    <span class="italic font-normal font-serif text-[#E15A3E]">Engineered</span> for real life.
+                </h1>
+
+                <p class="text-base sm:text-lg text-[#86868B] max-w-xl mx-auto mt-4 font-normal leading-relaxed">
+                    A masterclass in 15-minute comfort cooking by <strong class="text-neutral-900 font-semibold">Nimisha</strong>. Minimal pantry staples, zero fuss, pure warmth on your plate.
+                </p>
+
+                <!-- Action Pills -->
+                <div class="flex flex-wrap items-center justify-center gap-3 pt-6">
+                    <a href="#lookbook" class="px-6 py-3 rounded-full bg-neutral-900 hover:bg-black text-white text-xs sm:text-sm font-semibold tracking-tight transition shadow-md hover:scale-105 active:scale-95">
+                        Browse Video Lookbook ↓
+                    </a>
+                    <a href="#recipes" class="px-6 py-3 rounded-full bg-white hover:bg-neutral-50 border border-neutral-300 text-neutral-900 text-xs sm:text-sm font-semibold tracking-tight transition shadow-sm">
+                        Explore Chapters →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Feature (Cinematic Card) -->
+            <div id="hero-feature-container" class="max-w-4xl mx-auto">
+                <!-- Rendered by app.js -->
+            </div>
+        </section>
+
+        <!-- 2. APPLE-STYLE BENTO GRID (Visual Spotlight of Signature Hits) -->
+        <section id="featured" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-2">
+                <div>
+                    <span class="royal-crown-badge mb-1.5">👑 Grand Curation</span>
+                    <h2 class="font-display text-2xl sm:text-4xl font-bold text-neutral-900">
+                        Signature Highlights
+                    </h2>
+                </div>
+                <p class="text-xs sm:text-sm text-[#86868B]">
+                    Four viral favorites • Tap any card to cook along.
+                </p>
+            </div>
+
+            <!-- Bento Container -->
+            <div id="bento-grid-container">
+                <!-- Rendered by app.js -->
+            </div>
+        </section>
+
+        <!-- 3. APPLE MUSIC / APP STORE STYLE REEL STRIP -->
+        <section id="lookbook" class="py-16 bg-[#F5F5F7] border-y border-black/[0.06]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex items-end justify-between mb-6">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#E15A3E] block mb-1">Visual Lookbook</span>
+                        <h2 class="font-display text-2xl sm:text-4xl font-bold text-neutral-900">
+                            Watch & Cook
+                        </h2>
+                        <p class="text-xs sm:text-sm text-[#86868B] mt-1">
+                            Swipe horizontally to explore quick 60-second video guides.
+                        </p>
+                    </div>
+
+                    <!-- Scroll Navigation Buttons (Desktop) -->
+                    <div class="hidden sm:flex items-center gap-2">
+                        <button id="lookbook-prev-btn" class="w-10 h-10 rounded-full bg-white border border-black/[0.08] text-neutral-800 flex items-center justify-center hover:bg-neutral-100 transition shadow-sm" title="Scroll left">
+                            ←
+                        </button>
+                        <button id="lookbook-next-btn" class="w-10 h-10 rounded-full bg-white border border-black/[0.08] text-neutral-800 flex items-center justify-center hover:bg-neutral-100 transition shadow-sm" title="Scroll right">
+                            →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Horizontal Strip Container -->
+                <div id="lookbook-strip-container" class="apple-lookbook-strip">
+                    <!-- Rendered by app.js -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. THE RECIPE CHAPTERS (Apple Segmented Control & Clean Grid) -->
+        <section id="recipes" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="royal-crown-badge mb-2">✦ Grand Collection ✦</span>
+                <h2 class="font-display text-3xl sm:text-5xl font-bold text-neutral-900">
+                    Recipe Chapters
+                </h2>
+                <p class="text-xs sm:text-sm text-[#86868B] mt-2">
+                    Organized by culinary mood. Tap any chapter pill to explore curated bites.
+                </p>
+            </div>
+
+            <!-- Apple Segmented Control Pill Bar -->
+            <div class="flex justify-center overflow-x-auto pb-4 mb-10 no-scrollbar">
+                <div id="segmented-pills-container" class="segmented-control-container">
+                    <!-- Rendered by app.js -->
+                </div>
+            </div>
+
+            <!-- Search Bar & Counter -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8 pb-4 border-b border-black/[0.06]">
+                <div class="relative w-full sm:w-80">
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        placeholder="Search garlic, pasta, cheela, peanut butter..." 
+                        class="w-full bg-white border border-black/[0.08] rounded-full px-4 py-2.5 pl-10 text-xs text-neutral-900 placeholder-neutral-400 focus:outline-none focus:border-[#E15A3E] transition shadow-sm"
+                    />
+                    <svg class="w-4 h-4 text-neutral-400 absolute left-3.5 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                </div>
+
+                <div class="w-full sm:w-auto flex items-center justify-between sm:justify-end gap-4 text-xs">
+                    <span id="results-count" class="text-[#86868B] font-medium">Loading recipes...</span>
+                    <div class="flex items-center gap-2">
+                        <span class="text-neutral-400">Sort:</span>
+                        <select id="sort-select" class="bg-white border border-black/[0.08] rounded-full px-3 py-1.5 text-xs font-semibold text-neutral-900 focus:outline-none shadow-sm">
+                            <option value="popular">Most Popular</option>
+                            <option value="quick">Fastest (< 15 mins)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recipe Grid -->
+            <div id="recipe-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Rendered dynamically by app.js -->
+            </div>
+
+            <!-- Progressive Reveal / Load More Controller (Keeps page compact & easy to scroll) -->
+            <div id="recipe-load-more-container" class="mt-12 text-center">
+                <!-- Injected dynamically by app.js -->
+            </div>
+
+        </section>
+
+        <!-- 5. THE DEBUT COOKBOOK LAUNCHPAD (Apple Product Presentation) -->
+        <section id="cookbook" class="py-20 bg-white border-y border-black/[0.06]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="bg-[#F5F5F7] rounded-[32px] p-6 sm:p-14 border border-black/[0.06] shadow-sm">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                        
+                        <!-- 3D Hardcover Book Mockup & Recipe Page Previews -->
+                        <div class="lg:col-span-5 flex flex-col items-center gap-6">
+                            <div class="apple-book-wrapper flex justify-center">
+                                <div class="apple-book relative" onclick="openEbookModal()" title="Tap to Peek Inside">
+                                    <div class="apple-book-spine"></div>
+                                    <!-- Subtle Luxury Book Texture -->
+                                    <div class="absolute inset-0 bg-cover bg-center opacity-[0.07] pointer-events-none" style="background-image: url('static/images/cookbook_cover.jpg');"></div>
+                                    <div class="pl-8 pr-5 py-6 h-full flex flex-col justify-between relative z-10 box-border">
+                                        <div>
+                                            <div class="flex items-center justify-between text-[10px] tracking-widest uppercase font-bold text-[#86868B]">
+                                                <span>The Bite Chapter</span>
+                                                <span class="royal-crown-badge text-[9px] px-2 py-0.5">Vol. 01</span>
+                                            </div>
+                                            <h3 class="font-serif-headline text-2xl sm:text-3xl font-bold text-neutral-900 mt-5 leading-tight">
+                                                The Kitchen <br>Playbook
+                                            </h3>
+                                            <p class="text-[11px] text-[#E15A3E] font-semibold uppercase tracking-wider mt-1.5">
+                                                Masterclass Edition
+                                            </p>
+                                        </div>
+                                        <div class="text-center my-auto py-3">
+                                            <span class="text-5xl block transform hover:scale-110 transition duration-300">📖</span>
+                                            <p class="font-handwriting text-lg text-neutral-600 mt-1">By Nimisha</p>
+                                        </div>
+                                        <div class="pt-3 border-t border-black/[0.08] flex items-center justify-between text-[11px] gap-2">
+                                            <span class="text-neutral-500 font-medium whitespace-nowrap">60+ Recipes</span>
+                                            <span class="text-[#E15A3E] font-bold whitespace-nowrap bg-orange-50 px-2.5 py-1 rounded-full border border-orange-100 flex items-center gap-1 shadow-sm">
+                                                <span>Peek Inside</span>
+                                                <span>→</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Visual AI Cookbook Plate Previews -->
+                            <div class="flex items-center gap-3">
+                                <div class="w-16 h-16 rounded-2xl overflow-hidden border-2 border-white shadow-md cursor-pointer hover:scale-110 hover:border-[#E15A3E] transition duration-300 relative group" onclick="openEbookModal()" title="Spaghetti Aglio e Olio">
+                                    <img src="static/images/cookbook_cover.jpg" alt="Spaghetti Aglio e Olio" class="w-full h-full object-cover" />
+                                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
+                                </div>
+                                <div class="w-16 h-16 rounded-2xl overflow-hidden border-2 border-white shadow-md cursor-pointer hover:scale-110 hover:border-[#E15A3E] transition duration-300 relative group" onclick="openEbookModal()" title="Creamy Peanut Butter Chili Maggi">
+                                    <img src="static/images/plate_pb_maggi.jpg" alt="Peanut Butter Maggi" class="w-full h-full object-cover" />
+                                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
+                                </div>
+                                <div class="w-16 h-16 rounded-2xl overflow-hidden border-2 border-white shadow-md cursor-pointer hover:scale-110 hover:border-[#E15A3E] transition duration-300 relative group" onclick="openEbookModal()" title="Crispy Moong Dal Cheela">
+                                    <img src="static/images/plate_cheela.jpg" alt="Moong Dal Cheela" class="w-full h-full object-cover" />
+                                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
+                                </div>
+                                <div class="flex flex-col text-left">
+                                    <span class="text-xs font-bold text-neutral-800">4-Recipe Sample</span>
+                                    <span class="text-[10px] text-neutral-400 font-medium">Included in PDF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Description & Instant Chapter Download -->
+                        <div class="lg:col-span-7 space-y-5">
+                            <span class="apple-badge apple-badge-accent">Pre-Order Launchpad</span>
+                            <h2 class="font-display text-3xl sm:text-5xl font-bold text-neutral-900 leading-tight">
+                                The Kitchen Playbook. <br>
+                                <span class="text-[#86868B] font-normal">Written for real life.</span>
+                            </h2>
+                            <p class="text-sm sm:text-base text-neutral-600 leading-relaxed font-normal">
+                                A hardcover-feel digital cookbook capturing our community's favorite comfort recipes. Featuring the exact science behind silky pasta water emulsification, 5-minute spicy peanut butter noodles, golden protein cheelas, and foolproof pantry matrices.
+                            </p>
+
+                            <!-- Perks list -->
+                            <div class="grid grid-cols-2 gap-3 text-xs text-neutral-600 font-medium pt-1">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-[#E15A3E]">✓</span> 60+ Tested High-Flavor Recipes
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-[#E15A3E]">✓</span> Complete Macro & Protein Counts
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-[#E15A3E]">✓</span> 15-Minute Busy Weeknight Meals
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-[#E15A3E]">✓</span> Step-by-Step Color Photography
+                                </div>
+                            </div>
+
+                            <!-- Sample Chapter Download Form -->
+                            <div class="p-5 sm:p-6 rounded-2xl bg-white border border-black/[0.06] shadow-sm space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <h4 class="font-display font-bold text-sm text-neutral-900">Download Free 4-Recipe Sample Chapter (PDF)</h4>
+                                    <span class="text-[11px] font-bold text-emerald-600">Instant Access</span>
+                                </div>
+                                <form id="ebook-form" class="flex flex-col sm:flex-row gap-2.5">
+                                    <input 
+                                        type="email" 
+                                        name="email" 
+                                        required 
+                                        placeholder="Enter your email for the PDF copy..." 
+                                        class="flex-1 bg-[#F5F5F7] border border-black/[0.06] rounded-xl px-4 py-2.5 text-xs text-neutral-900 placeholder-neutral-400 focus:outline-none focus:border-[#E15A3E]"
+                                    />
+                                    <button type="submit" class="px-5 py-2.5 rounded-xl bg-neutral-900 hover:bg-black text-white font-semibold text-xs tracking-tight transition whitespace-nowrap">
+                                        Send Free Sample →
+                                    </button>
+                                </form>
+                                <p class="text-[11px] text-neutral-400">
+                                    🔒 Safe & zero spam. You will also lock in 30% off when the full edition drops.
+                                </p>
+                            </div>
+
+                            <button onclick="openEbookModal()" class="text-xs font-semibold text-[#E15A3E] hover:underline flex items-center gap-1.5">
+                                <span>📖</span> Preview Sample Chapter in Browser
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. BEHIND THE APRON: MEET NIMISHA -->
+        <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Nimisha Portrait -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="polaroid-frame max-w-xs text-center shadow-2xl">
+                        <div class="aspect-square bg-neutral-100 overflow-hidden rounded mb-3">
+                            <img src="https://yt3.googleusercontent.com/ZKOqFv7ItWNUC4uUUuYYA0DmokLjClM8HcNFPdyvWFOkeRbhEuOiiMIXAnl4UtMkCnTOJWbj3g=s900-c-k-c0x00ffffff-no-rj" alt="Nimisha" class="w-full h-full object-cover" />
+                        </div>
+                        <p class="font-handwriting text-2xl text-neutral-900 font-bold">Nimisha in the kitchen 🍳✨</p>
+                        <span class="text-[10px] tracking-widest uppercase font-semibold text-[#86868B]">Founder & Creator • The Bite Chapter</span>
+                    </div>
+                </div>
+
+                <!-- Story Text -->
+                <div class="lg:col-span-7 space-y-5 text-neutral-600">
+                    <span class="apple-badge royal-crown-badge">👑 The Food Philosophy</span>
+                    <h2 class="font-display text-3xl sm:text-5xl font-bold text-neutral-900 leading-tight">
+                        "Cooking should feel like a dance, not a chore."
+                    </h2>
+                    <p class="text-sm sm:text-base leading-relaxed font-normal">
+                        I started <strong class="text-neutral-900 font-semibold">The Bite Chapter</strong> as a personal food journal to document recipes that make everyday cooking feel comforting rather than exhausting.
+                    </p>
+                    <p class="text-sm sm:text-base leading-relaxed font-normal">
+                        Whether it's our signature smoky charcoal-infused tadka chutney, 10-minute garlic mushroom pasta, or crispy golden cheelas packed with clean protein, my goal is simple: high flavor, minimal dishes, and plating that brings a smile before the very first bite.
+                    </p>
+
+                    <div class="pt-4 border-t border-black/[0.06] flex flex-wrap items-center gap-6 text-xs text-neutral-500 font-semibold">
+                        <span>☕ Morning coffee lover</span>
+                        <span>🍝 Pasta enthusiast</span>
+                        <span>🌶️ Tadka believer</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 7. FOLLOW ALONG (App Store / Bio Link Friendly Grid with Media Previews) -->
+        <section id="follow" class="py-16 bg-[#F5F5F7] border-t border-black/[0.06]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <span class="apple-badge apple-badge-accent mb-2">Social Channels</span>
+                    <h2 class="font-display text-2xl sm:text-4xl font-bold text-neutral-900">
+                        Follow The Journey
+                    </h2>
+                    <p class="text-xs sm:text-sm text-neutral-500 mt-1">
+                        Catch daily kitchen stories, behind-the-scenes experiments, and new reel drops.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <!-- Instagram Card with AI Gourmet Image -->
+                    <a href="https://www.instagram.com/thebitechapter/" target="_blank" rel="noopener noreferrer" class="royal-card overflow-hidden group hover:border-pink-300 transition">
+                        <div class="relative h-40 overflow-hidden bg-neutral-900">
+                            <img src="static/images/social_instagram.jpg" alt="Instagram Food Journal" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition duration-700" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 flex items-center gap-2 text-white">
+                                <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-amber-500 via-pink-600 to-purple-600 text-white flex items-center justify-center text-xs shadow-md">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                </div>
+                                <span class="font-display font-bold text-sm">Instagram</span>
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2 bg-white">
+                            <p class="text-xs text-neutral-500">Daily food reels, quick dinner hacks & aesthetic table vibes.</p>
+                            <span class="text-xs font-semibold text-[#E15A3E] group-hover:underline inline-block">@thebitechapter →</span>
+                        </div>
+                    </a>
+
+                    <!-- YouTube Card with AI Gourmet Image -->
+                    <a href="https://www.youtube.com/@thebitechapter" target="_blank" rel="noopener noreferrer" class="royal-card overflow-hidden group hover:border-red-300 transition">
+                        <div class="relative h-40 overflow-hidden bg-neutral-900">
+                            <img src="static/images/social_youtube.jpg" alt="YouTube Live Tadka Smoke" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition duration-700" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 flex items-center gap-2 text-white">
+                                <div class="w-8 h-8 rounded-xl bg-red-600 text-white flex items-center justify-center text-xs shadow-md">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                                </div>
+                                <span class="font-display font-bold text-sm">YouTube</span>
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2 bg-white">
+                            <p class="text-xs text-neutral-500">Full Shorts library, cooking techniques & 95K+ viral records.</p>
+                            <span class="text-xs font-semibold text-red-600 group-hover:underline inline-block">Subscribe Channel →</span>
+                        </div>
+                    </a>
+
+                    <!-- Facebook Card with AI Gourmet Image -->
+                    <a href="https://www.facebook.com/thebitechapter/" target="_blank" rel="noopener noreferrer" class="royal-card overflow-hidden group hover:border-blue-300 transition">
+                        <div class="relative h-40 overflow-hidden bg-neutral-900">
+                            <img src="static/images/social_facebook.jpg" alt="Facebook Feast Community" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition duration-700" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+                            <div class="absolute bottom-3 left-4 flex items-center gap-2 text-white">
+                                <div class="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xs shadow-md">
+                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </div>
+                                <span class="font-display font-bold text-sm">Facebook</span>
+                            </div>
+                        </div>
+                        <div class="p-5 space-y-2 bg-white">
+                            <p class="text-xs text-neutral-500">Community discussions, viral pasta recipes & cooking tips.</p>
+                            <span class="text-xs font-semibold text-blue-600 group-hover:underline inline-block">Like Our Page →</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 8. THE SUNDAY CLUB NEWSLETTER -->
+        <section class="max-w-3xl mx-auto px-4 py-20 text-center">
+            <div class="apple-card p-8 sm:p-12 space-y-3">
+                <span class="text-3xl block">💌</span>
+                <h3 class="font-display text-2xl sm:text-3xl font-bold text-neutral-900">
+                    The Sunday Recipe Dispatch
+                </h3>
+                <p class="text-xs sm:text-sm text-neutral-500 max-w-md mx-auto">
+                    A private weekly email with 1 secret tested recipe, 3 grocery pantry secrets, and zero fluff.
+                </p>
+                <form id="newsletter-form" class="flex flex-col sm:flex-row gap-2.5 max-w-md mx-auto pt-3">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        required 
+                        placeholder="your.email@gmail.com" 
+                        class="flex-1 bg-[#F5F5F7] border border-black/[0.06] rounded-xl px-4 py-2.5 text-xs text-neutral-900 focus:outline-none focus:border-[#E15A3E]"
+                    />
+                    <button type="submit" class="px-5 py-2.5 rounded-xl bg-neutral-900 hover:bg-black text-white font-semibold text-xs tracking-tight transition shadow-sm">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MOBILE FLOATING BOTTOM DOCK (For effortless thumb reach in Instagram In-App Browser) -->
+    <nav class="md:hidden floating-mobile-dock">
+        <a href="#featured" class="px-3 py-1.5 text-xs font-semibold text-neutral-700 hover:text-neutral-900">
+            Featured
+        </a>
+        <a href="#lookbook" class="px-3 py-1.5 text-xs font-semibold text-neutral-700 hover:text-neutral-900">
+            Lookbook
+        </a>
+        <a href="#recipes" class="px-3 py-1.5 text-xs font-semibold text-neutral-700 hover:text-neutral-900">
+            Chapters
+        </a>
+        <button onclick="openEbookModal()" class="px-3.5 py-1.5 rounded-full bg-[#E15A3E] text-white text-xs font-semibold shadow-sm">
+            Cookbook
+        </button>
+    </nav>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-black/[0.06] py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 gap-4">
+            <div>
+                <span class="font-display font-bold text-neutral-900 text-sm">The Bite Chapter</span>
+                <span>• Life of Simple Treats by Nimisha</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#lookbook" class="hover:text-neutral-900">Lookbook</a>
+                <a href="#recipes" class="hover:text-neutral-900">Chapters</a>
+                <a href="#cookbook" class="hover:text-neutral-900">Cookbook</a>
+                <a href="https://www.instagram.com/thebitechapter/" target="_blank" class="hover:text-neutral-900">Instagram</a>
+            </div>
+            <p>© 2026 The Bite Chapter. Built for flavor.</p>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE iOS BOTTOM SHEET / RECIPE MODAL -->
+    <div id="recipe-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-0 sm:p-6 bg-black/60 backdrop-blur-sm">
+        
+        <!-- Desktop Close Button -->
+        <button onclick="closeRecipeModal()" class="hidden sm:flex absolute top-5 right-5 z-50 w-10 h-10 rounded-full bg-white text-neutral-800 items-center justify-center shadow-lg hover:bg-neutral-100 transition font-bold" title="Close (Esc)">
+            ✕
+        </button>
+
+        <!-- Modal Card (iOS Bottom Sheet on mobile, centered card on desktop) -->
+        <div class="ios-bottom-sheet relative w-full sm:max-w-5xl max-h-[92dvh] bg-white sm:rounded-3xl border border-black/[0.08] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+            
+            <!-- Mobile Grab Handle -->
+            <div class="sm:hidden w-full pt-2 pb-0 flex flex-col items-center">
+                <div class="ios-grab-handle"></div>
+                <div class="w-full flex justify-between items-center px-4 pb-2 border-b border-black/[0.06]">
+                    <span class="text-xs font-semibold text-neutral-500">Recipe Reader</span>
+                    <button onclick="closeRecipeModal()" class="text-xs font-bold text-neutral-800 bg-neutral-100 px-3 py-1 rounded-full">
+                        Done
+                    </button>
+                </div>
+            </div>
+
+            <!-- Left: Video Frame -->
+            <div class="lg:w-5/12 bg-neutral-50 flex items-center justify-center p-3 sm:p-6 border-b lg:border-b-0 lg:border-r border-black/[0.06]">
+                <div class="w-full max-w-[280px] sm:max-w-[320px] aspect-[9/16] bg-black rounded-2xl overflow-hidden shadow-md" id="modal-iframe-container">
+                    <!-- Video injected by JS -->
+                </div>
+            </div>
+
+            <!-- Right: Recipe Details, Scaler & Checklist -->
+            <div class="lg:w-7/12 p-5 sm:p-8 overflow-y-auto flex flex-col justify-between max-h-[55dvh] lg:max-h-[92dvh] bg-white">
+                <div class="space-y-4">
+                    <div id="modal-tags" class="flex flex-wrap items-center gap-1.5"></div>
+
+                    <h2 id="modal-title" class="font-serif-headline text-2xl lg:text-3xl font-bold text-neutral-900 leading-snug"></h2>
+
+                    <div class="flex items-center gap-4 text-xs font-medium text-neutral-500 pb-2 border-b border-black/[0.06]">
+                        <span>⏱️ <span id="modal-preptime"></span></span>
+                        <span>•</span>
+                        <span>🧑‍🍳 <span id="modal-difficulty"></span></span>
+                    </div>
+
+                    <p id="modal-description" class="text-xs sm:text-sm text-neutral-600 leading-relaxed font-normal"></p>
+
+                    <!-- Servings Multiplier (Apple Segmented Pill) -->
+                    <div class="p-3 rounded-2xl bg-neutral-50 border border-black/[0.04] flex items-center justify-between">
+                        <span class="text-xs font-bold text-neutral-800">Adjust Servings:</span>
+                        <div class="flex items-center gap-1 bg-white p-1 rounded-xl border border-black/[0.06]">
+                            <button id="serv-1" onclick="updateServings(1)" class="w-7 h-7 rounded-lg bg-neutral-900 text-white text-xs font-bold transition">1x</button>
+                            <button id="serv-2" onclick="updateServings(2)" class="w-7 h-7 rounded-lg bg-neutral-100 text-neutral-600 text-xs font-bold transition">2x</button>
+                            <button id="serv-4" onclick="updateServings(4)" class="w-7 h-7 rounded-lg bg-neutral-100 text-neutral-600 text-xs font-bold transition">4x</button>
+                        </div>
+                    </div>
+
+                    <!-- Checklist -->
+                    <div>
+                        <h4 class="font-display font-bold text-sm text-neutral-900 mb-2">Ingredients Checklist:</h4>
+                        <div id="modal-ingredients-list" class="space-y-1 max-h-48 overflow-y-auto pr-1"></div>
+                    </div>
+
+                    <!-- Method -->
+                    <div>
+                        <h4 class="font-display font-bold text-sm text-neutral-900 mb-2">Cooking Method:</h4>
+                        <ol id="modal-steps-list" class="space-y-2 max-h-44 overflow-y-auto pr-1"></ol>
+                    </div>
+                </div>
+
+                <div class="pt-4 mt-6 border-t border-black/[0.06] flex items-center justify-between">
+                    <span class="text-xs text-neutral-400 font-handwriting text-lg">"Plate gently, eat joyfully."</span>
+                    <button onclick="closeRecipeModal()" class="px-5 py-2 rounded-full bg-neutral-900 text-white text-xs font-semibold hover:bg-black transition">
+                        Done Cooking
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- EBOOK SAMPLE PREVIEW MODAL -->
+    <div id="ebook-preview-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6 bg-black/60 backdrop-blur-sm">
+        <button onclick="closeEbookModal()" class="absolute top-5 right-5 z-50 w-10 h-10 rounded-full bg-white text-neutral-800 flex items-center justify-center shadow-md font-bold">
+            ✕
+        </button>
+
+        <div class="relative w-full max-w-2xl bg-white border border-black/[0.08] rounded-3xl p-6 sm:p-10 max-h-[90dvh] overflow-y-auto space-y-6">
+            <div class="text-center">
+                <span class="apple-badge apple-badge-accent mb-2">Sample Chapter</span>
+                <h3 class="font-display text-3xl font-bold text-neutral-900">The Kitchen Playbook</h3>
+                <p class="text-xs sm:text-sm text-neutral-500 mt-1">4 exclusive signature recipes included in this free PDF sample chapter:</p>
+            </div>
+
+            <div class="space-y-3 text-xs text-neutral-600">
+                <div class="p-3.5 rounded-2xl bg-neutral-50 border border-black/[0.04] flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 shadow-sm border border-black/[0.06]">
+                        <img src="static/images/cookbook_cover.jpg" alt="Aglio e Olio" class="w-full h-full object-cover" />
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-neutral-900 text-sm">1. Authentic Spaghetti Aglio e Olio 🍝</h5>
+                        <p class="text-xs text-neutral-500 mt-0.5">Slivered garlic in olive oil emulsified with salted pasta water for classic Roman silkiness.</p>
+                    </div>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-neutral-50 border border-black/[0.04] flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 shadow-sm border border-black/[0.06]">
+                        <img src="static/images/plate_pb_maggi.jpg" alt="Peanut Butter Maggi" class="w-full h-full object-cover" />
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-neutral-900 text-sm">2. Creamy Peanut Butter Chili Maggi 🍜</h5>
+                        <p class="text-xs text-neutral-500 mt-0.5">Spicy tastemaker broth melted with creamy peanut butter, garlic chili oil, and scallions.</p>
+                    </div>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-neutral-50 border border-black/[0.04] flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 shadow-sm border border-black/[0.06]">
+                        <img src="static/images/plate_cheela.jpg" alt="Crispy Moong Dal Cheela" class="w-full h-full object-cover" />
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-neutral-900 text-sm">3. Crispy Golden Moong Dal Cheela 🥞</h5>
+                        <p class="text-xs text-neutral-500 mt-0.5">Thin yellow lentil crepe packed with spiced paneer and bell peppers (18g clean protein).</p>
+                    </div>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-neutral-50 border border-black/[0.04] flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 shadow-sm border border-black/[0.06]">
+                        <img src="static/images/social_youtube.jpg" alt="Rajasthani Tadka Chutney" class="w-full h-full object-cover" />
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-neutral-900 text-sm">4. Smoky Rajasthani Doongri Tadka Chutney 🌶️</h5>
+                        <p class="text-xs text-neutral-500 mt-0.5">Garlic and Kashmiri chilies in mustard oil with traditional live charcoal dhungar smoke.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center pt-2">
+                <a href="static/downloads/thebitechapter_sample_ebook.pdf" download="TheBiteChapter_Sample_Cookbook.pdf" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-neutral-900 hover:bg-black text-white text-xs font-semibold uppercase tracking-wider transition shadow-md">
+                    <span>📥 Download Full Sample PDF</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="fixed bottom-20 md:bottom-6 right-6 z-50 transform translate-y-4 opacity-0 pointer-events-none transition-all duration-300 bg-neutral-900 text-white text-xs font-semibold px-5 py-3 rounded-full shadow-2xl flex items-center gap-2"></div>
+
+    <!-- Scripts -->
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+</html>
