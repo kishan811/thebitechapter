@@ -5,7 +5,7 @@ const CREATOR_PROFILE = {
     name: "Nimisha",
     brand: "The Bite Chapter",
     handle: "@thebitechapter",
-    tagline: "A collection of simple treats, high flavor bites, and everyday kitchen stories.",
+    tagline: "High-flavor comfort cooking, quick everyday bites, and modern kitchen stories.",
     bio: "Welcome to my food journal. I'm Nimisha. I believe cooking shouldn't feel like a chore or require twenty specialty ingredients. From soothing 15-minute pastas and golden high-protein cheelas to regional smoky tadkas that remind you of home, this is where simple ingredients turn into pure daily comfort.",
     avatar: "https://yt3.googleusercontent.com/ZKOqFv7ItWNUC4uUUuYYA0DmokLjClM8HcNFPdyvWFOkeRbhEuOiiMIXAnl4UtMkCnTOJWbj3g=s900-c-k-c0x00ffffff-no-rj",
     issue: "Issue 01 • Modern Comfort & Kitchen Playbook",
@@ -27,7 +27,7 @@ const CHAPTERS = [
     { id: "quick_bites", name: "15-Min & PB Maggi", subtitle: "Comfort Noodles & Quick Eats", icon: "🍜", image: "https://i.ytimg.com/vi/V7DvO3Bei3k/hqdefault.jpg" },
     { id: "morning_fuel", name: "Cheelas & Fuel", subtitle: "Crispy High-Protein Starts", icon: "🥞", image: "https://i.ytimg.com/vi/ArtUYX17hjM/hqdefault.jpg" },
     { id: "desi_street", name: "Desi Tadkas", subtitle: "Smoky Chutneys & Street Flavor", icon: "🌶️", image: "https://i.ytimg.com/vi/rTWw5yVLwnk/hqdefault.jpg" },
-    { id: "sweet_solace", name: "Sweet Solace", subtitle: "Bounty Treats & Sips", icon: "🍫", image: "https://i.ytimg.com/vi/314G3x9uNFs/hqdefault.jpg" }
+    { id: "sweet_solace", name: "Sweet Solace", subtitle: "Bounty Bites & Sips", icon: "🍫", image: "https://i.ytimg.com/vi/314G3x9uNFs/hqdefault.jpg" }
 ];
 
 const REELS_DATA = [

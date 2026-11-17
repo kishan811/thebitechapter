@@ -382,6 +382,10 @@ function openRecipeModal(reelId) {
     modal.classList.remove('hidden');
     modal.classList.add('flex');
     document.body.style.overflow = 'hidden';
+
+    // Reset scroll positions to top
+    const scrollableAreas = modal.querySelectorAll('.overflow-y-auto');
+    scrollableAreas.forEach(el => el.scrollTop = 0);
 }
 
 function closeRecipeModal() {
@@ -610,7 +614,7 @@ async function handleNewsletterSubmit(e) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email })
         });
-        showToast("Welcome to Sunday Secret Treats! 💌");
+        showToast("Welcome to Sunday Secret Bites! 💌");
         triggerEmojiBurst(window.innerWidth / 2, window.innerHeight / 2, ['💌', '☕', '✨']);
         form.reset();
     } catch (err) {
