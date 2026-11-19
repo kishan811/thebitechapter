@@ -1,11 +1,11 @@
 // The Bite Chapter - Digital Food Journal & Magazine
-// Curated exclusively by Nimisha (\@thebitechapter)
+// Curated exclusively by Nimisha (@thebitechapter)
 // 100% Authentic Channel Recipes • Official Video Embeds
 
 const CREATOR_PROFILE = {
     name: "Nimisha",
     brand: "The Bite Chapter",
-    handle: "\@thebitechapter",
+    handle: "@thebitechapter",
     tagline: "High-flavor comfort cooking, quick everyday bites, and modern kitchen stories.",
     bio: "Welcome to my food journal. I'm Nimisha. I believe cooking shouldn't feel like a chore or require twenty specialty ingredients. From soothing 15-minute pastas and golden high-protein clean meals to regional smoky tadkas that remind you of home, this is where simple ingredients turn into pure daily comfort.",
     avatar: "https://yt3.googleusercontent.com/ZKOqFv7ItWNUC4uUUuYYA0DmokLjClM8HcNFPdyvWFOkeRbhEuOiiMIXAnl4UtMkCnTOJWbj3g=s900-c-k-c0x00ffffff-no-rj",
@@ -41,7 +41,7 @@ const REELS_DATA =
       "description" : "The #1 most watched viral recipe on our channel with 163K+ views! Tender steamed broccoli, sweet carrots, crisp baby corn, and fresh cottage cheese (paneer) tossed in fresh lemon juice, crushed black pepper, and Himalayan pink salt. Zero oil, pure nourishment!",
       "difficulty" : "Beginner Friendly",
       "embedUrl" : "https://www.youtube.com/embed/go0TJoanK1g",
-      "highlight" : "The Channel's #1 Most Watched Clean Bowl â¢ 163K+ Views",
+      "highlight" : "The Channel's #1 Most Watched Clean Bowl • 163K+ Views",
       "id" : "go0TJoanK1g",
       "ingredients" : [
          "1 cup fresh broccoli florets",
@@ -54,7 +54,7 @@ const REELS_DATA =
          "1 tbsp roasted pumpkin or sunflower seeds"
       ],
       "prepTime" : "10 mins",
-      "raw_title" : "Virat Kohliâs Steamed /Boiled Veggie Bowl | High-Protein Clean Meal ð¥£ #viratkohli #healthyeating",
+      "raw_title" : "Virat Kohli’s Steamed /Boiled Veggie Bowl | High-Protein Clean Meal 🥣 #viratkohli #healthyeating",
       "servings" : 1,
       "steps" : [
          "Steam broccoli, carrots, beans, and baby corn in a steamer basket for 4-5 minutes until tender-crisp.",
@@ -63,9 +63,9 @@ const REELS_DATA =
          "Toss gently, top with roasted seeds, and enjoy piping hot!"
       ],
       "tags" : [
-         "ð #1 Most Viral",
-         "ð¥¦ 163K+ Views",
-         "ð± 22g Clean Protein"
+         "👑 #1 Most Viral",
+         "🥦 163K+ Views",
+         "🌱 22g Clean Protein"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/go0TJoanK1g/hqdefault.jpg",
       "title" : "Virat Kohli's High-Protein Steamed Veggie Bowl",
@@ -91,7 +91,7 @@ const REELS_DATA =
          "1 small charcoal piece for smoking (optional)"
       ],
       "prepTime" : "8 mins",
-      "raw_title" : "Rajasthani Doongri Tadka Chutney ð #shorts #chutney #rajasthani #indianfood",
+      "raw_title" : "Rajasthani Doongri Tadka Chutney 😋 #shorts #chutney #rajasthani #indianfood",
       "servings" : 4,
       "steps" : [
          "Grind garlic cloves and soaked red chilies with cumin and a splash of water into a coarse paste.",
@@ -100,9 +100,9 @@ const REELS_DATA =
          "Perform quick dhungar smoke with a live coal and ghee for authentic dhaba smokiness!"
       ],
       "tags" : [
-         "ð¶ï¸ Signature Smoke",
-         "ð« Charcoal Dhungar",
-         "â¡ 8 Mins"
+         "🌶️ Signature Smoke",
+         "🫕 Charcoal Dhungar",
+         "⚡ 8 Mins"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/rTWw5yVLwnk/hqdefault.jpg",
       "title" : "Smoky Rajasthani Doongri Tadka Chutney",
@@ -135,9 +135,9 @@ const REELS_DATA =
          "Drizzle ghee, add the spiced paneer-veggie stuffing, fold crisp, and dip in mint chutney!"
       ],
       "tags" : [
-         "ðª 18g Protein",
-         "ð¥ Gluten-Free",
-         "â±ï¸ 15 Mins"
+         "💪 18g Protein",
+         "🥞 Gluten-Free",
+         "⏱️ 15 Mins"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/ArtUYX17hjM/hqdefault.jpg",
       "title" : "Crispy Golden Moong Dal Cheela",
@@ -163,17 +163,17 @@ const REELS_DATA =
          "Spring onions & toasted sesame for garnish"
       ],
       "prepTime" : "12 mins",
-      "raw_title" : "Chilli Garlic Tofuðð Vegan Recipe Alternative of Paneer - high protein dinner",
+      "raw_title" : "Chilli Garlic Tofu😍😋 Vegan Recipe Alternative of Paneer - high protein dinner",
       "servings" : 2,
       "steps" : [
          "Toss tofu cubes in cornstarch, pan-sear in sesame oil until golden and ultra-crispy.",
-         "SautÃ© garlic, pour the spicy savory sauce slurry and reduce until glossy.",
+         "Sauté garlic, pour the spicy savory sauce slurry and reduce until glossy.",
          "Toss crispy tofu cubes to coat evenly. Shower with toasted sesame and green onions!"
       ],
       "tags" : [
-         "ð¥¢ Vegan Favorite",
-         "ðª 20g Protein",
-         "â¡ 12 Mins"
+         "🥢 Vegan Favorite",
+         "💪 20g Protein",
+         "⚡ 12 Mins"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/40Fcx4VBujA/hqdefault.jpg",
       "title" : "Crispy Chilli Garlic Glazed Tofu",
@@ -197,7 +197,7 @@ const REELS_DATA =
          "Mustard oil for frying"
       ],
       "prepTime" : "20 mins",
-      "raw_title" : "Gobhi Pakora ð¥¦",
+      "raw_title" : "Gobhi Pakora 🥦",
       "servings" : 3,
       "steps" : [
          "Parboil gobhi florets with salt and turmeric for 3 minutes, drain completely.",
@@ -205,9 +205,9 @@ const REELS_DATA =
          "Dip florets and fry on medium heat till golden. Flash fry again before serving for maximum crunch!"
       ],
       "tags" : [
-         "ð§ï¸ Chai Companion",
-         "ð¥¦ Extra Crisp",
-         "â±ï¸ 20 Mins"
+         "🌧️ Chai Companion",
+         "🥦 Extra Crisp",
+         "⏱️ 20 Mins"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/dC5egFVwRlQ/hqdefault.jpg",
       "title" : "Halwai-Style Crunchy Gobhi Pakora",
@@ -232,7 +232,7 @@ const REELS_DATA =
          "Fresh cream for finishing"
       ],
       "prepTime" : "25 mins",
-      "raw_title" : "Authentic Dhaba-Style Palak Paneer ð¿",
+      "raw_title" : "Authentic Dhaba-Style Palak Paneer 🌿",
       "servings" : 4,
       "steps" : [
          "Blanch spinach for 90 seconds, plunge directly into ice cold water to preserve chlorophyll.",
@@ -240,9 +240,9 @@ const REELS_DATA =
          "Cook onion-tomato masala in ghee, fold in the spinach puree, simmer gently and fold paneer."
       ],
       "tags" : [
-         "ð¿ Vibrant Green",
-         "ð§ Soft Paneer",
-         "â±ï¸ 25 Mins"
+         "🌿 Vibrant Green",
+         "🧀 Soft Paneer",
+         "⏱️ 25 Mins"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/jlIBLm0bwlw/hqdefault.jpg",
       "title" : "Authentic Dhaba-Style Palak Paneer",
@@ -266,7 +266,7 @@ const REELS_DATA =
          "1 clove minced garlic + hot noodle water"
       ],
       "prepTime" : "10 mins",
-      "raw_title" : "Peanut Chilli Noodles ð #shorts #food #foodie #recipe #shortvideo #shortscooking",
+      "raw_title" : "Peanut Chilli Noodles 🍜 #shorts #food #foodie #recipe #shortvideo #shortscooking",
       "servings" : 1,
       "steps" : [
          "Whisk peanut butter, chili oil, soy sauce, garlic, and hot noodle water into a luscious sauce.",
@@ -274,9 +274,9 @@ const REELS_DATA =
          "Garnish with chopped scallions and roasted crushed peanuts!"
       ],
       "tags" : [
-         "ð¥ 4.5K Views",
-         "ð 10-Min Meal",
-         "ð¥ Creamy & Spicy"
+         "🔥 4.5K Views",
+         "🍜 10-Min Meal",
+         "🥜 Creamy & Spicy"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/dt5EQaT0hs4/hqdefault.jpg",
       "title" : "Spicy Dan Dan Peanut Chili Noodles",
@@ -301,7 +301,7 @@ const REELS_DATA =
          "Fresh coriander & black salt"
       ],
       "prepTime" : "12 mins",
-      "raw_title" : "Tamatar chutney ð #shorts #cooking #viral",
+      "raw_title" : "Tamatar chutney 🍅 #shorts #cooking #viral",
       "servings" : 3,
       "steps" : [
          "Roast whole tomatoes and garlic over open burner flame until charred and tender.",
@@ -309,9 +309,9 @@ const REELS_DATA =
          "Drizzle pungent mustard oil, season with black salt and coriander leaves."
       ],
       "tags" : [
-         "ð¥ 3.6K Views",
-         "ð Charred & Tangy",
-         "ð¶ï¸ Village Style"
+         "🔥 3.6K Views",
+         "🍅 Charred & Tangy",
+         "🌶️ Village Style"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/fNgwZwPCRs8/hqdefault.jpg",
       "title" : "Smoky Charred Tomato Garlic Chutney",
@@ -335,7 +335,7 @@ const REELS_DATA =
          "Finely chopped onions, tomatoes, and chaat masala"
       ],
       "prepTime" : "10 mins",
-      "raw_title" : "High Protein Tofu / Paneer Sandwich ð¥ª | 10-Minute Breakfast",
+      "raw_title" : "High Protein Tofu / Paneer Sandwich 🥪 | 10-Minute Breakfast",
       "servings" : 1,
       "steps" : [
          "Mix crumbled paneer with Greek yogurt, mint chutney, onions, and chaat masala.",
@@ -343,9 +343,9 @@ const REELS_DATA =
          "Toast in a skillet with a brush of butter till golden and crisp!"
       ],
       "tags" : [
-         "ð¥ª 3.4K Views",
-         "ðª 20g Protein",
-         "â¡ 10 Mins"
+         "🥪 3.4K Views",
+         "💪 20g Protein",
+         "⚡ 10 Mins"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/7UQ5wVs-ons/hqdefault.jpg",
       "title" : "10-Minute High-Protein Paneer Sandwich",
@@ -370,7 +370,7 @@ const REELS_DATA =
          "Parmesan cheese to finish"
       ],
       "prepTime" : "15 mins",
-      "raw_title" : "Classic Aglio e Olio Pasta ð",
+      "raw_title" : "Classic Aglio e Olio Pasta 🍝",
       "servings" : 2,
       "steps" : [
          "Cook pasta in salted water till al dente, reserving 1/2 cup pasta water.",
@@ -378,9 +378,9 @@ const REELS_DATA =
          "Add pasta water to emulsify into a silky sauce, toss spaghetti and fresh parsley!"
       ],
       "tags" : [
-         "ð 700K+ Viral Mega Hit",
-         "ð Roman Aglio e Olio",
-         "â¨ 5 Ingredients"
+         "👑 700K+ Viral Mega Hit",
+         "🍝 Roman Aglio e Olio",
+         "✨ 5 Ingredients"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/HjIfjPZh3Ac/hqdefault.jpg",
       "title" : "Authentic Spaghetti Aglio e Olio",
@@ -404,7 +404,7 @@ const REELS_DATA =
          "Oregano and chili flakes"
       ],
       "prepTime" : "8 mins",
-      "raw_title" : "Bread pizza ð Cheese pizza #pizza #recipe",
+      "raw_title" : "Bread pizza 🍕 Cheese pizza #pizza #recipe",
       "servings" : 2,
       "steps" : [
          "Toast one side of the bread in butter on a skillet.",
@@ -412,9 +412,9 @@ const REELS_DATA =
          "Cover with a lid on low flame for 3 minutes until cheese melts into gooey perfection!"
       ],
       "tags" : [
-         "ð Cheesy Melt",
-         "â¡ 8 Mins",
-         "ð§ Late Night"
+         "🍕 Cheesy Melt",
+         "⚡ 8 Mins",
+         "🧀 Late Night"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/1qAnvjCVoyA/hqdefault.jpg",
       "title" : "Crispy Stovetop Bread Pizza",
@@ -437,17 +437,17 @@ const REELS_DATA =
          "Fresh basil leaves & red chili flakes"
       ],
       "prepTime" : "6 mins",
-      "raw_title" : "Pizza in Airfryer ð #shorts #food #recipe",
+      "raw_title" : "Pizza in Airfryer 😋 #shorts #food #recipe",
       "servings" : 1,
       "steps" : [
-         "Preheat air fryer to 180Â°C (350Â°F).",
+         "Preheat air fryer to 180°C (350°F).",
          "Assemble pita with sauce, cheese, and toppings.",
          "Airfry for 5-6 minutes until cheese is bubbly and edges are toasted brown!"
       ],
       "tags" : [
-         "ð 2.5K Views",
-         "ð Airfryer Hack",
-         "â¡ 6 Mins"
+         "🍕 2.5K Views",
+         "🍟 Airfryer Hack",
+         "⚡ 6 Mins"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/zxRHLKEdvDM/hqdefault.jpg",
       "title" : "Airfryer Pita Pizza Hack",
@@ -470,17 +470,17 @@ const REELS_DATA =
          "1 tsp smoked paprika, garlic powder & sea salt"
       ],
       "prepTime" : "25 mins",
-      "raw_title" : "Extra Crispy Sweet Potato Fries ð ",
+      "raw_title" : "Extra Crispy Sweet Potato Fries 🍠",
       "servings" : 2,
       "steps" : [
          "Soak cut fries in cold ice water for 30 mins to remove excess surface starch.",
          "Dry thoroughly with a kitchen towel, toss in cornstarch and spices.",
-         "Bake or airfry at 200Â°C for 18-20 minutes, shaking halfway!"
+         "Bake or airfry at 200°C for 18-20 minutes, shaking halfway!"
       ],
       "tags" : [
-         "ð  Cornstarch Soak",
-         "ð Zero Sogginess",
-         "â±ï¸ 25 Mins"
+         "🍠 Cornstarch Soak",
+         "🍟 Zero Sogginess",
+         "⏱️ 25 Mins"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/T-EnKKFDiKI/hqdefault.jpg",
       "title" : "Shatteringly Crispy Sweet Potato Fries",
@@ -503,7 +503,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Omlette ð¥Protein rich healthy breakfast ðª",
+      "raw_title" : "Omlette 🥚Protein rich healthy breakfast 💪",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -511,11 +511,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 2.3K views",
-         "ð§âð³ Easy Bites"
+         "✨ 2.3K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/zMSnVMe_Jzs/hqdefault.jpg",
-      "title" : "Omlette ð¥Protein rich healthy breakfast ðª",
+      "title" : "Omlette 🥚Protein rich healthy breakfast 💪",
       "view_count" : 2300,
       "views" : "2.3K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/zMSnVMe_Jzs"
@@ -526,7 +526,7 @@ const REELS_DATA =
       "description" : "The 2nd pasta sensation that exploded on Facebook! Earthy pan-seared mushrooms tossed in garlicky olive oil pasta water emulsification.",
       "difficulty" : "Easy",
       "embedUrl" : "https://www.youtube.com/embed/yjmDrOIkaG0",
-      "highlight" : "Facebook Viral Favorite â¢ Mushroom Aglio e Olio",
+      "highlight" : "Facebook Viral Favorite • Mushroom Aglio e Olio",
       "id" : "yjmDrOIkaG0",
       "ingredients" : [
          "200g spaghetti or linguine",
@@ -537,17 +537,17 @@ const REELS_DATA =
          "Fresh parsley & grated parmesan"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Mushroom Aglio e Olio Pasta ð",
+      "raw_title" : "Mushroom Aglio e Olio Pasta 🍄",
       "servings" : 2,
       "steps" : [
          "Sear sliced mushrooms in olive oil on high heat till deeply browned and caramelized.",
-         "Lower heat, add garlic slivers and chili flakes, sautÃ©ing until fragrant without burning.",
+         "Lower heat, add garlic slivers and chili flakes, sautéing until fragrant without burning.",
          "Toss cooked al dente spaghetti with starchy pasta water and butter for a velvety glossy glaze!"
       ],
       "tags" : [
-         "ð Golden Mushrooms",
-         "ð Aglio e Olio",
-         "ð¿ Rich Umami"
+         "🍄 Golden Mushrooms",
+         "🍝 Aglio e Olio",
+         "🌿 Rich Umami"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/yjmDrOIkaG0/hqdefault.jpg",
       "title" : "Garlic Butter Mushroom Pasta",
@@ -570,7 +570,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Secret to extra crispy fries ð #shorts #fries #airfryer",
+      "raw_title" : "Secret to extra crispy fries 🍟 #shorts #fries #airfryer",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -578,11 +578,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 2.2K views",
-         "ð§âð³ Easy Bites"
+         "✨ 2.2K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/JtOElumtAiw/hqdefault.jpg",
-      "title" : "Secret to extra crispy fries ð",
+      "title" : "Secret to extra crispy fries 🍟",
       "view_count" : 2200,
       "views" : "2.2K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/JtOElumtAiw"
@@ -602,7 +602,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Crispy Bhindi Snacks ð¿",
+      "raw_title" : "Crispy Bhindi Snacks 🌿",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -610,11 +610,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.9K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.9K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/0vststJX_TE/hqdefault.jpg",
-      "title" : "Crispy Bhindi Snacks ð¿",
+      "title" : "Crispy Bhindi Snacks 🌿",
       "view_count" : 1900,
       "views" : "1.9K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/0vststJX_TE"
@@ -625,7 +625,7 @@ const REELS_DATA =
       "description" : "Thick, ultra-frothy cold coffee blended with rich vanilla ice cream, espresso shot, and chilled milk. Hits the spot every single time.",
       "difficulty" : "Super Easy",
       "embedUrl" : "https://www.youtube.com/embed/QgX-V8VgOMc",
-      "highlight" : "CafÃ© Quality at Home",
+      "highlight" : "Café Quality at Home",
       "id" : "QgX-V8VgOMc",
       "ingredients" : [
          "2 tsp instant coffee powder dissolved in 2 tbsp warm water",
@@ -635,7 +635,7 @@ const REELS_DATA =
          "Handful of ice cubes & cocoa powder for dusting"
       ],
       "prepTime" : "3 mins",
-      "raw_title" : "Iced Vanilla Cold Coffee â",
+      "raw_title" : "Iced Vanilla Cold Coffee ☕",
       "servings" : 1,
       "steps" : [
          "Add coffee decoction, milk, ice cream, sugar, and ice into a high-speed blender.",
@@ -643,12 +643,12 @@ const REELS_DATA =
          "Drizzle chocolate sauce along the glass walls, pour, and dust with cocoa powder!"
       ],
       "tags" : [
-         "â Barista Style",
-         "ð§ Rich & Creamy",
-         "â¡ 3 Mins"
+         "☕ Barista Style",
+         "🧊 Rich & Creamy",
+         "⚡ 3 Mins"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/QgX-V8VgOMc/hqdefault.jpg",
-      "title" : "Frothy CafÃ© Iced Vanilla Cold Coffee",
+      "title" : "Frothy Café Iced Vanilla Cold Coffee",
       "view_count" : 1800,
       "views" : "1.8K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/QgX-V8VgOMc"
@@ -677,9 +677,9 @@ const REELS_DATA =
          "Scatter grated paneer and herbs, fold crispy golden, and serve with sweet curd and mint dip!"
       ],
       "tags" : [
-         "ð§ Malai Paneer",
-         "ðª 22g Protein",
-         "ð¿ Desi Ghee"
+         "🧀 Malai Paneer",
+         "💪 22g Protein",
+         "🌿 Desi Ghee"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/WAC7sz6m1Dg/hqdefault.jpg",
       "title" : "Stuffed Paneer & Garden Herb Cheela",
@@ -711,9 +711,9 @@ const REELS_DATA =
          "Finish with fresh pomegranate arils and crunchy sev!"
       ],
       "tags" : [
-         "ð¥ 1.7K Views",
-         "ðª 15g Protein",
-         "ð Tangy & Crunchy"
+         "🥗 1.7K Views",
+         "💪 15g Protein",
+         "🍋 Tangy & Crunchy"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/gxfIiN22heQ/hqdefault.jpg",
       "title" : "Zesty Street-Style Kala Chana Chaat",
@@ -738,7 +738,7 @@ const REELS_DATA =
          "Finely chopped spring onions & toasted sesame seeds"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Maggi / Vegetable Maggi ð",
+      "raw_title" : "Maggi / Vegetable Maggi 🍜",
       "servings" : 2,
       "steps" : [
          "In your serving bowl, whisk together the Maggi tastemaker, peanut butter, minced garlic, and chili oil.",
@@ -747,9 +747,9 @@ const REELS_DATA =
          "Toss well and garnish with fresh scallions and toasted sesame seeds. Slurp immediately!"
       ],
       "tags" : [
-         "ð¥ Cult Favorite",
-         "â¡ 5-Min Fix",
-         "ð¶ï¸ Spicy & Nutty"
+         "🥜 Cult Favorite",
+         "⚡ 5-Min Fix",
+         "🌶️ Spicy & Nutty"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/V7DvO3Bei3k/hqdefault.jpg",
       "title" : "Creamy Peanut Butter Chili Maggi",
@@ -772,7 +772,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Super Crispy Roasted Masala Makhana ð¥£",
+      "raw_title" : "Super Crispy Roasted Masala Makhana 🥣",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -780,11 +780,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.7K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.7K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/c4k1PUJUdNA/hqdefault.jpg",
-      "title" : "Super Crispy Roasted Masala Makhana ð¥£",
+      "title" : "Super Crispy Roasted Masala Makhana 🥣",
       "view_count" : 1700,
       "views" : "1.7K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/c4k1PUJUdNA"
@@ -804,7 +804,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Banana Milk Bread Toast ð",
+      "raw_title" : "Banana Milk Bread Toast 🍞",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -812,11 +812,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.7K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.7K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/QcdUX536pwc/hqdefault.jpg",
-      "title" : "Banana Milk Bread Toast ð",
+      "title" : "Banana Milk Bread Toast 🍞",
       "view_count" : 1700,
       "views" : "1.7K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/QcdUX536pwc"
@@ -837,7 +837,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Full recipe ð ð¥ #recipe #cooking #shortvideo",
+      "raw_title" : "Full recipe 👇 🥚 #recipe #cooking #shortvideo",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -845,11 +845,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.7K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.7K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/11wRATeFZJY/hqdefault.jpg",
-      "title" : "Full recipe ð ð¥",
+      "title" : "Full recipe 👇 🥚",
       "view_count" : 1700,
       "views" : "1.7K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/11wRATeFZJY"
@@ -869,7 +869,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Easiest Tomato/Red sauce Pasta ð #shorts #shortsfeed #ytshorts",
+      "raw_title" : "Easiest Tomato/Red sauce Pasta 🍝 #shorts #shortsfeed #ytshorts",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -877,11 +877,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.7K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.7K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/uiUgnfZUIG0/hqdefault.jpg",
-      "title" : "Easiest Tomato/Red sauce Pasta ð",
+      "title" : "Easiest Tomato/Red sauce Pasta 🍝",
       "view_count" : 1700,
       "views" : "1.7K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/uiUgnfZUIG0"
@@ -902,7 +902,7 @@ const REELS_DATA =
          "Pinch of sea salt and cinnamon"
       ],
       "prepTime" : "7 mins",
-      "raw_title" : "Hot Chocolateð«",
+      "raw_title" : "Hot Chocolate🍫",
       "servings" : 2,
       "steps" : [
          "Warm milk, cream, and sugar over medium-low heat until steaming.",
@@ -910,9 +910,9 @@ const REELS_DATA =
          "Simmer for 2 minutes till thick and spoonable. Top with toasted marshmallows!"
       ],
       "tags" : [
-         "ð« 70% Dark Choc",
-         "âï¸ Thick & Silky",
-         "â±ï¸ 7 Mins"
+         "🍫 70% Dark Choc",
+         "☁️ Thick & Silky",
+         "⏱️ 7 Mins"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/2mmuCSmwGeg/hqdefault.jpg",
       "title" : "Decadent Drinking Hot Chocolate",
@@ -935,7 +935,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Yogurt Bowl with Warm Apple Cinnamon Oats ð¥£ | High Protein Breakfast ð #highprotein",
+      "raw_title" : "Yogurt Bowl with Warm Apple Cinnamon Oats 🥣 | High Protein Breakfast 💚 #highprotein",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -943,11 +943,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.6K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.6K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/HDHkLesHF6w/hqdefault.jpg",
-      "title" : "Yogurt Bowl with Warm Apple Cinnamon Oats ð¥£ | High Protein Breakfast ð",
+      "title" : "Yogurt Bowl with Warm Apple Cinnamon Oats 🥣 | High Protein Breakfast 💚",
       "view_count" : 1600,
       "views" : "1.6K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/HDHkLesHF6w"
@@ -967,7 +967,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Leftover Roti Pizza  ð",
+      "raw_title" : "Leftover Roti Pizza  🍕",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -975,11 +975,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.5K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.5K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/Qalu4xkb5Iw/hqdefault.jpg",
-      "title" : "Leftover Roti Pizza  ð",
+      "title" : "Leftover Roti Pizza  🍕",
       "view_count" : 1500,
       "views" : "1.5K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/Qalu4xkb5Iw"
@@ -1009,9 +1009,9 @@ const REELS_DATA =
          "Fold in cooked penne and a touch of cream for the silkiest caramelized onion pasta imaginable!"
       ],
       "tags" : [
-         "ð§ Sweet Caramelized",
-         "â±ï¸ 20 Mins",
-         "ð§ Creamy Velvet"
+         "🧅 Sweet Caramelized",
+         "⏱️ 20 Mins",
+         "🧀 Creamy Velvet"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/qnidlgYOsLw/hqdefault.jpg",
       "title" : "Caramelized Onion Velvet Pasta",
@@ -1042,8 +1042,8 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.5K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.5K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/DjLktHG7e2U/hqdefault.jpg",
       "title" : "Bread Malai Breakfast",
@@ -1066,7 +1066,7 @@ const REELS_DATA =
          "Tadka: 2 tbsp ghee, mustard seeds, fenugreek seeds (methi dana), dry red chilies, hing"
       ],
       "prepTime" : "30 mins",
-      "raw_title" : "Easiest Kadhi Pakora Recipe ð«",
+      "raw_title" : "Easiest Kadhi Pakora Recipe 🫕",
       "servings" : 4,
       "steps" : [
          "Whisk yogurt, besan, turmeric, and water into a lump-free liquid, boil on low for 25 mins.",
@@ -1074,9 +1074,9 @@ const REELS_DATA =
          "Top with smoking hot ghee tadka with hing and whole red chilies!"
       ],
       "tags" : [
-         "ð« 1.4K Views",
-         "ð² Comfort Bowl",
-         "ð¶ï¸ Hing Tadka"
+         "🫕 1.4K Views",
+         "🍲 Comfort Bowl",
+         "🌶️ Hing Tadka"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/EWOjxP4rN7M/hqdefault.jpg",
       "title" : "Velvety Dahi Kadhi with Melt-in-Mouth Pakoras",
@@ -1099,7 +1099,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Behind the Scenes vs. What You Actually See ð¥¹â¨ #food #cooking",
+      "raw_title" : "Behind the Scenes vs. What You Actually See 🥹✨ #food #cooking",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -1107,11 +1107,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.4K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.4K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/k_DxSnAJkv8/hqdefault.jpg",
-      "title" : "Behind the Scenes vs. What You Actually See ð¥¹â¨",
+      "title" : "Behind the Scenes vs. What You Actually See 🥹✨",
       "view_count" : 1400,
       "views" : "1.4K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/k_DxSnAJkv8"
@@ -1131,7 +1131,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Rajasthani food - Bati ð #shorts #food #recipe #shortvideo",
+      "raw_title" : "Rajasthani food - Bati 😋 #shorts #food #recipe #shortvideo",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -1139,8 +1139,8 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.4K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.4K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/FBPZ9PFBzIk/hqdefault.jpg",
       "title" : "Rajasthani food - Bati",
@@ -1163,7 +1163,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "No Maida Veg Noodles /chowmein ð #shorts #streetfood #cooking",
+      "raw_title" : "No Maida Veg Noodles /chowmein 😋 #shorts #streetfood #cooking",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -1171,8 +1171,8 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.4K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.4K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/67wEExtiNJA/hqdefault.jpg",
       "title" : "No Maida Veg Noodles /chowmein",
@@ -1204,9 +1204,9 @@ const REELS_DATA =
          "Shallow fry or airfry till shatteringly crisp outside!"
       ],
       "tags" : [
-         "ð« 1.3K Views",
-         "ð¥ Peanut Crunch",
-         "ð¿ Fasting Friendly"
+         "🫕 1.3K Views",
+         "🥜 Peanut Crunch",
+         "🌿 Fasting Friendly"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/rfCaHh5TFZc/hqdefault.jpg",
       "title" : "Crunchy Non-Oily Sabudana Vada",
@@ -1220,7 +1220,7 @@ const REELS_DATA =
       "description" : "Fluffy brioche toasted in butter, soaked in caramelized banana milk custard and drizzled with honey and toasted walnuts.",
       "difficulty" : "Super Easy",
       "embedUrl" : "https://www.youtube.com/embed/wVkgpad9qSQ",
-      "highlight" : "Viral CafÃ© Toast",
+      "highlight" : "Viral Café Toast",
       "id" : "wVkgpad9qSQ",
       "ingredients" : [
          "2 thick slices milk bread or brioche",
@@ -1230,7 +1230,7 @@ const REELS_DATA =
          "Honey and cinnamon for finishing"
       ],
       "prepTime" : "8 mins",
-      "raw_title" : "Banana Milk Bread Toast ð",
+      "raw_title" : "Banana Milk Bread Toast 🍞",
       "servings" : 1,
       "steps" : [
          "Caramelize sliced bananas in butter and brown sugar until golden.",
@@ -1238,9 +1238,9 @@ const REELS_DATA =
          "Toast both sides until caramelized and crisp at the edges!"
       ],
       "tags" : [
-         "ð 1.3K Views",
-         "ð Caramelized Banana",
-         "ð¯ Cozy Breakfast"
+         "🍞 1.3K Views",
+         "🍌 Caramelized Banana",
+         "🍯 Cozy Breakfast"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/wVkgpad9qSQ/hqdefault.jpg",
       "title" : "Custardy Banana Milk Bread Toast",
@@ -1263,7 +1263,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Creamy Veggie Rice Bowl with Peri-Peri Paneer ð¥£",
+      "raw_title" : "Creamy Veggie Rice Bowl with Peri-Peri Paneer 🥣",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -1271,11 +1271,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.3K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.3K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/Wje_-CME8WI/hqdefault.jpg",
-      "title" : "Creamy Veggie Rice Bowl with Peri-Peri Paneer ð¥£",
+      "title" : "Creamy Veggie Rice Bowl with Peri-Peri Paneer 🥣",
       "view_count" : 1300,
       "views" : "1.3K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/Wje_-CME8WI"
@@ -1302,9 +1302,9 @@ const REELS_DATA =
          "Dip into melted dark chocolate, set on parchment, sprinkle sea salt or coconut flakes!"
       ],
       "tags" : [
-         "ð« 1.3K Views",
-         "ð¥¥ 3 Ingredients",
-         "â¡ No-Bake"
+         "🍫 1.3K Views",
+         "🥥 3 Ingredients",
+         "⚡ No-Bake"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/bAT1JGfTrZ0/hqdefault.jpg",
       "title" : "3-Ingredient Dark Chocolate Bounty Bites",
@@ -1336,8 +1336,8 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.2K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.2K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/hUGND_gq4gU/hqdefault.jpg",
       "title" : "Try this healthy 5-min oats breakfast",
@@ -1368,8 +1368,8 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.2K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.2K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/jRrECPo8V_4/hqdefault.jpg",
       "title" : "Masala Macaroni",
@@ -1400,8 +1400,8 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.2K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.2K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/9_zCBvzRuhc/hqdefault.jpg",
       "title" : "Make stainless steel pan nonstick",
@@ -1432,8 +1432,8 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.1K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.1K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/GnHQZGy0gWc/hqdefault.jpg",
       "title" : "Moong Dal Recipe",
@@ -1456,7 +1456,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Hot Coffee â Love the process of making Coffee ð¤",
+      "raw_title" : "Hot Coffee ☕ Love the process of making Coffee 🤎",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -1464,11 +1464,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 1.1K views",
-         "ð§âð³ Easy Bites"
+         "✨ 1.1K views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/W7R9Bu5tSlk/hqdefault.jpg",
-      "title" : "Hot Coffee â Love the process of making Coffee ð¤",
+      "title" : "Hot Coffee ☕ Love the process of making Coffee 🤎",
       "view_count" : 1100,
       "views" : "1.1K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/W7R9Bu5tSlk"
@@ -1496,8 +1496,8 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 930 views",
-         "ð§âð³ Easy Bites"
+         "✨ 930 views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/TRGNQNDjkO8/hqdefault.jpg",
       "title" : "Dal Bati in Airfryer",
@@ -1520,7 +1520,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Help me reach 500 foodies ð¥¹ð«  #shorts #foodblogger #ytshorts",
+      "raw_title" : "Help me reach 500 foodies 🥹🫠 #shorts #foodblogger #ytshorts",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -1528,11 +1528,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 898 views",
-         "ð§âð³ Easy Bites"
+         "✨ 898 views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/RXI1dj0K_8I/hqdefault.jpg",
-      "title" : "Help me reach 500 foodies ð¥¹ð« ",
+      "title" : "Help me reach 500 foodies 🥹🫠",
       "view_count" : 898,
       "views" : "898 views",
       "youtubeUrl" : "https://www.youtube.com/shorts/RXI1dj0K_8I"
@@ -1560,8 +1560,8 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 775 views",
-         "ð§âð³ Easy Bites"
+         "✨ 775 views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/GrLdRYOTF3k/hqdefault.jpg",
       "title" : "Butterfly pea flower tea",
@@ -1584,7 +1584,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "Garlic Green beans Snacks ð",
+      "raw_title" : "Garlic Green beans Snacks 💚",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -1592,11 +1592,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 562 views",
-         "ð§âð³ Easy Bites"
+         "✨ 562 views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/0KseubPAJqk/hqdefault.jpg",
-      "title" : "Garlic Green beans Snacks ð",
+      "title" : "Garlic Green beans Snacks 💚",
       "view_count" : 562,
       "views" : "562 views",
       "youtubeUrl" : "https://www.youtube.com/shorts/0KseubPAJqk"
@@ -1616,7 +1616,7 @@ const REELS_DATA =
          "Fresh herbs for garnish"
       ],
       "prepTime" : "10-15 mins",
-      "raw_title" : "What's in my blinkit Bag ð¤¯ð #videoshort",
+      "raw_title" : "What's in my blinkit Bag 🤯👀 #videoshort",
       "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
@@ -1624,11 +1624,11 @@ const REELS_DATA =
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "â¨ 241 views",
-         "ð§âð³ Easy Bites"
+         "✨ 241 views",
+         "🧑‍🍳 Easy Bites"
       ],
       "thumbnail" : "https://i.ytimg.com/vi/KG_IztUf2cg/hqdefault.jpg",
-      "title" : "What's in my blinkit Bag ð¤¯ð",
+      "title" : "What's in my blinkit Bag 🤯👀",
       "view_count" : 241,
       "views" : "241 views",
       "youtubeUrl" : "https://www.youtube.com/shorts/KG_IztUf2cg"
