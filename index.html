@@ -547,9 +547,13 @@
             <div class="flex-1 overflow-y-auto lg:overflow-hidden flex flex-col lg:flex-row w-full overscroll-contain">
 
                 <!-- Left: Video Frame (Top of scroll flow on mobile, left column on desktop) -->
-                <div class="w-full lg:w-5/12 bg-neutral-50 flex items-center justify-center p-3.5 sm:p-5 lg:p-6 border-b lg:border-b-0 lg:border-r border-black/[0.06] flex-shrink-0">
+                <div class="w-full lg:w-5/12 bg-neutral-50 flex flex-col items-center justify-center p-3.5 sm:p-5 lg:p-6 border-b lg:border-b-0 lg:border-r border-black/[0.06] flex-shrink-0">
                     <div class="w-full max-w-[210px] sm:max-w-[250px] lg:max-w-[300px] aspect-[9/16] bg-black rounded-2xl overflow-hidden shadow-md mx-auto" id="modal-iframe-container">
                         <!-- Video injected by JS -->
+                    </div>
+                    <!-- Two Social Action Buttons directly under video (unobscured captions) -->
+                    <div id="modal-actions-container" class="w-full max-w-[210px] sm:max-w-[250px] lg:max-w-[300px] mt-3 flex items-center gap-2 mx-auto">
+                        <!-- Buttons injected by JS for every recipe -->
                     </div>
                 </div>
 
