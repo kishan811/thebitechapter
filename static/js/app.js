@@ -29,8 +29,8 @@ function renderHeroCover() {
     const heroContainer = document.getElementById('hero-feature-container');
     if (!heroContainer) return;
 
-    // Feature signature dish: Rajasthani Doongri Tadka Chutney (95K+ views)
-    const heroReel = window.REELS_DATA.find(r => r.id === 'rTWw5yVLwnk') || window.REELS_DATA[0];
+    // Feature channel's #1 most popular viral hit: Virat Kohli's Steamed Veggie Bowl (163K+ views)
+    const heroReel = window.REELS_DATA.find(r => r.id === 'go0TJoanK1g') || window.REELS_DATA[0];
 
     heroContainer.innerHTML = `
         <div class="royal-card p-3 sm:p-5 group cursor-pointer" onclick="openRecipeModal('${heroReel.id}')">
@@ -42,7 +42,7 @@ function renderHeroCover() {
                 <div class="absolute top-3 left-3 right-3 sm:top-4 sm:left-4 sm:right-4 flex items-center justify-between z-10">
                     <span class="apple-glass px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-bold text-neutral-900 flex items-center gap-1.5 shadow-sm">
                         <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                        Signature Cover Story
+                        #1 Viral Cover Story
                     </span>
                     <span class="apple-glass-dark px-2.5 py-1 rounded-full text-white text-[10px] sm:text-[11px] font-medium">
                         ⏱️ ${heroReel.prepTime}
@@ -59,7 +59,7 @@ function renderHeroCover() {
                 <!-- Bottom Typography Overlay -->
                 <div class="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-5 sm:right-5 text-white z-10">
                     <span class="royal-crown-badge mb-1 text-[10px]">
-                        👑 Live Charcoal Dhungar • 95K+ Views
+                        👑 #1 Most Viral • 163K+ Views • Clean Fuel
                     </span>
                     <h3 class="font-display text-lg sm:text-2xl font-bold leading-tight">
                         ${heroReel.title}
@@ -78,35 +78,35 @@ function renderBentoGrid() {
     const bentoContainer = document.getElementById('bento-grid-container');
     if (!bentoContainer) return;
 
-    const pbMaggi = window.REELS_DATA.find(r => r.id === 'V7DvO3Bei3k') || window.REELS_DATA[1];
-    const aglioOlio = window.REELS_DATA.find(r => r.id === 'HjIfjPZh3Ac') || window.REELS_DATA[2];
-    const cheela = window.REELS_DATA.find(r => r.id === 'ArtUYX17hjM') || window.REELS_DATA[3];
-    const mushroomPasta = window.REELS_DATA.find(r => r.id === 'yjmDrOIkaG0') || window.REELS_DATA[4];
+    const chutneys = window.REELS_DATA.find(r => r.id === 'rTWw5yVLwnk') || window.REELS_DATA[1];
+    const aglioOlioFB = window.REELS_DATA.find(r => r.id === 'fb_1173242588785480') || window.REELS_DATA[2];
+    const mushroomFB = window.REELS_DATA.find(r => r.id === 'fb_1635838080730020') || window.REELS_DATA[3];
+    const cheela = window.REELS_DATA.find(r => r.id === 'ArtUYX17hjM') || window.REELS_DATA[4];
 
     const highlights = [
         {
-            ...pbMaggi,
-            badge: "👑 Cult Viral Hack",
+            ...chutneys,
+            badge: "👑 95K+ Cult Tadka",
             badgeClass: "royal-crown-badge",
-            categorySubtitle: "5-Min Comfort"
+            categorySubtitle: "Charcoal Smoke"
+        },
+        {
+            ...aglioOlioFB,
+            badge: "🌐 180K+ Facebook Viral",
+            badgeClass: "apple-badge bg-blue-50 text-blue-700 border-blue-200",
+            categorySubtitle: "10-Min Roman Silk"
+        },
+        {
+            ...mushroomFB,
+            badge: "🍄 145K+ Facebook Hit",
+            badgeClass: "apple-badge bg-amber-50 text-amber-700 border-amber-200",
+            categorySubtitle: "Pan-Seared Umami"
         },
         {
             ...cheela,
             badge: "🌱 18g Clean Protein",
             badgeClass: "apple-badge bg-emerald-50 text-emerald-700 border-emerald-100",
-            categorySubtitle: "Crispy Stuffed Crepe"
-        },
-        {
-            ...aglioOlio,
-            badge: "🍝 Roman Aglio e Olio",
-            badgeClass: "apple-badge bg-blue-50 text-blue-700 border-blue-100",
-            categorySubtitle: "Silky Emulsification"
-        },
-        {
-            ...mushroomPasta,
-            badge: "🍄 Garlic Butter Glaze",
-            badgeClass: "apple-badge bg-amber-50 text-amber-700 border-amber-100",
-            categorySubtitle: "Pan-Seared Umami"
+            categorySubtitle: "Golden Stuffed Crepe"
         }
     ];
 
@@ -119,7 +119,7 @@ function renderBentoGrid() {
                             <span class="${item.badgeClass}">${item.badge}</span>
                             <span class="text-[11px] font-semibold text-neutral-400">⏱️ ${item.prepTime}</span>
                         </div>
-                        <div class="royal-thumb relative aspect-[16/10] rounded-xl mb-3 shadow-inner">
+                        <div class="royal-thumb relative aspect-[16/10] rounded-xl mb-3 shadow-inner overflow-hidden">
                             <img src="${item.thumbnail}" alt="${item.title}" loading="lazy" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                             <div class="absolute inset-0 flex items-center justify-center opacity-85 group-hover:opacity-100 transition z-10">
@@ -129,7 +129,7 @@ function renderBentoGrid() {
                             </div>
                             <div class="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-white text-[10px] font-semibold z-10">
                                 <span class="apple-glass-dark px-2 py-0.5 rounded-full">${item.categorySubtitle}</span>
-                                <span>${item.views || 'Viral'}</span>
+                                <span class="apple-glass-dark px-2 py-0.5 rounded-full">${item.platform === 'facebook' ? 'FB' : 'YT'} • ${item.views}</span>
                             </div>
                         </div>
                         <h4 class="font-serif-headline text-base sm:text-lg font-bold text-neutral-900 group-hover:text-[#E15A3E] transition leading-snug line-clamp-2">
@@ -140,7 +140,7 @@ function renderBentoGrid() {
                         </p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-black/[0.05] flex items-center justify-between text-xs">
-                        <span class="text-neutral-400 text-[11px] font-medium">The Bite Chapter</span>
+                        <span class="text-neutral-400 text-[11px] font-medium">${item.platform === 'facebook' ? 'Facebook Reel' : 'YouTube Short'}</span>
                         <span class="font-bold text-[#E15A3E] group-hover:translate-x-1 transition-transform flex items-center gap-1">
                             <span>Cook</span>
                             <span>→</span>
@@ -209,7 +209,7 @@ function renderSegmentedPills() {
         const isActive = chap.id === currentChapter;
         return `
             <button onclick="setChapter('${chap.id}')" class="segmented-pill flex items-center gap-1.5 ${isActive ? 'active' : ''}">
-                <img src="${chap.image}" alt="${chap.name}" class="segmented-pill-thumb" loading="lazy" />
+                <span class="text-xs">${chap.icon || '✨'}</span>
                 <span>${chap.name}</span>
             </button>
         `;
@@ -233,7 +233,13 @@ function renderRecipeGrid() {
     let list = [...window.REELS_DATA];
 
     if (currentChapter !== 'all') {
-        list = list.filter(r => r.chapter === currentChapter);
+        if (currentChapter === 'facebook') {
+            list = list.filter(r => r.platform === 'facebook');
+        } else if (currentChapter === 'youtube') {
+            list = list.filter(r => r.platform !== 'facebook');
+        } else {
+            list = list.filter(r => r.chapter === currentChapter);
+        }
     }
 
     if (searchQuery.trim()) {
@@ -242,7 +248,8 @@ function renderRecipeGrid() {
             r.title.toLowerCase().includes(q) ||
             r.tags.some(t => t.toLowerCase().includes(q)) ||
             r.ingredients.some(i => i.toLowerCase().includes(q)) ||
-            r.chapter.toLowerCase().includes(q)
+            (r.chapter && r.chapter.toLowerCase().includes(q)) ||
+            (r.platform && r.platform.toLowerCase().includes(q))
         );
     }
 
@@ -271,6 +278,7 @@ function renderRecipeGrid() {
         const isBookmarked = bookmarkedIds.has(reel.id);
         const tag1 = reel.tags[0] || `⏱️ ${reel.prepTime}`;
         const tag2 = reel.tags[1] || reel.difficulty;
+        const isFB = reel.platform === 'facebook';
 
         return `
             <div class="royal-card overflow-hidden flex flex-col group cursor-pointer animate-fade-in-up" onclick="openRecipeModal('${reel.id}')">
@@ -279,8 +287,10 @@ function renderRecipeGrid() {
                     <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent"></div>
                     
                     <div class="absolute top-2.5 left-2.5 right-2.5 flex justify-between items-start z-10">
-                        <span class="apple-glass px-2.5 py-1 rounded-full text-[10px] font-bold text-neutral-900 shadow-sm">
-                            ${tag1}
+                        <span class="apple-glass px-2.5 py-1 rounded-full text-[10px] font-bold text-neutral-900 shadow-sm flex items-center gap-1">
+                            ${isFB 
+                                ? '<span class="text-blue-600 font-extrabold">FB</span> • ' + reel.views 
+                                : '<span class="text-red-600 font-extrabold">YT</span> • ' + reel.views}
                         </span>
                         <button onclick="event.stopPropagation(); toggleBookmark('${reel.id}')" class="w-7 h-7 rounded-full apple-glass text-neutral-800 flex items-center justify-center transition shadow-sm hover:scale-105" title="Save">
                             <svg class="w-3.5 h-3.5 ${isBookmarked ? 'text-red-500 fill-red-500' : 'text-neutral-700'}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -296,7 +306,7 @@ function renderRecipeGrid() {
                     </div>
 
                     <div class="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-white text-[10px] z-10">
-                        <span class="apple-glass-dark px-2 py-0.5 rounded-full">${tag2}</span>
+                        <span class="apple-glass-dark px-2 py-0.5 rounded-full">${tag1}</span>
                         <span class="font-semibold text-neutral-200">⏱️ ${reel.prepTime}</span>
                     </div>
                 </div>
@@ -313,6 +323,17 @@ function renderRecipeGrid() {
 
                     <div class="mt-4 pt-3 border-t border-black/[0.05] flex items-center justify-between">
                         <span class="text-[11px] text-neutral-400 font-medium">
+                            ${reel.ingredients.length} ingredients • ${reel.difficulty}
+                        </span>
+                        <span class="text-xs font-bold text-[#E15A3E] group-hover:translate-x-1 transition-transform flex items-center gap-1">
+                            <span>Cook</span>
+                            <span>→</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
                             ${reel.ingredients.length} ingredients • ${reel.difficulty}
                         </span>
                         <span class="text-xs font-bold text-[#E15A3E] group-hover:translate-x-1 transition-transform flex items-center gap-1">
@@ -402,16 +423,43 @@ function closeRecipeModal() {
 function renderRecipeModalContent(reel) {
     const iframeContainer = document.getElementById('modal-iframe-container');
     if (iframeContainer) {
-        iframeContainer.innerHTML = `
-            <iframe 
-                src="https://www.youtube.com/embed/${reel.id}?autoplay=1&rel=0&modestbranding=1" 
-                title="${reel.title}" 
-                class="w-full h-full rounded-2xl"
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        `;
+        if (reel.platform === 'facebook') {
+            const fbUrl = encodeURIComponent(reel.facebookUrl || `https://www.facebook.com/reel/${reel.facebookReelId || reel.id}/`);
+            iframeContainer.innerHTML = `
+                <div class="relative w-full h-full bg-black rounded-2xl overflow-hidden flex flex-col justify-between">
+                    <iframe 
+                        src="https://www.facebook.com/plugins/video.php?href=${fbUrl}&show_text=0&autoplay=1" 
+                        title="${reel.title}" 
+                        class="w-full h-full rounded-2xl"
+                        frameborder="0" 
+                        scrolling="no"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                    <a href="${reel.facebookUrl || `https://www.facebook.com/reel/${reel.id}/`}" target="_blank" rel="noopener noreferrer" class="absolute bottom-2 left-2 right-2 px-3 py-1.5 rounded-full bg-blue-600/90 hover:bg-blue-600 text-white text-[11px] font-semibold flex items-center justify-center gap-1.5 backdrop-blur-sm shadow-md transition">
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        Watch on Facebook ↗
+                    </a>
+                </div>
+            `;
+        } else {
+            iframeContainer.innerHTML = `
+                <div class="relative w-full h-full bg-black rounded-2xl overflow-hidden flex flex-col justify-between">
+                    <iframe 
+                        src="https://www.youtube.com/embed/${reel.id}?autoplay=1&rel=0&modestbranding=1" 
+                        title="${reel.title}" 
+                        class="w-full h-full rounded-2xl"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <a href="${reel.youtubeUrl || `https://www.youtube.com/shorts/${reel.id}`}" target="_blank" rel="noopener noreferrer" class="absolute bottom-2 left-2 right-2 px-3 py-1.5 rounded-full bg-red-600/90 hover:bg-red-600 text-white text-[11px] font-semibold flex items-center justify-center gap-1.5 backdrop-blur-sm shadow-md transition">
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        Watch on YouTube ↗
+                    </a>
+                </div>
+            `;
+        }
     }
 
     document.getElementById('modal-title').textContent = reel.title;
@@ -421,7 +469,11 @@ function renderRecipeModalContent(reel) {
 
     const tagsContainer = document.getElementById('modal-tags');
     if (tagsContainer) {
-        tagsContainer.innerHTML = reel.tags.map(t => `
+        const platformBadge = reel.platform === 'facebook'
+            ? `<span class="apple-badge bg-blue-50 text-blue-700 border-blue-200 font-bold">🌐 Facebook Reel • ${reel.views}</span>`
+            : `<span class="apple-badge bg-red-50 text-red-700 border-red-200 font-bold">▶️ YouTube Short • ${reel.views}</span>`;
+
+        tagsContainer.innerHTML = platformBadge + reel.tags.map(t => `
             <span class="apple-badge">
                 ${t}
             </span>

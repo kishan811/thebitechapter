@@ -1,27 +1,33 @@
 # 🧑‍🍳 The Bite Chapter - Food Creator Portfolio & Recipe Hub
 
 > **"Big Flavor. Zero Fuss. Aesthetic Plates."**  
-> Official portfolio website & recipe journal for **Nimisha** ([@thebitechapter](https://www.youtube.com/@thebitechapter)).
+> Official portfolio website & recipe journal for **Nimisha** ([@thebitechapter](https://www.youtube.com/@thebitechapter)).  
+> **Live Web App**: [https://kishan811.github.io/thebitechapter/](https://kishan811.github.io/thebitechapter/)
 
 ---
 
 ## 🌟 Features Included
 
-1. **Viral Video Reels Showcase**:
-   - Highlighting viral hits including the **95K+ Rajasthani Doongri Tadka Chutney**, 27K Charcoal Smoked Chutney, 11K Moong Dal Cheela, 8.2K Chilli Garlic Tofu, and 5.6K Gobhi Pakora.
+1. **Multi-Platform Viral Video Reels Showcase**:
+   - Highlighting top viral hits across YouTube and Facebook:
+     - **163K+ Virat Kohli Steamed / Boiled Veggie Bowl** (YouTube #1 Viral Hit)
+     - **180K+ Authentic Spaghetti Aglio e Olio** (Facebook Viral Hit)
+     - **145K+ Creamy Mushroom Aglio e Olio** (Facebook Viral Hit)
+     - **95K+ Rajasthani Doongri Tadka Chutney** (Cult Favorite with live charcoal smoke)
+     - **110K+ Creamy White Sauce Pasta**, **175K+ Street Style Maggi**, **135K+ Sabudana Vada**
    - Interactive 3D phone mockup in the hero section with instant play.
    - Live infinite marquee ticker of trending recipes.
 
-2. **Complete 48+ Recipe Library**:
+2. **Complete 56+ Curated Recipe Library**:
    - Instant search by title, ingredient, tag, or category.
-   - Category filtering: *Viral Legends, High-Protein, Desi Tadka & Street, 10-Min Pastas & Pizza, Sips & Sweets*.
-   - Sort by *Most Viral* or *Quickest (<10 mins)*.
+   - Category filtering: *All Bites, Facebook Hits, YouTube Shorts, Viral Legends, High-Protein, Desi Tadka & Street, Pastas & Quick Bites, Sips & Sweets*.
+   - Sort by *Most Viral* or *Quickest (<15 mins)*.
    - Interactive recipe modal with:
-     - Embedded YouTube Short player
+     - Embedded YouTube Short & Facebook Reel player
      - **Interactive Portions Scaler** (1x, 2x, 4x) that scales ingredients dynamically
      - **Interactive Checklist** (tap to cross out ingredients as you cook)
      - Step-by-step cooking instructions with timers
-     - Social sharing and YouTube short link
+     - Social sharing, YouTube short link, and Facebook post link
 
 3. **Debut eBook Launchpad ("The Viral Kitchen Playbook")**:
    - 3D interactive book mockup with tilt and hover effects.
@@ -108,7 +114,7 @@ Cloud Run will automatically build the container using the provided `Dockerfile`
 thebitechapter/
 ├── index.html                   # Modern Gen-Z single-page portfolio & recipe app
 ├── server.py                    # Python server (FastAPI + fallback) with API endpoints
-├── reels_data.json              # Full 48-reel curated database with tags & instructions
+├── reels_data.json              # Full 56-reel curated database with tags & instructions (YouTube + Facebook)
 ├── requirements.txt             # Python dependencies
 ├── Dockerfile                   # Cloud Run container definition
 ├── .dockerignore                # Container exclusions
