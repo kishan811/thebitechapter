@@ -447,10 +447,12 @@ function renderRecipeModalContent(reel) {
     const tagsContainer = document.getElementById('modal-tags');
     if (tagsContainer) {
         const platformBadge = reel.id === 'HjIfjPZh3Ac'
-            ? `<span class="apple-badge bg-blue-50 text-blue-700 border-blue-200 font-bold">👑 700K+ Viral Mega Hit</span>`
+            ? `<span class="apple-badge bg-blue-50 text-blue-700 border-blue-200 font-bold">👑 700K+ Facebook Mega Hit</span>`
             : `<span class="apple-badge bg-red-50 text-red-700 border-red-200 font-bold">▶️ ${reel.views}</span>`;
 
-        tagsContainer.innerHTML = platformBadge + reel.tags.map(t => `
+        const displayTags = (reel.tags || []).filter(t => !t.includes('700K+') && !t.includes(reel.views));
+
+        tagsContainer.innerHTML = platformBadge + displayTags.map(t => `
             <span class="apple-badge">
                 ${t}
             </span>
