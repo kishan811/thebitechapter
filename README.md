@@ -11,7 +11,7 @@
 1. **Multi-Platform Viral Video Reels Showcase**:
    - Highlighting top viral hits across YouTube and Facebook:
      - **163K+ Virat Kohli Steamed / Boiled Veggie Bowl** (YouTube #1 Viral Hit)
-     - **180K+ Authentic Spaghetti Aglio e Olio** (Facebook Viral Hit)
+     - **700K+ Authentic Spaghetti Aglio e Olio** (Facebook #1 Viral Mega Hit)
      - **145K+ Creamy Mushroom Aglio e Olio** (Facebook Viral Hit)
      - **95K+ Rajasthani Doongri Tadka Chutney** (Cult Favorite with live charcoal smoke)
      - **110K+ Creamy White Sauce Pasta**, **175K+ Street Style Maggi**, **135K+ Sabudana Vada**

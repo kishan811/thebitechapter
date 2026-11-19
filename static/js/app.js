@@ -1,10 +1,6 @@
 // The Bite Chapter - Apple Enterprise Frontend Engine
 // Optimized for iOS, Android, and Instagram In-App Browser Webview
 
-document.addEventListener('DOMContentLoaded', () => {
-    initApp();
-});
-
 let currentChapter = 'all';
 let searchQuery = '';
 let currentSort = 'popular';
@@ -12,6 +8,11 @@ let currentServingsMultiplier = 1;
 let bookmarkedIds = new Set(JSON.parse(localStorage.getItem('tbc_bookmarks') || '[]'));
 let activeReel = null;
 let visibleRecipeCount = 6;
+let particles = [];
+
+document.addEventListener('DOMContentLoaded', () => {
+    initApp();
+});
 
 function initApp() {
     renderHeroCover();
@@ -92,7 +93,7 @@ function renderBentoGrid() {
         },
         {
             ...aglioOlioFB,
-            badge: "🌐 180K+ Facebook Viral",
+            badge: "🌐 700K+ Facebook Mega Hit",
             badgeClass: "apple-badge bg-blue-50 text-blue-700 border-blue-200",
             categorySubtitle: "10-Min Roman Silk"
         },
@@ -323,17 +324,6 @@ function renderRecipeGrid() {
 
                     <div class="mt-4 pt-3 border-t border-black/[0.05] flex items-center justify-between">
                         <span class="text-[11px] text-neutral-400 font-medium">
-                            ${reel.ingredients.length} ingredients • ${reel.difficulty}
-                        </span>
-                        <span class="text-xs font-bold text-[#E15A3E] group-hover:translate-x-1 transition-transform flex items-center gap-1">
-                            <span>Cook</span>
-                            <span>→</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        `;
-    }).join('');
                             ${reel.ingredients.length} ingredients • ${reel.difficulty}
                         </span>
                         <span class="text-xs font-bold text-[#E15A3E] group-hover:translate-x-1 transition-transform flex items-center gap-1">
@@ -747,7 +737,6 @@ function showToast(msg) {
 }
 
 // 12. Floating Particle Canvas
-let particles = [];
 function setupFxCanvas() {
     const canvas = document.getElementById('fx-canvas');
     if (!canvas) return;

@@ -11,7 +11,7 @@ const CREATOR_PROFILE = {
     issue: "Issue 01 • Modern Comfort & Kitchen Playbook",
     stats: {
         recipesCount: "56+",
-        communityCount: "200K+",
+        communityCount: "700K+",
         editions: "Vol. 1",
         platforms: "YouTube & Facebook"
     },
@@ -88,12 +88,12 @@ const REELS_DATA = [
          "Transfer pasta directly into the sauce, toss vigorously for 1 minute to coat every strand, and serve immediately!"
       ],
       "title" : "Classic Roman Spaghetti Aglio e Olio",
-      "view_count" : 180000,
+      "view_count" : 720000,
       "platform" : "facebook",
-      "highlight" : "Facebook Viral 10-Minute Authentic Aglio e Olio",
+      "highlight" : "Facebook Mega Viral Hit • 700K+ Views • 10-Minute Authentic Aglio e Olio",
       "id" : "fb_1173242588785480",
       "facebookUrl" : "https://www.facebook.com/reel/1173242588785480/",
-      "views" : "180K views",
+      "views" : "700K+ views",
       "prepTime" : "10 mins",
       "chapter" : "pasta_room",
       "description" : "When you need comfort food in under 10 minutes, this classic Aglio e Olio is your best friend. Sliced slivered garlic in extra virgin olive oil, emulsified with salted starchy pasta water for authentic Roman silkiness.",
