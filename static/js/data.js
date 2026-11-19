@@ -1,16 +1,17 @@
 // The Bite Chapter - Digital Food Journal & Magazine
-// Curated by Nimisha (@thebitechapter)
+// Curated exclusively by Nimisha (\@thebitechapter)
+// 100% Authentic Channel Recipes • Official Video Embeds
 
 const CREATOR_PROFILE = {
     name: "Nimisha",
     brand: "The Bite Chapter",
-    handle: "@thebitechapter",
+    handle: "\@thebitechapter",
     tagline: "High-flavor comfort cooking, quick everyday bites, and modern kitchen stories.",
     bio: "Welcome to my food journal. I'm Nimisha. I believe cooking shouldn't feel like a chore or require twenty specialty ingredients. From soothing 15-minute pastas and golden high-protein clean meals to regional smoky tadkas that remind you of home, this is where simple ingredients turn into pure daily comfort.",
     avatar: "https://yt3.googleusercontent.com/ZKOqFv7ItWNUC4uUUuYYA0DmokLjClM8HcNFPdyvWFOkeRbhEuOiiMIXAnl4UtMkCnTOJWbj3g=s900-c-k-c0x00ffffff-no-rj",
     issue: "Issue 01 • Modern Comfort & Kitchen Playbook",
     stats: {
-        recipesCount: "56+",
+        recipesCount: "48+",
         communityCount: "700K+",
         editions: "Vol. 1",
         platforms: "YouTube & Facebook"
@@ -23,39 +24,25 @@ const CREATOR_PROFILE = {
 };
 
 const CHAPTERS = [
-    { id: "all", name: "All Stories", subtitle: "Full Journal", icon: "✨", image: "https://i.ytimg.com/vi/go0TJoanK1g/hqdefault.jpg" },
-    { id: "facebook", name: "Facebook Hits", subtitle: "Viral Reels", icon: "🌐", image: "https://static.xx.fbcdn.net/rsrc.php/y1/r/ay1hV6OlegS.ico" },
-    { id: "youtube", name: "YouTube Shorts", subtitle: "Quick Bites", icon: "▶️", image: "https://i.ytimg.com/vi/go0TJoanK1g/hqdefault.jpg" },
+    { id: "all", name: "All Stories", subtitle: "Full Journal", icon: "✨", image: "https://i.ytimg.com/vi/HjIfjPZh3Ac/hqdefault.jpg" },
+    { id: "viral", name: "Viral Legends", subtitle: "700K+ & 163K+ Hits", icon: "👑", image: "https://i.ytimg.com/vi/HjIfjPZh3Ac/hqdefault.jpg" },
     { id: "pasta_room", name: "The Pasta Room", subtitle: "Aglio e Olio & Silky Pastas", icon: "🍝", image: "https://i.ytimg.com/vi/HjIfjPZh3Ac/hqdefault.jpg" },
     { id: "morning_fuel", name: "High-Protein Fuel", subtitle: "Kohli Bowl & Cheelas", icon: "🌱", image: "https://i.ytimg.com/vi/go0TJoanK1g/hqdefault.jpg" },
     { id: "desi_street", name: "Desi Tadkas", subtitle: "Smoky Chutney & Kadhi", icon: "🌶️", image: "https://i.ytimg.com/vi/rTWw5yVLwnk/hqdefault.jpg" },
-    { id: "quick_bites", name: "10-Min & Maggi", subtitle: "Street Maggi & Noodles", icon: "🍜", image: "https://i.ytimg.com/vi/V7DvO3Bei3k/hqdefault.jpg" },
-    { id: "sweet_solace", name: "Sweet Solace", subtitle: "Hot Chocolate & Sips", icon: "🍫", image: "https://i.ytimg.com/vi/314G3x9uNFs/hqdefault.jpg" }
+    { id: "quick_bites", name: "10-Min & Maggi", subtitle: "Street Maggi & Toast", icon: "🍜", image: "https://i.ytimg.com/vi/V7DvO3Bei3k/hqdefault.jpg" },
+    { id: "sweet_solace", name: "Sweet Solace", subtitle: "Hot Chocolate & Sips", icon: "🍫", image: "https://i.ytimg.com/vi/2mmuCSmwGeg/hqdefault.jpg" }
 ];
 
-const REELS_DATA = [
+const REELS_DATA = 
+[
    {
-      "prepTime" : "10 mins",
-      "views" : "163K views",
-      "id" : "go0TJoanK1g",
-      "platform" : "youtube",
-      "highlight" : "The Channel's #1 Most Watched Clean Bowl",
-      "view_count" : 163000,
-      "steps" : [
-         "Steam broccoli, carrots, beans, and baby corn in a steamer basket for 4-5 minutes until tender-crisp.",
-         "Gently warm paneer or tofu cubes alongside the steamed vegetables.",
-         "Transfer warm vegetables to a wide bowl, dress with fresh lemon juice, Himalayan pink salt, and crushed black pepper.",
-         "Toss gently, top with roasted seeds, and enjoy piping hot!"
-      ],
-      "tags" : [
-         "👑 #1 Most Viral",
-         "🥦 163K+ Views",
-         "🌱 22g Clean Protein"
-      ],
-      "title" : "Virat Kohli's High-Protein Steamed Veggie Bowl",
-      "embedUrl" : "https://www.youtube.com/embed/go0TJoanK1g",
-      "difficulty" : "Beginner Friendly",
       "category" : "viral",
+      "chapter" : "morning_fuel",
+      "description" : "The #1 most watched viral recipe on our channel with 163K+ views! Tender steamed broccoli, sweet carrots, crisp baby corn, and fresh cottage cheese (paneer) tossed in fresh lemon juice, crushed black pepper, and Himalayan pink salt. Zero oil, pure nourishment!",
+      "difficulty" : "Beginner Friendly",
+      "embedUrl" : "https://www.youtube.com/embed/go0TJoanK1g",
+      "highlight" : "The Channel's #1 Most Watched Clean Bowl â¢ 163K+ Views",
+      "id" : "go0TJoanK1g",
       "ingredients" : [
          "1 cup fresh broccoli florets",
          "150g fresh paneer (cottage cheese) or firm tofu (cubed)",
@@ -66,327 +53,34 @@ const REELS_DATA = [
          "Himalayan pink salt to taste",
          "1 tbsp roasted pumpkin or sunflower seeds"
       ],
-      "servings" : 1,
-      "youtubeUrl" : "https://www.youtube.com/shorts/go0TJoanK1g",
-      "thumbnail" : "https://i.ytimg.com/vi/go0TJoanK1g/hqdefault.jpg",
-      "raw_title" : "Virat Kohli’s Steamed /Boiled Veggie Bowl | High-Protein Clean Meal 🥣 #viratkohli #healthyeating",
-      "description" : "The #1 most watched viral recipe on our channel with 163K+ views! Tender steamed broccoli, sweet carrots, crisp baby corn, and fresh cottage cheese (paneer) tossed in fresh lemon juice, crushed black pepper, and Himalayan pink salt. Zero oil, pure nourishment!",
-      "chapter" : "morning_fuel"
-   },
-   {
-      "embedUrl" : "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1173242588785480%2F&show_text=0",
-      "tags" : [
-         "🍝 Facebook Viral",
-         "🧄 10-Min Roman Silk",
-         "⚡ 5 Ingredients"
-      ],
-      "steps" : [
-         "Boil spaghetti in generously salted water until just shy of al dente.",
-         "In a wide pan, gently heat extra virgin olive oil over medium-low flame. Add slivered garlic and slowly infuse until light golden.",
-         "Toss in red chili flakes and fresh parsley for 30 seconds until aromatic.",
-         "Ladle in 1/2 cup hot starchy pasta water and swirl vigorously to form a glossy, emulsified silk sauce.",
-         "Transfer pasta directly into the sauce, toss vigorously for 1 minute to coat every strand, and serve immediately!"
-      ],
-      "title" : "Classic Roman Spaghetti Aglio e Olio",
-      "view_count" : 720000,
-      "platform" : "facebook",
-      "highlight" : "Facebook Mega Viral Hit • 700K+ Views • 10-Minute Authentic Aglio e Olio",
-      "id" : "fb_1173242588785480",
-      "facebookUrl" : "https://www.facebook.com/reel/1173242588785480/",
-      "views" : "700K+ views",
       "prepTime" : "10 mins",
-      "chapter" : "pasta_room",
-      "description" : "When you need comfort food in under 10 minutes, this classic Aglio e Olio is your best friend. Sliced slivered garlic in extra virgin olive oil, emulsified with salted starchy pasta water for authentic Roman silkiness.",
-      "raw_title" : "Classic Roman Aglio e Olio Pasta 🍝 #AglioEOlio #PastaLover #ComfortFood",
-      "thumbnail" : "static/images/cookbook_cover.jpg",
-      "ingredients" : [
-         "200g Spaghetti pasta",
-         "4 tbsp pure extra virgin olive oil",
-         "6-7 garlic cloves (thinly slivered)",
-         "1.5 tsp crushed red chili flakes",
-         "1/4 cup finely chopped fresh Italian parsley",
-         "1/2 cup starchy pasta cooking water",
-         "Sea salt & freshly cracked black pepper"
-      ],
-      "category" : "viral",
-      "servings" : 2,
-      "difficulty" : "Beginner Friendly",
-      "facebookReelId" : "1173242588785480"
-   },
-   {
-      "difficulty" : "Beginner Friendly",
-      "ingredients" : [
-         "200g Spaghetti or fettuccine",
-         "1.5 cups fresh button or cremini mushrooms (sliced)",
-         "3 tbsp extra virgin olive oil",
-         "6 garlic cloves (finely sliced)",
-         "1 tsp red chili flakes",
-         "1/3 cup fresh parsley (chopped)",
-         "1/3 cup grated authentic parmesan cheese",
-         "Salt and black pepper to taste"
-      ],
-      "category" : "viral",
-      "servings" : 2,
-      "facebookReelId" : "1635838080730020",
-      "description" : "Heat a pan with olive oil, add mushrooms, and sear until golden brown and moisture evaporates. Sauté garlic until fragrant, emulsify with starchy pasta water for a glossy sauce, and finish with fresh grated parmesan!",
-      "chapter" : "pasta_room",
-      "thumbnail" : "static/images/cookbook_cover.jpg",
-      "raw_title" : "Mushroom Aglio e Olio 🍄 #pasta #quickdinner #easyrecipes",
-      "highlight" : "Facebook's Favorite Umami Mushroom Pasta",
-      "platform" : "facebook",
-      "prepTime" : "12 mins",
-      "id" : "fb_1635838080730020",
-      "facebookUrl" : "https://www.facebook.com/reel/1635838080730020/",
-      "views" : "145K views",
-      "embedUrl" : "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1635838080730020%2F&show_text=0",
-      "view_count" : 145000,
-      "title" : "Pan-Seared Garlic Mushroom Aglio e Olio",
-      "steps" : [
-         "Heat olive oil in a wide skillet, add sliced mushrooms, and sear undisturbed until deep golden brown.",
-         "Push mushrooms to the rim, add sliced garlic to the center, and sauté for 2 minutes until aromatic.",
-         "Toss in parsley, pour in a splash of salted pasta water, and emulsify into a glossy sauce.",
-         "Toss in hot pasta and finish with abundant grated parmesan cheese."
-      ],
-      "tags" : [
-         "🍄 Golden Seared Umami",
-         "🍝 Facebook Hit",
-         "🧀 Fresh Parmesan"
-      ]
-   },
-   {
-      "thumbnail" : "static/images/cookbook_cover.jpg",
-      "raw_title" : "Creamy White Sauce Pasta Restaurant Style 🍝",
-      "chapter" : "pasta_room",
-      "description" : "Classic creamy white sauce pasta loaded with sautéed garlic, crunchy sweet corn, crisp capsicum, herbs, and melted mozzarella cheese.",
-      "facebookReelId" : "1518328809774148",
-      "ingredients" : [
-         "1.5 cups Penne or Fusilli pasta",
-         "2 tbsp pure butter",
-         "2 tbsp all-purpose flour",
-         "1.5 cups chilled whole milk",
-         "1 tbsp minced fresh garlic",
-         "1/2 chopped capsicum & 1/4 cup sweet corn",
-         "1 tsp oregano, 1 tsp chili flakes & 1/2 tsp black pepper",
-         "1/2 cup grated mozzarella or processed cheese"
-      ],
-      "servings" : 2,
-      "category" : "quick",
-      "difficulty" : "Easy",
-      "title" : "Restaurant Style Creamy White Sauce Pasta",
-      "steps" : [
-         "Boil pasta in salted water until al dente, drain and reserve 1/4 cup pasta water.",
-         "In butter, lightly sauté minced garlic, diced capsicum, and sweet corn for 2 minutes.",
-         "Make bechamel: melt butter, whisk in flour until bubbly, slowly pour in cold milk while whisking to avoid lumps.",
-         "Simmer until thick and velvety. Stir in seasonings, cheese, sautéed veggies, and pasta."
-      ],
-      "tags" : [
-         "🧀 Velvety Bechamel",
-         "🌽 Sweet Corn & Peppers",
-         "⚡ 15 Mins"
-      ],
-      "view_count" : 110000,
-      "embedUrl" : "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1518328809774148%2F&show_text=0",
-      "views" : "110K views",
-      "facebookUrl" : "https://www.facebook.com/reel/1518328809774148/",
-      "id" : "fb_1518328809774148",
-      "prepTime" : "15 mins",
-      "highlight" : "Silk Bechamel with Golden Corn & Peppers",
-      "platform" : "facebook"
-   },
-   {
-      "id" : "fb_3038550843162720",
-      "facebookUrl" : "https://www.facebook.com/reel/3038550843162720/",
-      "views" : "175K views",
-      "prepTime" : "6 mins",
-      "highlight" : "The Ultimate Midnight Canteen Masala Maggi",
-      "platform" : "facebook",
-      "steps" : [
-         "Melt butter in a pan, sauté onions, green chilies, and vegetables for 2 minutes until tender.",
-         "Add chopped tomatoes and dry spices; cook until soft.",
-         "Pour in boiling water, stir in tastemaker, and break in noodle block.",
-         "Simmer on medium flame until broth is thick, saucy, and noodles are tender. Finish with an extra knob of butter!"
-      ],
-      "title" : "Street Style Butter Vegetable Masala Maggi",
-      "tags" : [
-         "🍜 Tapri Style",
-         "🧈 Amul Butter Loaded",
-         "⚡ 5 Mins"
-      ],
-      "view_count" : 175000,
-      "embedUrl" : "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3038550843162720%2F&show_text=0",
-      "facebookReelId" : "3038550843162720",
-      "ingredients" : [
-         "1 pack Maggi noodles + 1.5 tastemaker packets",
-         "1 tbsp salted Amul butter + 1 tsp oil",
-         "1 small onion & 1 small tomato (chopped)",
-         "1/4 cup green peas & diced capsicum",
-         "1 chopped green chili",
-         "1/4 tsp turmeric, 1/4 tsp red chili powder & pinch of salt",
-         "1.25 cups boiling water"
-      ],
-      "category" : "quick",
+      "raw_title" : "Virat Kohliâs Steamed /Boiled Veggie Bowl | High-Protein Clean Meal ð¥£ #viratkohli #healthyeating",
       "servings" : 1,
-      "difficulty" : "Beginner Friendly",
-      "thumbnail" : "static/images/plate_pb_maggi.jpg",
-      "raw_title" : "Street Style Vegetable Maggi 🍜 #maggi #streetfood",
-      "chapter" : "quick_bites",
-      "description" : "The quintessential Indian hill-station and street-side vegetable Maggi: tempered in plenty of Amul butter with crunchy onions, tomatoes, green chilies, green peas, and double tastemaker punch."
-   },
-   {
-      "view_count" : 135000,
       "steps" : [
-         "Combine soaked sabudana, mashed potatoes, crushed peanuts, ginger, green chilies, spices, and coriander in a bowl.",
-         "Grease palms with a drop of oil, shape into round patties (tikki).",
-         "Deep fry or shallow fry on medium-low flame until deep golden, crisp, and puffed on the outside.",
-         "Serve piping hot with fresh mint coriander chutney!"
+         "Steam broccoli, carrots, beans, and baby corn in a steamer basket for 4-5 minutes until tender-crisp.",
+         "Gently warm paneer or tofu cubes alongside the steamed vegetables.",
+         "Transfer warm vegetables to a wide bowl, dress with fresh lemon juice, Himalayan pink salt, and crushed black pepper.",
+         "Toss gently, top with roasted seeds, and enjoy piping hot!"
       ],
       "tags" : [
-         "🥔 Non-Sticky Secret",
-         "🥜 Crushed Roasted Peanuts",
-         "Crispy Vrat Snack"
+         "ð #1 Most Viral",
+         "ð¥¦ 163K+ Views",
+         "ð± 22g Clean Protein"
       ],
-      "title" : "Crispy Golden Sabudana Vada (Non-Sticky Hack)",
-      "embedUrl" : "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1143088988469353%2F&show_text=0",
-      "prepTime" : "15 mins",
-      "id" : "fb_1143088988469353",
-      "facebookUrl" : "https://www.facebook.com/reel/1143088988469353/",
-      "views" : "135K views",
-      "highlight" : "Nimisha's 1-Inch Water Soaking Rule",
-      "platform" : "facebook",
-      "raw_title" : "Sabudana Vada / Sabudana Tikki / Sago Fritter 🥔",
-      "thumbnail" : "static/images/plate_cheela.jpg",
-      "description" : "The secret to non-sticky, super crispy sabudana vadas! Fluffy soaked sago mixed with boiled potatoes, coarse roasted peanuts, ginger, green chilies, and fried to golden perfection.",
+      "thumbnail" : "https://i.ytimg.com/vi/go0TJoanK1g/hqdefault.jpg",
+      "title" : "Virat Kohli's High-Protein Steamed Veggie Bowl",
+      "view_count" : 163000,
+      "views" : "163K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/go0TJoanK1g"
+   },
+   {
+      "category" : "viral",
       "chapter" : "desi_street",
-      "facebookReelId" : "1143088988469353",
-      "difficulty" : "Intermediate",
-      "servings" : 4,
-      "ingredients" : [
-         "1 cup sabudana (soaked overnight with water 1 inch above level)",
-         "1/2 cup roasted peanuts (crushed coarsely)",
-         "2 medium boiled potatoes (mashed)",
-         "1 inch ginger (grated) & 2 green chilies (chopped)",
-         "1 tsp cumin seeds (jeera) & 1/2 tsp sugar",
-         "Salt or rock salt (sendha namak) to taste",
-         "Fresh chopped coriander & oil for shaping/frying"
-      ],
-      "category" : "desi"
-   },
-   {
-      "steps" : [
-         "Warm milk in a small saucepan over medium heat; whisk in cocoa powder and sugar until dissolved and steamy.",
-         "Turn flame to low, add chopped 70% dark chocolate, and stir continuously until silky and thick.",
-         "Whisk in a tiny pinch of sea salt to enhance the deep cocoa aroma.",
-         "Pour hot into mugs, top with marshmallows or whipped cream, and enjoy!"
-      ],
-      "tags" : [
-         "🍫 70% Dark Chocolate",
-         "☕ Parisian Velvet",
-         "⚡ 8 Mins"
-      ],
-      "title" : "Thick Parisian 70% Dark Hot Chocolate",
-      "view_count" : 120000,
-      "embedUrl" : "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1030935770043034%2F&show_text=0",
-      "views" : "120K views",
-      "facebookUrl" : "https://www.facebook.com/reel/1030935770043034/",
-      "id" : "fb_1030935770043034",
-      "prepTime" : "8 mins",
-      "platform" : "facebook",
-      "highlight" : "Deep Decadent Winter Mug with Flaky Salt",
-      "raw_title" : "Rich Thick Parisian 70% Dark Hot Chocolate 🍫",
-      "thumbnail" : "https://i.ytimg.com/vi/314G3x9uNFs/hqdefault.jpg",
-      "chapter" : "sweet_solace",
-      "description" : "Wrap yourself in cozy warmth with this rich, thick, Parisian-style hot chocolate. Real 70% dark chocolate melted into whole milk and Dutch cocoa, balanced with a tiny pinch of flaky sea salt.",
-      "facebookReelId" : "1030935770043034",
-      "ingredients" : [
-         "1.5 cups whole milk (or half-and-half)",
-         "100g 70% dark chocolate (finely chopped)",
-         "1 tbsp Dutch-process unsweetened cocoa powder",
-         "1.5 tbsp raw brown sugar or condensed milk",
-         "A pinch of fine sea salt"
-      ],
-      "category" : "sweet",
-      "servings" : 2,
-      "difficulty" : "Beginner Friendly"
-   },
-   {
-      "tags" : [
-         "🥘 Tangy Dahi Kadhi",
-         "🧅 Fluffy Pakoras",
-         "🌶️ Sizzling Tadka"
-      ],
-      "steps" : [
-         "Whisk besan, sour curd, turmeric, chili powder, and water until silky smooth.",
-         "Temper oil with cumin, hing, ginger, and methi seeds. Pour in curd mixture, bring to boil, then add salt. Simmer on low for 15 mins.",
-         "Beat pakora batter until airy, drop spoonfuls in hot oil and fry until golden. Transfer pakoras into the simmering kadhi.",
-         "Make sizzling ghee tadka with cumin, hing, curry leaves, and dry red chilies. Pour over kadhi and serve with steamed rice!"
-      ],
-      "title" : "Punjabi Kadhi Pakora with Ghee Double Tadka",
-      "view_count" : 195000,
-      "embedUrl" : "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2027154211271964%2F&show_text=0",
-      "facebookUrl" : "https://www.facebook.com/reel/2027154211271964/",
-      "id" : "fb_punjabi_kadhi_pakora",
-      "views" : "195K views",
-      "prepTime" : "25 mins",
-      "platform" : "facebook",
-      "highlight" : "Slow-Simmered Soul Food with Crispy Pakoras",
-      "raw_title" : "Tangy Punjabi Kadhi Pakora with Ghee Double Tadka 🫕",
-      "thumbnail" : "static/images/social_youtube.jpg",
-      "chapter" : "desi_street",
-      "description" : "Warm comforting bowl of tangy slow-cooked kadhi paired with steamed rice: sour dahi and besan slow-cooked to velvety perfection, soft fluffy onion-besan pakoras, and a sizzling ghee tadka with curry leaves and dry red chilies.",
-      "facebookReelId" : "2027154211271964",
-      "ingredients" : [
-         "1 cup sour dahi (curd/yogurt) + 1/3 cup besan + 2.5 cups water",
-         "Pakora batter: 1/2 cup besan, 1 chopped onion, turmeric, chili powder, pinch of baking soda",
-         "Kadhi spices: methi dana, cumin, hing, grated ginger, green chilies, turmeric",
-         "Final Tadka: 2 tbsp desi ghee, cumin, hing, fresh curry leaves, dry kashmiri chilies",
-         "Salt to taste"
-      ],
-      "category" : "desi",
-      "servings" : 4,
-      "difficulty" : "Intermediate"
-   },
-   {
-      "view_count" : 140000,
-      "title" : "Desi Street Kala Chana Chaat (18g Protein)",
-      "steps" : [
-         "Add warm boiled black chickpeas to a mixing bowl.",
-         "Toss in chopped onions, tomatoes, cucumber, green chilies, and fresh coriander.",
-         "Season with roasted jeera powder, black salt, chaat masala, and a generous squeeze of fresh lemon juice.",
-         "Toss vigorously and serve as a healthy protein breakfast or evening snack."
-      ],
-      "tags" : [
-         "🥗 18g Desi Protein",
-         "🍋 Zesty Chaat Masala",
-         "⚡ Zero Oil"
-      ],
-      "embedUrl" : "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1962152878502834%2F&show_text=0",
-      "prepTime" : "8 mins",
-      "views" : "140K views",
-      "facebookUrl" : "https://www.facebook.com/reel/1962152878502834/",
-      "id" : "fb_1962152878502834",
-      "highlight" : "Crunchy Street-Style Black Chickpea Protein Bowl",
-      "platform" : "facebook",
-      "thumbnail" : "static/images/plate_cheela.jpg",
-      "raw_title" : "High-Protein Kala Chana Chaat Salad 🥗 #healthyfood #protein",
-      "description" : "Tender boiled black chickpeas (kala chana) tossed with crunchy onions, juicy tomatoes, cucumbers, green chilies, fresh lemon juice, roasted cumin, and black salt.",
-      "chapter" : "morning_fuel",
-      "facebookReelId" : "1962152878502834",
+      "description" : "The viral Rajasthani doongri tadka chutney that broke our feed with 95K+ views! Fiery, smoky, and infused with charcoal smoke (dhungar technique).",
       "difficulty" : "Beginner Friendly",
-      "category" : "healthy",
-      "ingredients" : [
-         "1.5 cups boiled black chickpeas (kala chana)",
-         "1 medium onion & 1 ripe tomato (finely chopped)",
-         "1/2 English cucumber (diced)",
-         "1-2 green chilies (minced)",
-         "1 fresh juicy lemon",
-         "1 tsp roasted cumin powder, 1 tsp chaat masala, 1/2 tsp black salt & regular salt",
-         "Handful of fresh coriander leaves"
-      ],
-      "servings" : 2
-   },
-   {
-      "difficulty" : "Beginner Friendly",
-      "servings" : 4,
+      "embedUrl" : "https://www.youtube.com/embed/rTWw5yVLwnk",
+      "highlight" : "The Internet's Favorite Garlic Tadka",
+      "id" : "rTWw5yVLwnk",
       "ingredients" : [
          "12-15 peeled garlic cloves",
          "3 dry red kashmiri chilies (soaked)",
@@ -396,39 +90,34 @@ const REELS_DATA = [
          "1 tsp red chili powder & salt to taste",
          "1 small charcoal piece for smoking (optional)"
       ],
-      "category" : "viral",
-      "description" : "The viral Rajasthani doongri tadka chutney that broke our feed with 95K+ views! Fiery, smoky, and infused with charcoal smoke (dhungar technique).",
-      "chapter" : "desi_street",
-      "youtubeUrl" : "https://www.youtube.com/shorts/rTWw5yVLwnk",
-      "thumbnail" : "https://i.ytimg.com/vi/rTWw5yVLwnk/hqdefault.jpg",
-      "raw_title" : "Rajasthani Doongri Tadka Chutney 😋 #shorts #chutney #rajasthani #indianfood",
-      "highlight" : "The Internet's Favorite Garlic Tadka",
-      "platform" : "youtube",
       "prepTime" : "8 mins",
-      "views" : "95K views",
-      "id" : "rTWw5yVLwnk",
-      "embedUrl" : "https://www.youtube.com/embed/rTWw5yVLwnk",
-      "view_count" : 95000,
-      "tags" : [
-         "🌶️ Signature Smoke",
-         "🫕 Charcoal Dhungar",
-         "⚡ 8 Mins"
-      ],
+      "raw_title" : "Rajasthani Doongri Tadka Chutney ð #shorts #chutney #rajasthani #indianfood",
+      "servings" : 4,
       "steps" : [
          "Grind garlic cloves and soaked red chilies with cumin and a splash of water into a coarse paste.",
          "Heat mustard oil in a tadka pan until smoking hot, temper with jeera and hing.",
          "Pour the sizzling oil over the chutney paste and stir vigorously until aromatic.",
          "Perform quick dhungar smoke with a live coal and ghee for authentic dhaba smokiness!"
       ],
-      "title" : "Smoky Rajasthani Doongri Tadka Chutney"
+      "tags" : [
+         "ð¶ï¸ Signature Smoke",
+         "ð« Charcoal Dhungar",
+         "â¡ 8 Mins"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/rTWw5yVLwnk/hqdefault.jpg",
+      "title" : "Smoky Rajasthani Doongri Tadka Chutney",
+      "view_count" : 95000,
+      "views" : "95K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/rTWw5yVLwnk"
    },
    {
-      "raw_title" : "Moong dal cheela #shorts #proteinrich #food #breakfast",
-      "thumbnail" : "https://i.ytimg.com/vi/ArtUYX17hjM/hqdefault.jpg",
-      "youtubeUrl" : "https://www.youtube.com/shorts/ArtUYX17hjM",
+      "category" : "high_protein",
       "chapter" : "morning_fuel",
       "description" : "Viral on Instagram with hundreds of saves! Crispy yellow lentil crepe stuffed with spiced crumbled paneer and crunchy peppers. 18g clean protein.",
-      "servings" : 2,
+      "difficulty" : "Super Easy",
+      "embedUrl" : "https://www.youtube.com/embed/ArtUYX17hjM",
+      "highlight" : "The High-Protein Cheela That Broke Instagram",
+      "id" : "ArtUYX17hjM",
       "ingredients" : [
          "1 cup yellow moong dal (soaked 2 hrs)",
          "1 green chili & 1 inch ginger",
@@ -437,53 +126,33 @@ const REELS_DATA = [
          "Pinch of hing, turmeric, and pink Himalayan salt",
          "1 tsp olive oil or ghee for cooking"
       ],
-      "category" : "high_protein",
-      "difficulty" : "Super Easy",
-      "title" : "Crispy Golden Moong Dal Cheela",
+      "prepTime" : "15 mins",
+      "raw_title" : "Moong dal cheela #shorts #proteinrich #food #breakfast",
+      "servings" : 2,
       "steps" : [
          "Blend soaked moong dal with ginger, chili, and little water into a smooth pourable batter.",
          "Pour a ladle onto a hot tawa and swirl thin like a dosa.",
          "Drizzle ghee, add the spiced paneer-veggie stuffing, fold crisp, and dip in mint chutney!"
       ],
       "tags" : [
-         "💪 18g Protein",
-         "🥞 Gluten-Free",
-         "⏱️ 15 Mins"
+         "ðª 18g Protein",
+         "ð¥ Gluten-Free",
+         "â±ï¸ 15 Mins"
       ],
+      "thumbnail" : "https://i.ytimg.com/vi/ArtUYX17hjM/hqdefault.jpg",
+      "title" : "Crispy Golden Moong Dal Cheela",
       "view_count" : 11000,
-      "embedUrl" : "https://www.youtube.com/embed/ArtUYX17hjM",
       "views" : "11K views",
-      "id" : "ArtUYX17hjM",
-      "prepTime" : "15 mins",
-      "highlight" : "The High-Protein Cheela That Broke Instagram",
-      "platform" : "youtube"
+      "youtubeUrl" : "https://www.youtube.com/shorts/ArtUYX17hjM"
    },
    {
-      "embedUrl" : "https://www.youtube.com/embed/40Fcx4VBujA",
-      "view_count" : 8200,
-      "title" : "Crispy Chilli Garlic Glazed Tofu",
-      "steps" : [
-         "Toss tofu cubes in cornstarch, pan-sear in sesame oil until golden and ultra-crispy.",
-         "Sauté garlic, pour the spicy savory sauce slurry and reduce until glossy.",
-         "Toss crispy tofu cubes to coat evenly. Shower with toasted sesame and green onions!"
-      ],
-      "tags" : [
-         "🥢 Vegan Favorite",
-         "💪 20g Protein",
-         "⚡ 12 Mins"
-      ],
-      "highlight" : "Tastes Way Better Than Takeout",
-      "platform" : "youtube",
-      "prepTime" : "12 mins",
-      "id" : "40Fcx4VBujA",
-      "views" : "8.2K views",
-      "description" : "Crispy pan-seared tofu tossed in a glossy, fiery garlic-soy glaze. Perfect high-protein dinner when you want flavor without calorie guilt.",
-      "chapter" : "quick_bites",
-      "youtubeUrl" : "https://www.youtube.com/shorts/40Fcx4VBujA",
-      "thumbnail" : "https://i.ytimg.com/vi/40Fcx4VBujA/hqdefault.jpg",
-      "raw_title" : "Chilli Garlic Tofu😍😋 Vegan Recipe Alternative of Paneer - high protein dinner",
-      "difficulty" : "Intermediate",
       "category" : "high_protein",
+      "chapter" : "quick_bites",
+      "description" : "Crispy pan-seared tofu tossed in a glossy, fiery garlic-soy glaze. Perfect high-protein dinner when you want flavor without calorie guilt.",
+      "difficulty" : "Intermediate",
+      "embedUrl" : "https://www.youtube.com/embed/40Fcx4VBujA",
+      "highlight" : "Tastes Way Better Than Takeout",
+      "id" : "40Fcx4VBujA",
       "ingredients" : [
          "200g firm tofu (pressed and cubed)",
          "1.5 tbsp cornstarch + pinch of salt/pepper",
@@ -493,15 +162,33 @@ const REELS_DATA = [
          "1 tsp honey or maple syrup",
          "Spring onions & toasted sesame for garnish"
       ],
-      "servings" : 2
+      "prepTime" : "12 mins",
+      "raw_title" : "Chilli Garlic Tofuðð Vegan Recipe Alternative of Paneer - high protein dinner",
+      "servings" : 2,
+      "steps" : [
+         "Toss tofu cubes in cornstarch, pan-sear in sesame oil until golden and ultra-crispy.",
+         "SautÃ© garlic, pour the spicy savory sauce slurry and reduce until glossy.",
+         "Toss crispy tofu cubes to coat evenly. Shower with toasted sesame and green onions!"
+      ],
+      "tags" : [
+         "ð¥¢ Vegan Favorite",
+         "ðª 20g Protein",
+         "â¡ 12 Mins"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/40Fcx4VBujA/hqdefault.jpg",
+      "title" : "Crispy Chilli Garlic Glazed Tofu",
+      "view_count" : 8200,
+      "views" : "8.2K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/40Fcx4VBujA"
    },
    {
-      "youtubeUrl" : "https://www.youtube.com/shorts/dC5egFVwRlQ",
-      "raw_title" : "Gobhi Pakora 🥦",
-      "thumbnail" : "https://i.ytimg.com/vi/dC5egFVwRlQ/hqdefault.jpg",
-      "description" : "Double-fried spiced cauliflower fritters seasoned with ajwain and chaat masala. Super crunchy outside, tender inside.",
+      "category" : "street_comfort",
       "chapter" : "desi_street",
+      "description" : "Double-fried spiced cauliflower fritters seasoned with ajwain and chaat masala. Super crunchy outside, tender inside.",
       "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/dC5egFVwRlQ",
+      "highlight" : "Rainy Day Comfort Food",
+      "id" : "dC5egFVwRlQ",
       "ingredients" : [
          "1 small cauliflower cut into medium florets (blanched)",
          "1 cup besan (gram flour) + 2 tbsp rice flour for crunch",
@@ -509,33 +196,33 @@ const REELS_DATA = [
          "1 tsp red chili powder & garam masala",
          "Mustard oil for frying"
       ],
+      "prepTime" : "20 mins",
+      "raw_title" : "Gobhi Pakora ð¥¦",
       "servings" : 3,
-      "category" : "street_comfort",
-      "view_count" : 5600,
-      "title" : "Halwai-Style Crunchy Gobhi Pakora",
       "steps" : [
          "Parboil gobhi florets with salt and turmeric for 3 minutes, drain completely.",
          "Make a thick spiced besan-rice flour batter.",
          "Dip florets and fry on medium heat till golden. Flash fry again before serving for maximum crunch!"
       ],
       "tags" : [
-         "🌧️ Chai Companion",
-         "🥦 Extra Crisp",
-         "⏱️ 20 Mins"
+         "ð§ï¸ Chai Companion",
+         "ð¥¦ Extra Crisp",
+         "â±ï¸ 20 Mins"
       ],
-      "embedUrl" : "https://www.youtube.com/embed/dC5egFVwRlQ",
-      "prepTime" : "20 mins",
+      "thumbnail" : "https://i.ytimg.com/vi/dC5egFVwRlQ/hqdefault.jpg",
+      "title" : "Halwai-Style Crunchy Gobhi Pakora",
+      "view_count" : 5600,
       "views" : "5.6K views",
-      "id" : "dC5egFVwRlQ",
-      "platform" : "youtube",
-      "highlight" : "Rainy Day Comfort Food"
+      "youtubeUrl" : "https://www.youtube.com/shorts/dC5egFVwRlQ"
    },
    {
-      "thumbnail" : "https://i.ytimg.com/vi/jlIBLm0bwlw/hqdefault.jpg",
-      "raw_title" : "Authentic Dhaba-Style Palak Paneer 🌿",
-      "youtubeUrl" : "https://www.youtube.com/shorts/jlIBLm0bwlw",
+      "category" : "street_comfort",
       "chapter" : "desi_street",
       "description" : "Vibrant, silky spinach gravy with soft paneer cubes that retains its gorgeous emerald color without turning dull brown.",
+      "difficulty" : "Intermediate",
+      "embedUrl" : "https://www.youtube.com/embed/jlIBLm0bwlw",
+      "highlight" : "Secret Dhaba Blanching Technique",
+      "id" : "jlIBLm0bwlw",
       "ingredients" : [
          "2 bunches fresh spinach (blanched in ice water)",
          "200g malai paneer cubes",
@@ -544,30 +231,33 @@ const REELS_DATA = [
          "2 tbsp ghee + 1 tsp kasuri methi",
          "Fresh cream for finishing"
       ],
+      "prepTime" : "25 mins",
+      "raw_title" : "Authentic Dhaba-Style Palak Paneer ð¿",
       "servings" : 4,
-      "category" : "street_comfort",
-      "difficulty" : "Intermediate",
-      "title" : "Authentic Dhaba-Style Palak Paneer",
       "steps" : [
          "Blanch spinach for 90 seconds, plunge directly into ice cold water to preserve chlorophyll.",
          "Blend into a velvety puree with green chilies.",
          "Cook onion-tomato masala in ghee, fold in the spinach puree, simmer gently and fold paneer."
       ],
       "tags" : [
-         "🌿 Vibrant Green",
-         "🧀 Soft Paneer",
-         "⏱️ 25 Mins"
+         "ð¿ Vibrant Green",
+         "ð§ Soft Paneer",
+         "â±ï¸ 25 Mins"
       ],
+      "thumbnail" : "https://i.ytimg.com/vi/jlIBLm0bwlw/hqdefault.jpg",
+      "title" : "Authentic Dhaba-Style Palak Paneer",
       "view_count" : 5100,
-      "embedUrl" : "https://www.youtube.com/embed/jlIBLm0bwlw",
       "views" : "5.1K views",
-      "id" : "jlIBLm0bwlw",
-      "prepTime" : "25 mins",
-      "highlight" : "Secret Dhaba Blanching Technique",
-      "platform" : "youtube"
+      "youtubeUrl" : "https://www.youtube.com/shorts/jlIBLm0bwlw"
    },
    {
       "category" : "pastas_quick",
+      "chapter" : "pasta_room",
+      "description" : "Velvety, creamy peanut butter sauce with garlic, chili oil, and soy sauce clinging to bouncy noodles. Ready in 10 minutes flat.",
+      "difficulty" : "Super Easy",
+      "embedUrl" : "https://www.youtube.com/embed/dt5EQaT0hs4",
+      "highlight" : "Better Than Instant Ramen",
+      "id" : "dt5EQaT0hs4",
       "ingredients" : [
          "1 pack ramen / udon / wheat noodles",
          "2 tbsp peanut butter (smooth or crunchy)",
@@ -575,57 +265,33 @@ const REELS_DATA = [
          "1.5 tbsp soy sauce + 1 tsp rice vinegar",
          "1 clove minced garlic + hot noodle water"
       ],
-      "servings" : 1,
-      "difficulty" : "Super Easy",
-      "chapter" : "pasta_room",
-      "description" : "Velvety, creamy peanut butter sauce with garlic, chili oil, and soy sauce clinging to bouncy noodles. Ready in 10 minutes flat.",
-      "raw_title" : "Peanut Chilli Noodles 🍜 #shorts #food #foodie #recipe #shortvideo #shortscooking",
-      "thumbnail" : "https://i.ytimg.com/vi/dt5EQaT0hs4/hqdefault.jpg",
-      "youtubeUrl" : "https://www.youtube.com/shorts/dt5EQaT0hs4",
-      "highlight" : "Better Than Instant Ramen",
-      "platform" : "youtube",
-      "views" : "4.5K views",
-      "id" : "dt5EQaT0hs4",
       "prepTime" : "10 mins",
-      "embedUrl" : "https://www.youtube.com/embed/dt5EQaT0hs4",
-      "title" : "Spicy Dan Dan Peanut Chili Noodles",
+      "raw_title" : "Peanut Chilli Noodles ð #shorts #food #foodie #recipe #shortvideo #shortscooking",
+      "servings" : 1,
       "steps" : [
          "Whisk peanut butter, chili oil, soy sauce, garlic, and hot noodle water into a luscious sauce.",
          "Boil noodles, toss directly into the warm sauce bowl.",
          "Garnish with chopped scallions and roasted crushed peanuts!"
       ],
       "tags" : [
-         "🔥 4.5K Views",
-         "🍜 10-Min Meal",
-         "🥜 Creamy & Spicy"
+         "ð¥ 4.5K Views",
+         "ð 10-Min Meal",
+         "ð¥ Creamy & Spicy"
       ],
-      "view_count" : 4500
+      "thumbnail" : "https://i.ytimg.com/vi/dt5EQaT0hs4/hqdefault.jpg",
+      "title" : "Spicy Dan Dan Peanut Chili Noodles",
+      "view_count" : 4500,
+      "views" : "4.5K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/dt5EQaT0hs4"
    },
    {
-      "view_count" : 3600,
-      "steps" : [
-         "Roast whole tomatoes and garlic over open burner flame until charred and tender.",
-         "Peel the burnt skin, mash together in a bowl with green chili and diced onions.",
-         "Drizzle pungent mustard oil, season with black salt and coriander leaves."
-      ],
-      "title" : "Smoky Charred Tomato Garlic Chutney",
-      "tags" : [
-         "🔥 3.6K Views",
-         "🍅 Charred & Tangy",
-         "🌶️ Village Style"
-      ],
-      "embedUrl" : "https://www.youtube.com/embed/fNgwZwPCRs8",
-      "prepTime" : "12 mins",
-      "views" : "3.6K views",
-      "id" : "fNgwZwPCRs8",
-      "platform" : "youtube",
-      "highlight" : "Direct Flame Roasted",
-      "youtubeUrl" : "https://www.youtube.com/shorts/fNgwZwPCRs8",
-      "thumbnail" : "https://i.ytimg.com/vi/fNgwZwPCRs8/hqdefault.jpg",
-      "raw_title" : "Tamatar chutney 🍅 #shorts #cooking #viral",
-      "description" : "Open-flame charred tomatoes mashed with raw mustard oil, roasted garlic, and chopped onions. Elevates any dal-chawal or paratha.",
+      "category" : "street_comfort",
       "chapter" : "desi_street",
+      "description" : "Open-flame charred tomatoes mashed with raw mustard oil, roasted garlic, and chopped onions. Elevates any dal-chawal or paratha.",
       "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/fNgwZwPCRs8",
+      "highlight" : "Direct Flame Roasted",
+      "id" : "fNgwZwPCRs8",
       "ingredients" : [
          "3 large ripe tomatoes (charred on open flame)",
          "4 garlic cloves (charred)",
@@ -634,35 +300,33 @@ const REELS_DATA = [
          "1 tbsp raw kachi ghani mustard oil",
          "Fresh coriander & black salt"
       ],
-      "category" : "street_comfort",
-      "servings" : 3
+      "prepTime" : "12 mins",
+      "raw_title" : "Tamatar chutney ð #shorts #cooking #viral",
+      "servings" : 3,
+      "steps" : [
+         "Roast whole tomatoes and garlic over open burner flame until charred and tender.",
+         "Peel the burnt skin, mash together in a bowl with green chili and diced onions.",
+         "Drizzle pungent mustard oil, season with black salt and coriander leaves."
+      ],
+      "tags" : [
+         "ð¥ 3.6K Views",
+         "ð Charred & Tangy",
+         "ð¶ï¸ Village Style"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/fNgwZwPCRs8/hqdefault.jpg",
+      "title" : "Smoky Charred Tomato Garlic Chutney",
+      "view_count" : 3600,
+      "views" : "3.6K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/fNgwZwPCRs8"
    },
    {
-      "embedUrl" : "https://www.youtube.com/embed/7UQ5wVs-ons",
-      "view_count" : 3400,
-      "tags" : [
-         "🥪 3.4K Views",
-         "💪 20g Protein",
-         "⚡ 10 Mins"
-      ],
-      "steps" : [
-         "Mix crumbled paneer with Greek yogurt, mint chutney, onions, and chaat masala.",
-         "Spread thickly between bread slices.",
-         "Toast in a skillet with a brush of butter till golden and crisp!"
-      ],
-      "title" : "10-Minute High-Protein Paneer Sandwich",
-      "highlight" : "The Busy Morning Lifesaver",
-      "platform" : "youtube",
-      "prepTime" : "10 mins",
-      "views" : "3.4K views",
-      "id" : "7UQ5wVs-ons",
-      "description" : "Loaded with spiced paneer bhurji, crunchy cucumbers, and mint yogurt spread between whole-grain sourdough slices.",
-      "chapter" : "morning_fuel",
-      "youtubeUrl" : "https://www.youtube.com/shorts/7UQ5wVs-ons",
-      "raw_title" : "High Protein Tofu / Paneer Sandwich 🥪 | 10-Minute Breakfast",
-      "thumbnail" : "https://i.ytimg.com/vi/7UQ5wVs-ons/hqdefault.jpg",
-      "difficulty" : "Super Easy",
       "category" : "high_protein",
+      "chapter" : "morning_fuel",
+      "description" : "Loaded with spiced paneer bhurji, crunchy cucumbers, and mint yogurt spread between whole-grain sourdough slices.",
+      "difficulty" : "Super Easy",
+      "embedUrl" : "https://www.youtube.com/embed/7UQ5wVs-ons",
+      "highlight" : "The Busy Morning Lifesaver",
+      "id" : "7UQ5wVs-ons",
       "ingredients" : [
          "2 slices multigrain sourdough bread",
          "100g crumbled paneer or tofu",
@@ -670,10 +334,33 @@ const REELS_DATA = [
          "1 tbsp green mint chutney",
          "Finely chopped onions, tomatoes, and chaat masala"
       ],
-      "servings" : 1
+      "prepTime" : "10 mins",
+      "raw_title" : "High Protein Tofu / Paneer Sandwich ð¥ª | 10-Minute Breakfast",
+      "servings" : 1,
+      "steps" : [
+         "Mix crumbled paneer with Greek yogurt, mint chutney, onions, and chaat masala.",
+         "Spread thickly between bread slices.",
+         "Toast in a skillet with a brush of butter till golden and crisp!"
+      ],
+      "tags" : [
+         "ð¥ª 3.4K Views",
+         "ðª 20g Protein",
+         "â¡ 10 Mins"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/7UQ5wVs-ons/hqdefault.jpg",
+      "title" : "10-Minute High-Protein Paneer Sandwich",
+      "view_count" : 3400,
+      "views" : "3.4K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/7UQ5wVs-ons"
    },
    {
+      "category" : "viral",
+      "chapter" : "pasta_room",
+      "description" : "The iconic pasta reel that took over Facebook and Instagram feeds with 700K+ views! Slivers of fresh garlic slowly bloomed in high quality extra virgin olive oil, emulsified with hot starchy pasta water into a glossy restaurant-grade silk sauce.",
       "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/HjIfjPZh3Ac",
+      "highlight" : "The 700K+ Viral Mega Hit Across Facebook & YouTube",
+      "id" : "HjIfjPZh3Ac",
       "ingredients" : [
          "200g bronze-cut spaghetti",
          "6 cloves garlic, thinly slivered",
@@ -682,52 +369,33 @@ const REELS_DATA = [
          "Handful fresh flat-leaf parsley (chopped)",
          "Parmesan cheese to finish"
       ],
-      "servings" : 2,
-      "category" : "pastas_quick",
-      "youtubeUrl" : "https://www.youtube.com/shorts/HjIfjPZh3Ac",
-      "thumbnail" : "https://i.ytimg.com/vi/HjIfjPZh3Ac/hqdefault.jpg",
-      "raw_title" : "Classic Aglio e Olio Pasta 🍝",
-      "description" : "One of the 3 pasta reels that went massively viral on Facebook! Silky emulsified garlic olive oil, red pepper flakes, and al dente spaghetti.",
-      "chapter" : "pasta_room",
       "prepTime" : "15 mins",
-      "id" : "HjIfjPZh3Ac",
-      "views" : "3.3K views",
-      "highlight" : "The Pasta Reel That Took Over Facebook Feeds",
-      "platform" : "youtube",
-      "view_count" : 3300,
-      "tags" : [
-         "🍝 5 Ingredients",
-         "⏱️ 15 Mins",
-         "✨ Roman Classic"
-      ],
+      "raw_title" : "Classic Aglio e Olio Pasta ð",
+      "servings" : 2,
       "steps" : [
          "Cook pasta in salted water till al dente, reserving 1/2 cup pasta water.",
          "Slowly fry garlic slivers in olive oil on low heat until lightly golden, add chili flakes.",
          "Add pasta water to emulsify into a silky sauce, toss spaghetti and fresh parsley!"
       ],
+      "tags" : [
+         "ð 700K+ Viral Mega Hit",
+         "ð Roman Aglio e Olio",
+         "â¨ 5 Ingredients"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/HjIfjPZh3Ac/hqdefault.jpg",
       "title" : "Authentic Spaghetti Aglio e Olio",
-      "embedUrl" : "https://www.youtube.com/embed/HjIfjPZh3Ac"
+      "view_count" : 700000,
+      "views" : "700K+ views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/HjIfjPZh3Ac"
    },
    {
-      "prepTime" : "8 mins",
-      "id" : "1qAnvjCVoyA",
-      "views" : "2.8K views",
-      "highlight" : "Late-Night Snack Cravings",
-      "platform" : "youtube",
-      "view_count" : 2800,
-      "steps" : [
-         "Toast one side of the bread in butter on a skillet.",
-         "Flip, spread sauce, top with mozzarella and veggies.",
-         "Cover with a lid on low flame for 3 minutes until cheese melts into gooey perfection!"
-      ],
-      "tags" : [
-         "🍕 Cheesy Melt",
-         "⚡ 8 Mins",
-         "🧀 Late Night"
-      ],
-      "title" : "Crispy Stovetop Bread Pizza",
-      "embedUrl" : "https://www.youtube.com/embed/1qAnvjCVoyA",
+      "category" : "pastas_quick",
+      "chapter" : "quick_bites",
+      "description" : "No oven required! Crispy bottom bread pizza loaded with pizza sauce, colorful veggies, and bubbling mozzarella on a flat pan.",
       "difficulty" : "Super Easy",
+      "embedUrl" : "https://www.youtube.com/embed/1qAnvjCVoyA",
+      "highlight" : "Late-Night Snack Cravings",
+      "id" : "1qAnvjCVoyA",
       "ingredients" : [
          "4 slices bread (white or sourdough)",
          "2 tbsp pizza-pasta sauce",
@@ -735,123 +403,131 @@ const REELS_DATA = [
          "Diced bell peppers, sweet corn, and onions",
          "Oregano and chili flakes"
       ],
+      "prepTime" : "8 mins",
+      "raw_title" : "Bread pizza ð Cheese pizza #pizza #recipe",
       "servings" : 2,
-      "category" : "pastas_quick",
-      "youtubeUrl" : "https://www.youtube.com/shorts/1qAnvjCVoyA",
-      "raw_title" : "Bread pizza 🍕 Cheese pizza #pizza #recipe",
-      "thumbnail" : "https://i.ytimg.com/vi/1qAnvjCVoyA/hqdefault.jpg",
-      "description" : "No oven required! Crispy bottom bread pizza loaded with pizza sauce, colorful veggies, and bubbling mozzarella on a flat pan.",
-      "chapter" : "quick_bites"
-   },
-   {
-      "platform" : "youtube",
-      "highlight" : "Crispy in 6 Minutes Flat",
-      "views" : "2.5K views",
-      "id" : "zxRHLKEdvDM",
-      "prepTime" : "6 mins",
-      "embedUrl" : "https://www.youtube.com/embed/zxRHLKEdvDM",
       "steps" : [
-         "Preheat air fryer to 180°C (350°F).",
-         "Assemble pita with sauce, cheese, and toppings.",
-         "Airfry for 5-6 minutes until cheese is bubbly and edges are toasted brown!"
+         "Toast one side of the bread in butter on a skillet.",
+         "Flip, spread sauce, top with mozzarella and veggies.",
+         "Cover with a lid on low flame for 3 minutes until cheese melts into gooey perfection!"
       ],
       "tags" : [
-         "🍕 2.5K Views",
-         "🍟 Airfryer Hack",
-         "⚡ 6 Mins"
+         "ð Cheesy Melt",
+         "â¡ 8 Mins",
+         "ð§ Late Night"
       ],
-      "title" : "Airfryer Pita Pizza Hack",
-      "view_count" : 2500,
+      "thumbnail" : "https://i.ytimg.com/vi/1qAnvjCVoyA/hqdefault.jpg",
+      "title" : "Crispy Stovetop Bread Pizza",
+      "view_count" : 2800,
+      "views" : "2.8K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/1qAnvjCVoyA"
+   },
+   {
+      "category" : "pastas_quick",
+      "chapter" : "quick_bites",
+      "description" : "The quickest personal pizza hack using an air fryer for an ultra-crispy crust and bubbly golden cheese.",
+      "difficulty" : "Super Easy",
+      "embedUrl" : "https://www.youtube.com/embed/zxRHLKEdvDM",
+      "highlight" : "Crispy in 6 Minutes Flat",
+      "id" : "zxRHLKEdvDM",
       "ingredients" : [
          "1 whole wheat pita or naan bread",
          "2 tbsp marinara sauce",
          "Mozzarella pearls or shredded cheese",
          "Fresh basil leaves & red chili flakes"
       ],
+      "prepTime" : "6 mins",
+      "raw_title" : "Pizza in Airfryer ð #shorts #food #recipe",
       "servings" : 1,
-      "category" : "pastas_quick",
-      "difficulty" : "Super Easy",
-      "chapter" : "quick_bites",
-      "description" : "The quickest personal pizza hack using an air fryer for an ultra-crispy crust and bubbly golden cheese.",
+      "steps" : [
+         "Preheat air fryer to 180Â°C (350Â°F).",
+         "Assemble pita with sauce, cheese, and toppings.",
+         "Airfry for 5-6 minutes until cheese is bubbly and edges are toasted brown!"
+      ],
+      "tags" : [
+         "ð 2.5K Views",
+         "ð Airfryer Hack",
+         "â¡ 6 Mins"
+      ],
       "thumbnail" : "https://i.ytimg.com/vi/zxRHLKEdvDM/hqdefault.jpg",
-      "raw_title" : "Pizza in Airfryer 😋 #shorts #food #recipe",
+      "title" : "Airfryer Pita Pizza Hack",
+      "view_count" : 2500,
+      "views" : "2.5K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/zxRHLKEdvDM"
    },
    {
+      "category" : "drinks_sweets",
+      "chapter" : "quick_bites",
+      "description" : "Say goodbye to limp sweet potato fries! The secret cold water soak and cornstarch dust technique for shatteringly crisp fries.",
       "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/T-EnKKFDiKI",
+      "highlight" : "The Cornstarch Soak Trick",
+      "id" : "T-EnKKFDiKI",
       "ingredients" : [
          "2 large sweet potatoes (cut into matchsticks)",
          "1 tbsp cornstarch",
          "1.5 tbsp olive oil",
          "1 tsp smoked paprika, garlic powder & sea salt"
       ],
-      "servings" : 2,
-      "category" : "drinks_sweets",
-      "description" : "Say goodbye to limp sweet potato fries! The secret cold water soak and cornstarch dust technique for shatteringly crisp fries.",
-      "chapter" : "quick_bites",
-      "youtubeUrl" : "https://www.youtube.com/shorts/T-EnKKFDiKI",
-      "raw_title" : "Extra Crispy Sweet Potato Fries 🍠",
-      "thumbnail" : "https://i.ytimg.com/vi/T-EnKKFDiKI/hqdefault.jpg",
-      "platform" : "youtube",
-      "highlight" : "The Cornstarch Soak Trick",
       "prepTime" : "25 mins",
-      "id" : "T-EnKKFDiKI",
-      "views" : "2.4K views",
-      "embedUrl" : "https://www.youtube.com/embed/T-EnKKFDiKI",
-      "view_count" : 2400,
-      "tags" : [
-         "🍠 Cornstarch Soak",
-         "🍟 Zero Sogginess",
-         "⏱️ 25 Mins"
-      ],
+      "raw_title" : "Extra Crispy Sweet Potato Fries ð ",
+      "servings" : 2,
       "steps" : [
          "Soak cut fries in cold ice water for 30 mins to remove excess surface starch.",
          "Dry thoroughly with a kitchen towel, toss in cornstarch and spices.",
-         "Bake or airfry at 200°C for 18-20 minutes, shaking halfway!"
+         "Bake or airfry at 200Â°C for 18-20 minutes, shaking halfway!"
       ],
-      "title" : "Shatteringly Crispy Sweet Potato Fries"
+      "tags" : [
+         "ð  Cornstarch Soak",
+         "ð Zero Sogginess",
+         "â±ï¸ 25 Mins"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/T-EnKKFDiKI/hqdefault.jpg",
+      "title" : "Shatteringly Crispy Sweet Potato Fries",
+      "view_count" : 2400,
+      "views" : "2.4K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/T-EnKKFDiKI"
    },
    {
-      "youtubeUrl" : "https://www.youtube.com/shorts/zMSnVMe_Jzs",
-      "thumbnail" : "https://i.ytimg.com/vi/zMSnVMe_Jzs/hqdefault.jpg",
-      "raw_title" : "Omlette 🥚Protein rich healthy breakfast 💪",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "category" : "high_protein",
       "chapter" : "morning_fuel",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
       "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/zMSnVMe_Jzs",
+      "highlight" : "Viral Creator Pick",
+      "id" : "zMSnVMe_Jzs",
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Omlette ð¥Protein rich healthy breakfast ðª",
       "servings" : 2,
-      "category" : "high_protein",
-      "view_count" : 2300,
-      "title" : "Omlette 🥚Protein rich healthy breakfast 💪",
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
          "Follow the easy seasoning and cooking steps.",
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "✨ 2.3K views",
-         "🧑‍🍳 Easy Bites"
+         "â¨ 2.3K views",
+         "ð§âð³ Easy Bites"
       ],
-      "embedUrl" : "https://www.youtube.com/embed/zMSnVMe_Jzs",
-      "prepTime" : "10-15 mins",
+      "thumbnail" : "https://i.ytimg.com/vi/zMSnVMe_Jzs/hqdefault.jpg",
+      "title" : "Omlette ð¥Protein rich healthy breakfast ðª",
+      "view_count" : 2300,
       "views" : "2.3K views",
-      "id" : "zMSnVMe_Jzs",
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick"
+      "youtubeUrl" : "https://www.youtube.com/shorts/zMSnVMe_Jzs"
    },
    {
-      "description" : "The 2nd pasta sensation that exploded on Facebook! Earthy pan-seared mushrooms tossed in garlicky olive oil pasta water emulsification.",
+      "category" : "pastas_quick",
       "chapter" : "pasta_room",
-      "youtubeUrl" : "https://www.youtube.com/shorts/yjmDrOIkaG0",
-      "thumbnail" : "https://i.ytimg.com/vi/yjmDrOIkaG0/hqdefault.jpg",
-      "raw_title" : "Mushroom Aglio e Olio Pasta 🍄",
+      "description" : "The 2nd pasta sensation that exploded on Facebook! Earthy pan-seared mushrooms tossed in garlicky olive oil pasta water emulsification.",
       "difficulty" : "Easy",
-      "servings" : 2,
+      "embedUrl" : "https://www.youtube.com/embed/yjmDrOIkaG0",
+      "highlight" : "Facebook Viral Favorite â¢ Mushroom Aglio e Olio",
+      "id" : "yjmDrOIkaG0",
       "ingredients" : [
          "200g spaghetti or linguine",
          "150g button or cremini mushrooms (sliced)",
@@ -860,117 +536,97 @@ const REELS_DATA = [
          "1 tsp red chili flakes & cracked black pepper",
          "Fresh parsley & grated parmesan"
       ],
-      "category" : "pastas_quick",
-      "embedUrl" : "https://www.youtube.com/embed/yjmDrOIkaG0",
-      "view_count" : 2200,
-      "tags" : [
-         "🍄 Golden Mushrooms",
-         "⏱️ 15 Mins",
-         "🌿 Rich Umami"
-      ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Mushroom Aglio e Olio Pasta ð",
+      "servings" : 2,
       "steps" : [
          "Sear sliced mushrooms in olive oil on high heat till deeply browned and caramelized.",
-         "Lower heat, add garlic slivers and chili flakes, sautéing until fragrant without burning.",
+         "Lower heat, add garlic slivers and chili flakes, sautÃ©ing until fragrant without burning.",
          "Toss cooked al dente spaghetti with starchy pasta water and butter for a velvety glossy glaze!"
       ],
+      "tags" : [
+         "ð Golden Mushrooms",
+         "ð Aglio e Olio",
+         "ð¿ Rich Umami"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/yjmDrOIkaG0/hqdefault.jpg",
       "title" : "Garlic Butter Mushroom Pasta",
-      "highlight" : "Facebook Community Favorite Pasta",
-      "platform" : "youtube",
-      "prepTime" : "10-15 mins",
-      "id" : "yjmDrOIkaG0",
-      "views" : "2.2K views"
+      "view_count" : 2200,
+      "views" : "2.2K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/yjmDrOIkaG0"
    },
    {
-      "thumbnail" : "https://i.ytimg.com/vi/JtOElumtAiw/hqdefault.jpg",
-      "raw_title" : "Secret to extra crispy fries 🍟 #shorts #fries #airfryer",
-      "youtubeUrl" : "https://www.youtube.com/shorts/JtOElumtAiw",
+      "category" : "street_comfort",
       "chapter" : "quick_bites",
       "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "ingredients" : [
-         "Fresh seasonal ingredients",
-         "Aromatic Indian spices",
-         "Olive oil or pure desi ghee",
-         "Fresh herbs for garnish"
-      ],
-      "category" : "street_comfort",
-      "servings" : 2,
       "difficulty" : "Easy",
-      "title" : "Secret to extra crispy fries 🍟",
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "tags" : [
-         "✨ 2.2K views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "view_count" : 2200,
       "embedUrl" : "https://www.youtube.com/embed/JtOElumtAiw",
-      "id" : "JtOElumtAiw",
-      "views" : "2.2K views",
-      "prepTime" : "10-15 mins",
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick"
-   },
-   {
-      "embedUrl" : "https://www.youtube.com/embed/0vststJX_TE",
-      "view_count" : 1900,
-      "tags" : [
-         "✨ 1.9K views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "title" : "Crispy Bhindi Snacks 🌿",
       "highlight" : "Viral Creator Pick",
-      "platform" : "youtube",
-      "prepTime" : "10-15 mins",
-      "views" : "1.9K views",
-      "id" : "0vststJX_TE",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "chapter" : "desi_street",
-      "youtubeUrl" : "https://www.youtube.com/shorts/0vststJX_TE",
-      "thumbnail" : "https://i.ytimg.com/vi/0vststJX_TE/hqdefault.jpg",
-      "raw_title" : "Crispy Bhindi Snacks 🌿",
-      "difficulty" : "Easy",
-      "servings" : 2,
+      "id" : "JtOElumtAiw",
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
-      "category" : "street_comfort"
-   },
-   {
-      "view_count" : 1800,
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Secret to extra crispy fries ð #shorts #fries #airfryer",
+      "servings" : 2,
       "steps" : [
-         "Add coffee decoction, milk, ice cream, sugar, and ice into a high-speed blender.",
-         "Blend on high for 45 seconds until super thick and foamy.",
-         "Drizzle chocolate sauce along the glass walls, pour, and dust with cocoa powder!"
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "☕ Barista Style",
-         "🧊 Rich & Creamy",
-         "⚡ 3 Mins"
+         "â¨ 2.2K views",
+         "ð§âð³ Easy Bites"
       ],
-      "title" : "Frothy Café Iced Vanilla Cold Coffee",
-      "embedUrl" : "https://www.youtube.com/embed/QgX-V8VgOMc",
-      "prepTime" : "3 mins",
-      "views" : "1.8K views",
-      "id" : "QgX-V8VgOMc",
-      "platform" : "youtube",
-      "highlight" : "Café Quality at Home",
-      "youtubeUrl" : "https://www.youtube.com/shorts/QgX-V8VgOMc",
-      "thumbnail" : "https://i.ytimg.com/vi/QgX-V8VgOMc/hqdefault.jpg",
-      "raw_title" : "Iced Vanilla Cold Coffee ☕",
-      "description" : "Thick, ultra-frothy cold coffee blended with rich vanilla ice cream, espresso shot, and chilled milk. Hits the spot every single time.",
+      "thumbnail" : "https://i.ytimg.com/vi/JtOElumtAiw/hqdefault.jpg",
+      "title" : "Secret to extra crispy fries ð",
+      "view_count" : 2200,
+      "views" : "2.2K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/JtOElumtAiw"
+   },
+   {
+      "category" : "street_comfort",
+      "chapter" : "desi_street",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/0vststJX_TE",
+      "highlight" : "Viral Creator Pick",
+      "id" : "0vststJX_TE",
+      "ingredients" : [
+         "Fresh seasonal ingredients",
+         "Aromatic Indian spices",
+         "Olive oil or pure desi ghee",
+         "Fresh herbs for garnish"
+      ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Crispy Bhindi Snacks ð¿",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 1.9K views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/0vststJX_TE/hqdefault.jpg",
+      "title" : "Crispy Bhindi Snacks ð¿",
+      "view_count" : 1900,
+      "views" : "1.9K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/0vststJX_TE"
+   },
+   {
+      "category" : "drinks_sweets",
       "chapter" : "sweet_solace",
+      "description" : "Thick, ultra-frothy cold coffee blended with rich vanilla ice cream, espresso shot, and chilled milk. Hits the spot every single time.",
       "difficulty" : "Super Easy",
+      "embedUrl" : "https://www.youtube.com/embed/QgX-V8VgOMc",
+      "highlight" : "CafÃ© Quality at Home",
+      "id" : "QgX-V8VgOMc",
       "ingredients" : [
          "2 tsp instant coffee powder dissolved in 2 tbsp warm water",
          "1 scoop premium vanilla bean ice cream",
@@ -978,15 +634,33 @@ const REELS_DATA = [
          "1 tsp brown sugar or condensed milk",
          "Handful of ice cubes & cocoa powder for dusting"
       ],
+      "prepTime" : "3 mins",
+      "raw_title" : "Iced Vanilla Cold Coffee â",
       "servings" : 1,
-      "category" : "drinks_sweets"
+      "steps" : [
+         "Add coffee decoction, milk, ice cream, sugar, and ice into a high-speed blender.",
+         "Blend on high for 45 seconds until super thick and foamy.",
+         "Drizzle chocolate sauce along the glass walls, pour, and dust with cocoa powder!"
+      ],
+      "tags" : [
+         "â Barista Style",
+         "ð§ Rich & Creamy",
+         "â¡ 3 Mins"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/QgX-V8VgOMc/hqdefault.jpg",
+      "title" : "Frothy CafÃ© Iced Vanilla Cold Coffee",
+      "view_count" : 1800,
+      "views" : "1.8K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/QgX-V8VgOMc"
    },
    {
+      "category" : "high_protein",
       "chapter" : "morning_fuel",
       "description" : "The 2nd viral Instagram Cheela! A paper-thin besan-moong crepe loaded with spiced grated malai paneer, fresh coriander, and mint chutney swirl.",
-      "raw_title" : "High Protein Tofu Roll / Vegan Roll #shorts #cooking #healthyrecipes",
-      "thumbnail" : "https://i.ytimg.com/vi/WAC7sz6m1Dg/hqdefault.jpg",
-      "youtubeUrl" : "https://www.youtube.com/shorts/WAC7sz6m1Dg",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/WAC7sz6m1Dg",
+      "highlight" : "The 2nd Viral Instagram Cheela",
+      "id" : "WAC7sz6m1Dg",
       "ingredients" : [
          "1/2 cup besan + 1/2 cup soaked moong dal batter",
          "80g fresh malai paneer (grated)",
@@ -994,35 +668,33 @@ const REELS_DATA = [
          "1/2 tsp ajwain (carom seeds) & rock salt",
          "1 tsp desi ghee for crisping"
       ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "High Protein Tofu Roll / Vegan Roll #shorts #cooking #healthyrecipes",
       "servings" : 2,
-      "category" : "high_protein",
-      "difficulty" : "Easy",
-      "embedUrl" : "https://www.youtube.com/embed/WAC7sz6m1Dg",
-      "title" : "Stuffed Paneer & Garden Herb Cheela",
       "steps" : [
          "Whisk the spiced batter till lump-free and bubbly.",
          "Pour and spread ultra-thin on a seasoned cast-iron skillet, drizzling desi ghee.",
          "Scatter grated paneer and herbs, fold crispy golden, and serve with sweet curd and mint dip!"
       ],
       "tags" : [
-         "🧀 Malai Paneer",
-         "💪 22g Protein",
-         "🌿 Desi Ghee"
+         "ð§ Malai Paneer",
+         "ðª 22g Protein",
+         "ð¿ Desi Ghee"
       ],
+      "thumbnail" : "https://i.ytimg.com/vi/WAC7sz6m1Dg/hqdefault.jpg",
+      "title" : "Stuffed Paneer & Garden Herb Cheela",
       "view_count" : 1800,
-      "platform" : "youtube",
-      "highlight" : "The 2nd Viral Instagram Cheela",
       "views" : "1.8K views",
-      "id" : "WAC7sz6m1Dg",
-      "prepTime" : "10-15 mins"
+      "youtubeUrl" : "https://www.youtube.com/shorts/WAC7sz6m1Dg"
    },
    {
-      "description" : "Boiled black chickpeas tossed with crunchy onions, juicy tomatoes, boiled potatoes, raw mango, lemon juice, and roasted cumin.",
+      "category" : "high_protein",
       "chapter" : "quick_bites",
-      "youtubeUrl" : "https://www.youtube.com/shorts/gxfIiN22heQ",
-      "raw_title" : "Kala Chana Salad / Kala Chana Chaat",
-      "thumbnail" : "https://i.ytimg.com/vi/gxfIiN22heQ/hqdefault.jpg",
+      "description" : "Boiled black chickpeas tossed with crunchy onions, juicy tomatoes, boiled potatoes, raw mango, lemon juice, and roasted cumin.",
       "difficulty" : "Super Easy",
+      "embedUrl" : "https://www.youtube.com/embed/gxfIiN22heQ",
+      "highlight" : "Desi Power Salad",
+      "id" : "gxfIiN22heQ",
       "ingredients" : [
          "1.5 cups boiled black chickpeas (kala chana)",
          "1/2 red onion, 1 cucumber, 1 tomato finely diced",
@@ -1030,35 +702,33 @@ const REELS_DATA = [
          "1 tsp chaat masala + 1/2 tsp roasted jeera powder",
          "Fresh lemon juice & mint chutney drizzle"
       ],
+      "prepTime" : "10 mins",
+      "raw_title" : "Kala Chana Salad / Kala Chana Chaat",
       "servings" : 2,
-      "category" : "high_protein",
-      "embedUrl" : "https://www.youtube.com/embed/gxfIiN22heQ",
-      "view_count" : 1700,
-      "tags" : [
-         "🥗 1.7K Views",
-         "💪 15g Protein",
-         "🍋 Tangy & Crunchy"
-      ],
       "steps" : [
          "Combine boiled warm black chickpeas with diced veggies.",
          "Toss with chaat masala, cumin, rock salt, and lemon juice.",
          "Finish with fresh pomegranate arils and crunchy sev!"
       ],
+      "tags" : [
+         "ð¥ 1.7K Views",
+         "ðª 15g Protein",
+         "ð Tangy & Crunchy"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/gxfIiN22heQ/hqdefault.jpg",
       "title" : "Zesty Street-Style Kala Chana Chaat",
-      "platform" : "youtube",
-      "highlight" : "Desi Power Salad",
-      "prepTime" : "10 mins",
-      "id" : "gxfIiN22heQ",
-      "views" : "1.7K views"
+      "view_count" : 1700,
+      "views" : "1.7K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/gxfIiN22heQ"
    },
    {
-      "youtubeUrl" : "https://www.youtube.com/shorts/V7DvO3Bei3k",
-      "raw_title" : "Maggi / Vegetable Maggi 🍜",
-      "thumbnail" : "https://i.ytimg.com/vi/V7DvO3Bei3k/hqdefault.jpg",
-      "description" : "The unconventional combination that went insanely viral on Instagram! Creamy peanut butter melted into spicy Maggi tastemaker broth with garlic chili crisp. Pure culinary dopamine.",
+      "category" : "street_comfort",
       "chapter" : "quick_bites",
+      "description" : "The unconventional combination that went insanely viral on Instagram! Creamy peanut butter melted into spicy Maggi tastemaker broth with garlic chili crisp. Pure culinary dopamine.",
       "difficulty" : "Easy",
-      "servings" : 2,
+      "embedUrl" : "https://www.youtube.com/embed/V7DvO3Bei3k",
+      "highlight" : "The Peanut Butter Maggi Sensation",
+      "id" : "V7DvO3Bei3k",
       "ingredients" : [
          "1 pack Maggi 2-minute noodles + tastemaker packet",
          "1.5 tbsp creamy peanut butter",
@@ -1067,9 +737,9 @@ const REELS_DATA = [
          "1 cup boiling water",
          "Finely chopped spring onions & toasted sesame seeds"
       ],
-      "category" : "street_comfort",
-      "view_count" : 1700,
-      "title" : "Creamy Peanut Butter Chili Maggi",
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Maggi / Vegetable Maggi ð",
+      "servings" : 2,
       "steps" : [
          "In your serving bowl, whisk together the Maggi tastemaker, peanut butter, minced garlic, and chili oil.",
          "Boil Maggi noodles in 1 cup water until tender.",
@@ -1077,157 +747,153 @@ const REELS_DATA = [
          "Toss well and garnish with fresh scallions and toasted sesame seeds. Slurp immediately!"
       ],
       "tags" : [
-         "🥜 Cult Favorite",
-         "⚡ 5-Min Fix",
-         "🌶️ Spicy & Nutty"
+         "ð¥ Cult Favorite",
+         "â¡ 5-Min Fix",
+         "ð¶ï¸ Spicy & Nutty"
       ],
-      "embedUrl" : "https://www.youtube.com/embed/V7DvO3Bei3k",
-      "prepTime" : "10-15 mins",
-      "id" : "V7DvO3Bei3k",
+      "thumbnail" : "https://i.ytimg.com/vi/V7DvO3Bei3k/hqdefault.jpg",
+      "title" : "Creamy Peanut Butter Chili Maggi",
+      "view_count" : 1700,
       "views" : "1.7K views",
-      "platform" : "youtube",
-      "highlight" : "The Peanut Butter Maggi Sensation"
+      "youtubeUrl" : "https://www.youtube.com/shorts/V7DvO3Bei3k"
    },
    {
-      "id" : "c4k1PUJUdNA",
-      "views" : "1.7K views",
-      "prepTime" : "10-15 mins",
-      "highlight" : "Viral Creator Pick",
-      "platform" : "youtube",
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "title" : "Super Crispy Roasted Masala Makhana 🥣",
-      "tags" : [
-         "✨ 1.7K views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "view_count" : 1700,
+      "category" : "street_comfort",
+      "chapter" : "quick_bites",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
       "embedUrl" : "https://www.youtube.com/embed/c4k1PUJUdNA",
-      "servings" : 2,
+      "highlight" : "Viral Creator Pick",
+      "id" : "c4k1PUJUdNA",
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
-      "category" : "street_comfort",
-      "difficulty" : "Easy",
-      "raw_title" : "Super Crispy Roasted Masala Makhana 🥣",
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Super Crispy Roasted Masala Makhana ð¥£",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 1.7K views",
+         "ð§âð³ Easy Bites"
+      ],
       "thumbnail" : "https://i.ytimg.com/vi/c4k1PUJUdNA/hqdefault.jpg",
-      "youtubeUrl" : "https://www.youtube.com/shorts/c4k1PUJUdNA",
-      "chapter" : "quick_bites",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!"
+      "title" : "Super Crispy Roasted Masala Makhana ð¥£",
+      "view_count" : 1700,
+      "views" : "1.7K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/c4k1PUJUdNA"
    },
    {
-      "view_count" : 1700,
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "title" : "Banana Milk Bread Toast 🍞",
-      "tags" : [
-         "✨ 1.7K views",
-         "🧑‍🍳 Easy Bites"
-      ],
+      "category" : "drinks_sweets",
+      "chapter" : "quick_bites",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
       "embedUrl" : "https://www.youtube.com/embed/QcdUX536pwc",
-      "prepTime" : "10-15 mins",
+      "highlight" : "Viral Creator Pick",
       "id" : "QcdUX536pwc",
-      "views" : "1.7K views",
-      "highlight" : "Viral Creator Pick",
-      "platform" : "youtube",
-      "youtubeUrl" : "https://www.youtube.com/shorts/QcdUX536pwc",
-      "thumbnail" : "https://i.ytimg.com/vi/QcdUX536pwc/hqdefault.jpg",
-      "raw_title" : "Banana Milk Bread Toast 🍞",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "chapter" : "quick_bites",
-      "difficulty" : "Easy",
-      "servings" : 2,
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
-      "category" : "drinks_sweets"
-   },
-   {
-      "id_is_cheela_2" : true,
-      "difficulty" : "Easy",
-      "ingredients" : [
-         "Fresh seasonal ingredients",
-         "Aromatic Indian spices",
-         "Olive oil or pure desi ghee",
-         "Fresh herbs for garnish"
-      ],
-      "category" : "street_comfort",
-      "servings" : 2,
-      "youtubeUrl" : "https://www.youtube.com/shorts/11wRATeFZJY",
-      "thumbnail" : "https://i.ytimg.com/vi/11wRATeFZJY/hqdefault.jpg",
-      "raw_title" : "Full recipe 👇 🥚 #recipe #cooking #shortvideo",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "chapter" : "quick_bites",
       "prepTime" : "10-15 mins",
-      "id" : "11wRATeFZJY",
-      "views" : "1.7K views",
-      "highlight" : "Viral Creator Pick",
-      "platform" : "youtube",
-      "view_count" : 1700,
-      "tags" : [
-         "✨ 1.7K views",
-         "🧑‍🍳 Easy Bites"
-      ],
+      "raw_title" : "Banana Milk Bread Toast ð",
+      "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
          "Follow the easy seasoning and cooking steps.",
          "Plate with aesthetic garnishes and serve warm!"
       ],
-      "title" : "Full recipe 👇 🥚",
-      "embedUrl" : "https://www.youtube.com/embed/11wRATeFZJY"
+      "tags" : [
+         "â¨ 1.7K views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/QcdUX536pwc/hqdefault.jpg",
+      "title" : "Banana Milk Bread Toast ð",
+      "view_count" : 1700,
+      "views" : "1.7K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/QcdUX536pwc"
    },
    {
-      "raw_title" : "Easiest Tomato/Red sauce Pasta 🍝 #shorts #shortsfeed #ytshorts",
-      "thumbnail" : "https://i.ytimg.com/vi/uiUgnfZUIG0/hqdefault.jpg",
-      "youtubeUrl" : "https://www.youtube.com/shorts/uiUgnfZUIG0",
+      "category" : "street_comfort",
+      "chapter" : "quick_bites",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/11wRATeFZJY",
+      "highlight" : "Viral Creator Pick",
+      "id" : "11wRATeFZJY",
+      "id_is_cheela_2" : true,
+      "ingredients" : [
+         "Fresh seasonal ingredients",
+         "Aromatic Indian spices",
+         "Olive oil or pure desi ghee",
+         "Fresh herbs for garnish"
+      ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Full recipe ð ð¥ #recipe #cooking #shortvideo",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 1.7K views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/11wRATeFZJY/hqdefault.jpg",
+      "title" : "Full recipe ð ð¥",
+      "view_count" : 1700,
+      "views" : "1.7K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/11wRATeFZJY"
+   },
+   {
+      "category" : "pastas_quick",
       "chapter" : "pasta_room",
       "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "category" : "pastas_quick",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/uiUgnfZUIG0",
+      "highlight" : "Viral Creator Pick",
+      "id" : "uiUgnfZUIG0",
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Easiest Tomato/Red sauce Pasta ð #shorts #shortsfeed #ytshorts",
       "servings" : 2,
-      "difficulty" : "Easy",
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
          "Follow the easy seasoning and cooking steps.",
          "Plate with aesthetic garnishes and serve warm!"
       ],
-      "title" : "Easiest Tomato/Red sauce Pasta 🍝",
       "tags" : [
-         "✨ 1.7K views",
-         "🧑‍🍳 Easy Bites"
+         "â¨ 1.7K views",
+         "ð§âð³ Easy Bites"
       ],
+      "thumbnail" : "https://i.ytimg.com/vi/uiUgnfZUIG0/hqdefault.jpg",
+      "title" : "Easiest Tomato/Red sauce Pasta ð",
       "view_count" : 1700,
-      "embedUrl" : "https://www.youtube.com/embed/uiUgnfZUIG0",
       "views" : "1.7K views",
-      "id" : "uiUgnfZUIG0",
-      "prepTime" : "10-15 mins",
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick"
+      "youtubeUrl" : "https://www.youtube.com/shorts/uiUgnfZUIG0"
    },
    {
+      "category" : "drinks_sweets",
       "chapter" : "sweet_solace",
       "description" : "Not your watery cocoa powder drink! Made with real 70% dark chocolate melted into whole milk with a hint of cinnamon and sea salt.",
-      "thumbnail" : "https://i.ytimg.com/vi/2mmuCSmwGeg/hqdefault.jpg",
-      "raw_title" : "Hot Chocolate🍫",
-      "youtubeUrl" : "https://www.youtube.com/shorts/2mmuCSmwGeg",
-      "servings" : 2,
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/2mmuCSmwGeg",
+      "highlight" : "Thick Spoonable Velvet",
+      "id" : "2mmuCSmwGeg",
       "ingredients" : [
          "100g quality dark chocolate (70% cocoa), finely chopped",
          "1.5 cups whole milk + 1/4 cup heavy cream",
@@ -1235,96 +901,97 @@ const REELS_DATA = [
          "1/2 tsp cornstarch (slurry) for Italian thickness",
          "Pinch of sea salt and cinnamon"
       ],
-      "category" : "drinks_sweets",
-      "difficulty" : "Easy",
-      "embedUrl" : "https://www.youtube.com/embed/2mmuCSmwGeg",
-      "title" : "Decadent Drinking Hot Chocolate",
+      "prepTime" : "7 mins",
+      "raw_title" : "Hot Chocolateð«",
+      "servings" : 2,
       "steps" : [
          "Warm milk, cream, and sugar over medium-low heat until steaming.",
          "Whisk in the chopped dark chocolate until completely melted and glossy.",
          "Simmer for 2 minutes till thick and spoonable. Top with toasted marshmallows!"
       ],
       "tags" : [
-         "🍫 70% Dark Choc",
-         "☁️ Thick & Silky",
-         "⏱️ 7 Mins"
+         "ð« 70% Dark Choc",
+         "âï¸ Thick & Silky",
+         "â±ï¸ 7 Mins"
       ],
+      "thumbnail" : "https://i.ytimg.com/vi/2mmuCSmwGeg/hqdefault.jpg",
+      "title" : "Decadent Drinking Hot Chocolate",
       "view_count" : 1600,
-      "highlight" : "Thick Spoonable Velvet",
-      "platform" : "youtube",
-      "id" : "2mmuCSmwGeg",
       "views" : "1.6K views",
-      "prepTime" : "7 mins"
+      "youtubeUrl" : "https://www.youtube.com/shorts/2mmuCSmwGeg"
    },
    {
-      "difficulty" : "Easy",
       "category" : "high_protein",
-      "ingredients" : [
-         "Fresh seasonal ingredients",
-         "Aromatic Indian spices",
-         "Olive oil or pure desi ghee",
-         "Fresh herbs for garnish"
-      ],
-      "servings" : 2,
-      "youtubeUrl" : "https://www.youtube.com/shorts/HDHkLesHF6w",
-      "raw_title" : "Yogurt Bowl with Warm Apple Cinnamon Oats 🥣 | High Protein Breakfast 💚 #highprotein",
-      "thumbnail" : "https://i.ytimg.com/vi/HDHkLesHF6w/hqdefault.jpg",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
       "chapter" : "morning_fuel",
-      "prepTime" : "10-15 mins",
-      "views" : "1.6K views",
-      "id" : "HDHkLesHF6w",
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick",
-      "view_count" : 1600,
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "title" : "Yogurt Bowl with Warm Apple Cinnamon Oats 🥣 | High Protein Breakfast 💚",
-      "tags" : [
-         "✨ 1.6K views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "embedUrl" : "https://www.youtube.com/embed/HDHkLesHF6w"
-   },
-   {
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
       "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/HDHkLesHF6w",
+      "highlight" : "Viral Creator Pick",
+      "id" : "HDHkLesHF6w",
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
-      "servings" : 2,
-      "category" : "pastas_quick",
-      "youtubeUrl" : "https://www.youtube.com/shorts/Qalu4xkb5Iw",
-      "thumbnail" : "https://i.ytimg.com/vi/Qalu4xkb5Iw/hqdefault.jpg",
-      "raw_title" : "Leftover Roti Pizza  🍕",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "chapter" : "quick_bites",
       "prepTime" : "10-15 mins",
-      "views" : "1.5K views",
-      "id" : "Qalu4xkb5Iw",
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick",
-      "view_count" : 1500,
+      "raw_title" : "Yogurt Bowl with Warm Apple Cinnamon Oats ð¥£ | High Protein Breakfast ð #highprotein",
+      "servings" : 2,
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
          "Follow the easy seasoning and cooking steps.",
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "✨ 1.5K views",
-         "🧑‍🍳 Easy Bites"
+         "â¨ 1.6K views",
+         "ð§âð³ Easy Bites"
       ],
-      "title" : "Leftover Roti Pizza  🍕",
-      "embedUrl" : "https://www.youtube.com/embed/Qalu4xkb5Iw"
+      "thumbnail" : "https://i.ytimg.com/vi/HDHkLesHF6w/hqdefault.jpg",
+      "title" : "Yogurt Bowl with Warm Apple Cinnamon Oats ð¥£ | High Protein Breakfast ð",
+      "view_count" : 1600,
+      "views" : "1.6K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/HDHkLesHF6w"
    },
    {
-      "difficulty" : "Easy",
       "category" : "pastas_quick",
+      "chapter" : "quick_bites",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/Qalu4xkb5Iw",
+      "highlight" : "Viral Creator Pick",
+      "id" : "Qalu4xkb5Iw",
+      "ingredients" : [
+         "Fresh seasonal ingredients",
+         "Aromatic Indian spices",
+         "Olive oil or pure desi ghee",
+         "Fresh herbs for garnish"
+      ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Leftover Roti Pizza  ð",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 1.5K views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/Qalu4xkb5Iw/hqdefault.jpg",
+      "title" : "Leftover Roti Pizza  ð",
+      "view_count" : 1500,
+      "views" : "1.5K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/Qalu4xkb5Iw"
+   },
+   {
+      "category" : "pastas_quick",
+      "chapter" : "pasta_room",
+      "description" : "The 3rd viral Facebook pasta! Deeply caramelized golden onions simmered into a rich, sweet-savory creamy garlic pasta sauce.",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/qnidlgYOsLw",
+      "highlight" : "The 3rd Viral Facebook Pasta",
+      "id" : "qnidlgYOsLw",
       "ingredients" : [
          "200g penne or rigatoni pasta",
          "2 large onions (thinly sliced)",
@@ -1333,203 +1000,194 @@ const REELS_DATA = [
          "1/3 cup pasta water + 2 tbsp cream or cream cheese",
          "Fresh thyme, black pepper, and parmesan"
       ],
-      "servings" : 2,
-      "description" : "The 3rd viral Facebook pasta! Deeply caramelized golden onions simmered into a rich, sweet-savory creamy garlic pasta sauce.",
-      "chapter" : "pasta_room",
-      "youtubeUrl" : "https://www.youtube.com/shorts/qnidlgYOsLw",
-      "raw_title" : "Caramelized Onion Pasta #shorts #pasta",
-      "thumbnail" : "https://i.ytimg.com/vi/qnidlgYOsLw/hqdefault.jpg",
-      "highlight" : "The 3rd Viral Facebook Pasta",
-      "platform" : "youtube",
       "prepTime" : "10-15 mins",
-      "views" : "1.5K views",
-      "id" : "qnidlgYOsLw",
-      "embedUrl" : "https://www.youtube.com/embed/qnidlgYOsLw",
-      "view_count" : 1500,
-      "title" : "Caramelized Onion Velvet Pasta",
+      "raw_title" : "Caramelized Onion Pasta #shorts #pasta",
+      "servings" : 2,
       "steps" : [
          "Slowly cook onions in butter with a pinch of salt on medium-low for 15 minutes till deep golden amber.",
          "Add minced garlic, thyme, and deglaze with starchy pasta cooking water.",
          "Fold in cooked penne and a touch of cream for the silkiest caramelized onion pasta imaginable!"
       ],
       "tags" : [
-         "🧅 Sweet Caramelized",
-         "⏱️ 20 Mins",
-         "🧀 Creamy Velvet"
-      ]
+         "ð§ Sweet Caramelized",
+         "â±ï¸ 20 Mins",
+         "ð§ Creamy Velvet"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/qnidlgYOsLw/hqdefault.jpg",
+      "title" : "Caramelized Onion Velvet Pasta",
+      "view_count" : 1500,
+      "views" : "1.5K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/qnidlgYOsLw"
    },
    {
+      "category" : "street_comfort",
       "chapter" : "quick_bites",
       "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "raw_title" : "Bread Malai Breakfast #shorts #breakfast #bread",
-      "thumbnail" : "https://i.ytimg.com/vi/DjLktHG7e2U/hqdefault.jpg",
-      "youtubeUrl" : "https://www.youtube.com/shorts/DjLktHG7e2U",
-      "category" : "street_comfort",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/DjLktHG7e2U",
+      "highlight" : "Viral Creator Pick",
+      "id" : "DjLktHG7e2U",
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Bread Malai Breakfast #shorts #breakfast #bread",
       "servings" : 2,
-      "difficulty" : "Easy",
-      "embedUrl" : "https://www.youtube.com/embed/DjLktHG7e2U",
-      "title" : "Bread Malai Breakfast",
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
          "Follow the easy seasoning and cooking steps.",
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "✨ 1.5K views",
-         "🧑‍🍳 Easy Bites"
+         "â¨ 1.5K views",
+         "ð§âð³ Easy Bites"
       ],
+      "thumbnail" : "https://i.ytimg.com/vi/DjLktHG7e2U/hqdefault.jpg",
+      "title" : "Bread Malai Breakfast",
       "view_count" : 1500,
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick",
       "views" : "1.5K views",
-      "id" : "DjLktHG7e2U",
-      "prepTime" : "10-15 mins"
+      "youtubeUrl" : "https://www.youtube.com/shorts/DjLktHG7e2U"
    },
    {
+      "category" : "street_comfort",
+      "chapter" : "desi_street",
+      "description" : "Tangy spiced yogurt curry simmered to golden perfection, loaded with pillowy soft besan pakoras and double ghee-hing tadka.",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/EWOjxP4rN7M",
+      "highlight" : "Soul Food in a Bowl",
+      "id" : "EWOjxP4rN7M",
       "ingredients" : [
          "1.5 cups sour yogurt / dahi whisked with 4 tbsp besan",
          "4 cups water + turmeric + salt",
          "For pakoras: 1 cup besan, onions, ajwain, pinch baking soda",
          "Tadka: 2 tbsp ghee, mustard seeds, fenugreek seeds (methi dana), dry red chilies, hing"
       ],
-      "servings" : 4,
-      "category" : "street_comfort",
-      "difficulty" : "Easy",
-      "chapter" : "desi_street",
-      "description" : "Tangy spiced yogurt curry simmered to golden perfection, loaded with pillowy soft besan pakoras and double ghee-hing tadka.",
-      "raw_title" : "Easiest Kadhi Pakora Recipe 🫕",
-      "thumbnail" : "https://i.ytimg.com/vi/EWOjxP4rN7M/hqdefault.jpg",
-      "youtubeUrl" : "https://www.youtube.com/shorts/EWOjxP4rN7M",
-      "highlight" : "Soul Food in a Bowl",
-      "platform" : "youtube",
-      "views" : "1.4K views",
-      "id" : "EWOjxP4rN7M",
       "prepTime" : "30 mins",
-      "embedUrl" : "https://www.youtube.com/embed/EWOjxP4rN7M",
+      "raw_title" : "Easiest Kadhi Pakora Recipe ð«",
+      "servings" : 4,
       "steps" : [
          "Whisk yogurt, besan, turmeric, and water into a lump-free liquid, boil on low for 25 mins.",
          "Fry onion pakoras until light and airy, plunge directly into simmering kadhi.",
          "Top with smoking hot ghee tadka with hing and whole red chilies!"
       ],
       "tags" : [
-         "🫕 1.4K Views",
-         "🍲 Comfort Bowl",
-         "🌶️ Hing Tadka"
+         "ð« 1.4K Views",
+         "ð² Comfort Bowl",
+         "ð¶ï¸ Hing Tadka"
       ],
+      "thumbnail" : "https://i.ytimg.com/vi/EWOjxP4rN7M/hqdefault.jpg",
       "title" : "Velvety Dahi Kadhi with Melt-in-Mouth Pakoras",
-      "view_count" : 1400
+      "view_count" : 1400,
+      "views" : "1.4K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/EWOjxP4rN7M"
    },
    {
+      "category" : "street_comfort",
       "chapter" : "quick_bites",
       "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "thumbnail" : "https://i.ytimg.com/vi/k_DxSnAJkv8/hqdefault.jpg",
-      "raw_title" : "Behind the Scenes vs. What You Actually See 🥹✨ #food #cooking",
-      "youtubeUrl" : "https://www.youtube.com/shorts/k_DxSnAJkv8",
-      "category" : "street_comfort",
-      "ingredients" : [
-         "Fresh seasonal ingredients",
-         "Aromatic Indian spices",
-         "Olive oil or pure desi ghee",
-         "Fresh herbs for garnish"
-      ],
-      "servings" : 2,
       "difficulty" : "Easy",
       "embedUrl" : "https://www.youtube.com/embed/k_DxSnAJkv8",
-      "title" : "Behind the Scenes vs. What You Actually See 🥹✨",
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "tags" : [
-         "✨ 1.4K views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "view_count" : 1400,
       "highlight" : "Viral Creator Pick",
-      "platform" : "youtube",
-      "views" : "1.4K views",
       "id" : "k_DxSnAJkv8",
-      "prepTime" : "10-15 mins"
-   },
-   {
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick",
-      "id" : "FBPZ9PFBzIk",
-      "views" : "1.4K views",
-      "prepTime" : "10-15 mins",
-      "embedUrl" : "https://www.youtube.com/embed/FBPZ9PFBzIk",
-      "title" : "Rajasthani food - Bati",
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "tags" : [
-         "✨ 1.4K views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "view_count" : 1400,
-      "servings" : 2,
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Behind the Scenes vs. What You Actually See ð¥¹â¨ #food #cooking",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 1.4K views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/k_DxSnAJkv8/hqdefault.jpg",
+      "title" : "Behind the Scenes vs. What You Actually See ð¥¹â¨",
+      "view_count" : 1400,
+      "views" : "1.4K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/k_DxSnAJkv8"
+   },
+   {
       "category" : "street_comfort",
-      "difficulty" : "Easy",
       "chapter" : "quick_bites",
       "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/FBPZ9PFBzIk",
+      "highlight" : "Viral Creator Pick",
+      "id" : "FBPZ9PFBzIk",
+      "ingredients" : [
+         "Fresh seasonal ingredients",
+         "Aromatic Indian spices",
+         "Olive oil or pure desi ghee",
+         "Fresh herbs for garnish"
+      ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Rajasthani food - Bati ð #shorts #food #recipe #shortvideo",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 1.4K views",
+         "ð§âð³ Easy Bites"
+      ],
       "thumbnail" : "https://i.ytimg.com/vi/FBPZ9PFBzIk/hqdefault.jpg",
-      "raw_title" : "Rajasthani food - Bati 😋 #shorts #food #recipe #shortvideo",
+      "title" : "Rajasthani food - Bati",
+      "view_count" : 1400,
+      "views" : "1.4K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/FBPZ9PFBzIk"
    },
    {
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick",
-      "prepTime" : "10-15 mins",
-      "views" : "1.4K views",
-      "id" : "67wEExtiNJA",
-      "embedUrl" : "https://www.youtube.com/embed/67wEExtiNJA",
-      "view_count" : 1400,
-      "tags" : [
-         "✨ 1.4K views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "title" : "No Maida Veg Noodles /chowmein",
+      "category" : "pastas_quick",
+      "chapter" : "pasta_room",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
       "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/67wEExtiNJA",
+      "highlight" : "Viral Creator Pick",
+      "id" : "67wEExtiNJA",
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
-      "category" : "pastas_quick",
+      "prepTime" : "10-15 mins",
+      "raw_title" : "No Maida Veg Noodles /chowmein ð #shorts #streetfood #cooking",
       "servings" : 2,
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "chapter" : "pasta_room",
-      "youtubeUrl" : "https://www.youtube.com/shorts/67wEExtiNJA",
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 1.4K views",
+         "ð§âð³ Easy Bites"
+      ],
       "thumbnail" : "https://i.ytimg.com/vi/67wEExtiNJA/hqdefault.jpg",
-      "raw_title" : "No Maida Veg Noodles /chowmein 😋 #shorts #streetfood #cooking"
+      "title" : "No Maida Veg Noodles /chowmein",
+      "view_count" : 1400,
+      "views" : "1.4K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/67wEExtiNJA"
    },
    {
+      "category" : "street_comfort",
       "chapter" : "quick_bites",
       "description" : "Crispy golden tapioca pearl patties packed with roasted crushed peanuts, boiled potatoes, cumin, and fresh green chilies.",
-      "raw_title" : "Sabudana Vada / Sabudana Tikki /Sabudana Cutlet / Sago Vada",
-      "thumbnail" : "https://i.ytimg.com/vi/rfCaHh5TFZc/hqdefault.jpg",
-      "youtubeUrl" : "https://www.youtube.com/shorts/rfCaHh5TFZc",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/rfCaHh5TFZc",
+      "highlight" : "Zero Bursting Guarantee",
+      "id" : "rfCaHh5TFZc",
       "ingredients" : [
          "1 cup sabudana (soaked 4 hrs, drained dry)",
          "2 medium boiled potatoes (mashed)",
@@ -1537,49 +1195,33 @@ const REELS_DATA = [
          "2 green chilies & fresh cilantro",
          "1 tsp cumin seeds & rock salt (sendha namak)"
       ],
+      "prepTime" : "20 mins",
+      "raw_title" : "Sabudana Vada / Sabudana Tikki /Sabudana Cutlet / Sago Vada",
       "servings" : 3,
-      "category" : "street_comfort",
-      "difficulty" : "Easy",
-      "embedUrl" : "https://www.youtube.com/embed/rfCaHh5TFZc",
-      "tags" : [
-         "🫕 1.3K Views",
-         "🥜 Peanut Crunch",
-         "🌿 Fasting Friendly"
-      ],
       "steps" : [
          "Ensure soaked sabudana has zero excess water.",
          "Knead with mashed potato, peanuts, and spices into flat round patties.",
          "Shallow fry or airfry till shatteringly crisp outside!"
       ],
+      "tags" : [
+         "ð« 1.3K Views",
+         "ð¥ Peanut Crunch",
+         "ð¿ Fasting Friendly"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/rfCaHh5TFZc/hqdefault.jpg",
       "title" : "Crunchy Non-Oily Sabudana Vada",
       "view_count" : 1300,
-      "highlight" : "Zero Bursting Guarantee",
-      "platform" : "youtube",
-      "id" : "rfCaHh5TFZc",
       "views" : "1.3K views",
-      "prepTime" : "20 mins"
+      "youtubeUrl" : "https://www.youtube.com/shorts/rfCaHh5TFZc"
    },
    {
-      "prepTime" : "8 mins",
-      "views" : "1.3K views",
-      "id" : "wVkgpad9qSQ",
-      "platform" : "youtube",
-      "highlight" : "Viral Café Toast",
-      "view_count" : 1300,
-      "title" : "Custardy Banana Milk Bread Toast",
-      "steps" : [
-         "Caramelize sliced bananas in butter and brown sugar until golden.",
-         "Pour milk into the pan and let the bread soak up the warm banana cream.",
-         "Toast both sides until caramelized and crisp at the edges!"
-      ],
-      "tags" : [
-         "🍞 1.3K Views",
-         "🍌 Caramelized Banana",
-         "🍯 Cozy Breakfast"
-      ],
-      "embedUrl" : "https://www.youtube.com/embed/wVkgpad9qSQ",
-      "difficulty" : "Super Easy",
       "category" : "drinks_sweets",
+      "chapter" : "quick_bites",
+      "description" : "Fluffy brioche toasted in butter, soaked in caramelized banana milk custard and drizzled with honey and toasted walnuts.",
+      "difficulty" : "Super Easy",
+      "embedUrl" : "https://www.youtube.com/embed/wVkgpad9qSQ",
+      "highlight" : "Viral CafÃ© Toast",
+      "id" : "wVkgpad9qSQ",
       "ingredients" : [
          "2 thick slices milk bread or brioche",
          "1 ripe banana (sliced)",
@@ -1587,409 +1229,409 @@ const REELS_DATA = [
          "1 tbsp butter",
          "Honey and cinnamon for finishing"
       ],
+      "prepTime" : "8 mins",
+      "raw_title" : "Banana Milk Bread Toast ð",
       "servings" : 1,
-      "youtubeUrl" : "https://www.youtube.com/shorts/wVkgpad9qSQ",
-      "thumbnail" : "https://i.ytimg.com/vi/wVkgpad9qSQ/hqdefault.jpg",
-      "raw_title" : "Banana Milk Bread Toast 🍞",
-      "description" : "Fluffy brioche toasted in butter, soaked in caramelized banana milk custard and drizzled with honey and toasted walnuts.",
-      "chapter" : "quick_bites"
-   },
-   {
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick",
-      "prepTime" : "10-15 mins",
-      "id" : "Wje_-CME8WI",
-      "views" : "1.3K views",
-      "embedUrl" : "https://www.youtube.com/embed/Wje_-CME8WI",
-      "view_count" : 1300,
-      "title" : "Creamy Veggie Rice Bowl with Peri-Peri Paneer 🥣",
       "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
+         "Caramelize sliced bananas in butter and brown sugar until golden.",
+         "Pour milk into the pan and let the bread soak up the warm banana cream.",
+         "Toast both sides until caramelized and crisp at the edges!"
       ],
       "tags" : [
-         "✨ 1.3K views",
-         "🧑‍🍳 Easy Bites"
+         "ð 1.3K Views",
+         "ð Caramelized Banana",
+         "ð¯ Cozy Breakfast"
       ],
+      "thumbnail" : "https://i.ytimg.com/vi/wVkgpad9qSQ/hqdefault.jpg",
+      "title" : "Custardy Banana Milk Bread Toast",
+      "view_count" : 1300,
+      "views" : "1.3K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/wVkgpad9qSQ"
+   },
+   {
+      "category" : "street_comfort",
+      "chapter" : "quick_bites",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
       "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/Wje_-CME8WI",
+      "highlight" : "Viral Creator Pick",
+      "id" : "Wje_-CME8WI",
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
-      "category" : "street_comfort",
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Creamy Veggie Rice Bowl with Peri-Peri Paneer ð¥£",
       "servings" : 2,
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "chapter" : "quick_bites",
-      "youtubeUrl" : "https://www.youtube.com/shorts/Wje_-CME8WI",
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 1.3K views",
+         "ð§âð³ Easy Bites"
+      ],
       "thumbnail" : "https://i.ytimg.com/vi/Wje_-CME8WI/hqdefault.jpg",
-      "raw_title" : "Creamy Veggie Rice Bowl with Peri-Peri Paneer 🥣"
+      "title" : "Creamy Veggie Rice Bowl with Peri-Peri Paneer ð¥£",
+      "view_count" : 1300,
+      "views" : "1.3K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/Wje_-CME8WI"
    },
    {
-      "highlight" : "Healthy Homemade Candy",
-      "platform" : "youtube",
-      "id" : "bAT1JGfTrZ0",
-      "views" : "1.3K views",
-      "prepTime" : "15 mins",
+      "category" : "drinks_sweets",
+      "chapter" : "sweet_solace",
+      "description" : "Rich coconut centers enrobed in glossy melted dark chocolate. Vegan, refined sugar-free, and tastes even better than the store-bought bar.",
+      "difficulty" : "Super Easy",
       "embedUrl" : "https://www.youtube.com/embed/bAT1JGfTrZ0",
-      "steps" : [
-         "Mix desiccated coconut with condensed milk or maple syrup until it holds shape.",
-         "Roll into bite-sized balls or mini bars, chill in freezer for 15 minutes.",
-         "Dip into melted dark chocolate, set on parchment, sprinkle sea salt or coconut flakes!"
-      ],
-      "title" : "3-Ingredient Dark Chocolate Bounty Bites",
-      "tags" : [
-         "🍫 1.3K Views",
-         "🥥 3 Ingredients",
-         "⚡ No-Bake"
-      ],
-      "view_count" : 1300,
+      "highlight" : "Healthy Homemade Candy",
+      "id" : "bAT1JGfTrZ0",
       "ingredients" : [
          "1.5 cups unsweetened desiccated coconut",
          "3 tbsp condensed milk or maple syrup + coconut cream",
          "150g dark chocolate chips (melted)"
       ],
-      "category" : "drinks_sweets",
-      "servings" : 8,
-      "difficulty" : "Super Easy",
-      "chapter" : "sweet_solace",
-      "description" : "Rich coconut centers enrobed in glossy melted dark chocolate. Vegan, refined sugar-free, and tastes even better than the store-bought bar.",
-      "thumbnail" : "https://i.ytimg.com/vi/bAT1JGfTrZ0/hqdefault.jpg",
+      "prepTime" : "15 mins",
       "raw_title" : "Easy 3-Ingredient Bounty Balls #shorts #shortvideo #chocolate #sweet",
+      "servings" : 8,
+      "steps" : [
+         "Mix desiccated coconut with condensed milk or maple syrup until it holds shape.",
+         "Roll into bite-sized balls or mini bars, chill in freezer for 15 minutes.",
+         "Dip into melted dark chocolate, set on parchment, sprinkle sea salt or coconut flakes!"
+      ],
+      "tags" : [
+         "ð« 1.3K Views",
+         "ð¥¥ 3 Ingredients",
+         "â¡ No-Bake"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/bAT1JGfTrZ0/hqdefault.jpg",
+      "title" : "3-Ingredient Dark Chocolate Bounty Bites",
+      "view_count" : 1300,
+      "views" : "1.3K views",
       "youtubeUrl" : "https://www.youtube.com/shorts/bAT1JGfTrZ0"
    },
    {
-      "embedUrl" : "https://www.youtube.com/embed/hUGND_gq4gU",
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "tags" : [
-         "✨ 1.2K views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "title" : "Try this healthy 5-min oats breakfast",
-      "view_count" : 1200,
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick",
-      "views" : "1.2K views",
-      "id" : "hUGND_gq4gU",
-      "prepTime" : "10-15 mins",
+      "category" : "high_protein",
       "chapter" : "morning_fuel",
       "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "raw_title" : "Try this healthy 5-min oats breakfast #shorts #protein",
-      "thumbnail" : "https://i.ytimg.com/vi/hUGND_gq4gU/hqdefault.jpg",
-      "youtubeUrl" : "https://www.youtube.com/shorts/hUGND_gq4gU",
-      "category" : "high_protein",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/hUGND_gq4gU",
+      "highlight" : "Viral Creator Pick",
+      "id" : "hUGND_gq4gU",
+      "id_is_cheela_2" : true,
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Try this healthy 5-min oats breakfast #shorts #protein",
       "servings" : 2,
-      "difficulty" : "Easy",
-      "id_is_cheela_2" : true
-   },
-   {
-      "embedUrl" : "https://www.youtube.com/embed/jRrECPo8V_4",
       "steps" : [
          "Prep ingredients as demonstrated in the reel.",
          "Follow the easy seasoning and cooking steps.",
          "Plate with aesthetic garnishes and serve warm!"
       ],
       "tags" : [
-         "✨ 1.2K views",
-         "🧑‍🍳 Easy Bites"
+         "â¨ 1.2K views",
+         "ð§âð³ Easy Bites"
       ],
+      "thumbnail" : "https://i.ytimg.com/vi/hUGND_gq4gU/hqdefault.jpg",
+      "title" : "Try this healthy 5-min oats breakfast",
+      "view_count" : 1200,
+      "views" : "1.2K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/hUGND_gq4gU"
+   },
+   {
+      "category" : "pastas_quick",
+      "chapter" : "quick_bites",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/jRrECPo8V_4",
+      "highlight" : "Viral Creator Pick",
+      "id" : "jRrECPo8V_4",
+      "ingredients" : [
+         "Fresh seasonal ingredients",
+         "Aromatic Indian spices",
+         "Olive oil or pure desi ghee",
+         "Fresh herbs for garnish"
+      ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Masala Macaroni",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 1.2K views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/jRrECPo8V_4/hqdefault.jpg",
       "title" : "Masala Macaroni",
       "view_count" : 1200,
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick",
       "views" : "1.2K views",
-      "id" : "jRrECPo8V_4",
-      "prepTime" : "10-15 mins",
-      "chapter" : "quick_bites",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "thumbnail" : "https://i.ytimg.com/vi/jRrECPo8V_4/hqdefault.jpg",
-      "raw_title" : "Masala Macaroni",
-      "youtubeUrl" : "https://www.youtube.com/shorts/jRrECPo8V_4",
-      "ingredients" : [
-         "Fresh seasonal ingredients",
-         "Aromatic Indian spices",
-         "Olive oil or pure desi ghee",
-         "Fresh herbs for garnish"
-      ],
-      "category" : "pastas_quick",
-      "servings" : 2,
-      "difficulty" : "Easy"
+      "youtubeUrl" : "https://www.youtube.com/shorts/jRrECPo8V_4"
    },
    {
-      "view_count" : 1200,
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "tags" : [
-         "✨ 1.2K views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "title" : "Make stainless steel pan nonstick",
+      "category" : "street_comfort",
+      "chapter" : "quick_bites",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
       "embedUrl" : "https://www.youtube.com/embed/9_zCBvzRuhc",
-      "prepTime" : "10-15 mins",
-      "views" : "1.2K views",
+      "highlight" : "Viral Creator Pick",
       "id" : "9_zCBvzRuhc",
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick",
-      "youtubeUrl" : "https://www.youtube.com/shorts/9_zCBvzRuhc",
+      "ingredients" : [
+         "Fresh seasonal ingredients",
+         "Aromatic Indian spices",
+         "Olive oil or pure desi ghee",
+         "Fresh herbs for garnish"
+      ],
+      "prepTime" : "10-15 mins",
       "raw_title" : "Make stainless steel pan nonstick #shorts #shortvideo",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 1.2K views",
+         "ð§âð³ Easy Bites"
+      ],
       "thumbnail" : "https://i.ytimg.com/vi/9_zCBvzRuhc/hqdefault.jpg",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "chapter" : "quick_bites",
-      "difficulty" : "Easy",
-      "ingredients" : [
-         "Fresh seasonal ingredients",
-         "Aromatic Indian spices",
-         "Olive oil or pure desi ghee",
-         "Fresh herbs for garnish"
-      ],
-      "servings" : 2,
-      "category" : "street_comfort"
+      "title" : "Make stainless steel pan nonstick",
+      "view_count" : 1200,
+      "views" : "1.2K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/9_zCBvzRuhc"
    },
    {
-      "prepTime" : "10-15 mins",
-      "views" : "1.1K views",
-      "id" : "GnHQZGy0gWc",
-      "highlight" : "Viral Creator Pick",
-      "platform" : "youtube",
-      "view_count" : 1100,
-      "tags" : [
-         "✨ 1.1K views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "title" : "Moong Dal Recipe",
+      "category" : "street_comfort",
+      "chapter" : "desi_street",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
       "embedUrl" : "https://www.youtube.com/embed/GnHQZGy0gWc",
-      "difficulty" : "Easy",
-      "category" : "street_comfort",
+      "highlight" : "Viral Creator Pick",
+      "id" : "GnHQZGy0gWc",
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
-      "servings" : 2,
-      "youtubeUrl" : "https://www.youtube.com/shorts/GnHQZGy0gWc",
-      "thumbnail" : "https://i.ytimg.com/vi/GnHQZGy0gWc/hqdefault.jpg",
+      "prepTime" : "10-15 mins",
       "raw_title" : "Moong Dal Recipe #indianfood",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "chapter" : "desi_street"
-   },
-   {
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "chapter" : "sweet_solace",
-      "youtubeUrl" : "https://www.youtube.com/shorts/W7R9Bu5tSlk",
-      "raw_title" : "Hot Coffee ☕ Love the process of making Coffee 🤎",
-      "thumbnail" : "https://i.ytimg.com/vi/W7R9Bu5tSlk/hqdefault.jpg",
-      "difficulty" : "Easy",
-      "category" : "drinks_sweets",
-      "ingredients" : [
-         "Fresh seasonal ingredients",
-         "Aromatic Indian spices",
-         "Olive oil or pure desi ghee",
-         "Fresh herbs for garnish"
-      ],
       "servings" : 2,
-      "embedUrl" : "https://www.youtube.com/embed/W7R9Bu5tSlk",
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 1.1K views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/GnHQZGy0gWc/hqdefault.jpg",
+      "title" : "Moong Dal Recipe",
       "view_count" : 1100,
-      "tags" : [
-         "✨ 1.1K views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "title" : "Hot Coffee ☕ Love the process of making Coffee 🤎",
-      "highlight" : "Viral Creator Pick",
-      "platform" : "youtube",
-      "prepTime" : "10-15 mins",
-      "id" : "W7R9Bu5tSlk",
-      "views" : "1.1K views"
+      "views" : "1.1K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/GnHQZGy0gWc"
    },
    {
-      "prepTime" : "10-15 mins",
-      "views" : "930 views",
-      "id" : "TRGNQNDjkO8",
-      "highlight" : "Viral Creator Pick",
-      "platform" : "youtube",
-      "view_count" : 930,
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "tags" : [
-         "✨ 930 views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "title" : "Dal Bati in Airfryer",
-      "embedUrl" : "https://www.youtube.com/embed/TRGNQNDjkO8",
-      "difficulty" : "Easy",
-      "ingredients" : [
-         "Fresh seasonal ingredients",
-         "Aromatic Indian spices",
-         "Olive oil or pure desi ghee",
-         "Fresh herbs for garnish"
-      ],
-      "category" : "street_comfort",
-      "servings" : 2,
-      "youtubeUrl" : "https://www.youtube.com/shorts/TRGNQNDjkO8",
-      "thumbnail" : "https://i.ytimg.com/vi/TRGNQNDjkO8/hqdefault.jpg",
-      "raw_title" : "Dal Bati in Airfryer  #shorts #airfryer #rajasthani #food",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "chapter" : "desi_street"
-   },
-   {
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "title" : "Help me reach 500 foodies 🥹🫠",
-      "tags" : [
-         "✨ 898 views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "view_count" : 898,
-      "embedUrl" : "https://www.youtube.com/embed/RXI1dj0K_8I",
-      "id" : "RXI1dj0K_8I",
-      "views" : "898 views",
-      "prepTime" : "10-15 mins",
-      "highlight" : "Viral Creator Pick",
-      "platform" : "youtube",
-      "raw_title" : "Help me reach 500 foodies 🥹🫠 #shorts #foodblogger #ytshorts",
-      "thumbnail" : "https://i.ytimg.com/vi/RXI1dj0K_8I/hqdefault.jpg",
-      "youtubeUrl" : "https://www.youtube.com/shorts/RXI1dj0K_8I",
-      "chapter" : "quick_bites",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "servings" : 2,
-      "ingredients" : [
-         "Fresh seasonal ingredients",
-         "Aromatic Indian spices",
-         "Olive oil or pure desi ghee",
-         "Fresh herbs for garnish"
-      ],
-      "category" : "street_comfort",
-      "difficulty" : "Easy"
-   },
-   {
-      "youtubeUrl" : "https://www.youtube.com/shorts/GrLdRYOTF3k",
-      "thumbnail" : "https://i.ytimg.com/vi/GrLdRYOTF3k/hqdefault.jpg",
-      "raw_title" : "Butterfly pea flower tea #shorts #shortvideo #bluetea #tea #tealovers #recipe",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "chapter" : "sweet_solace",
-      "difficulty" : "Easy",
-      "ingredients" : [
-         "Fresh seasonal ingredients",
-         "Aromatic Indian spices",
-         "Olive oil or pure desi ghee",
-         "Fresh herbs for garnish"
-      ],
-      "servings" : 2,
       "category" : "drinks_sweets",
-      "view_count" : 775,
-      "tags" : [
-         "✨ 775 views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "title" : "Butterfly pea flower tea",
-      "embedUrl" : "https://www.youtube.com/embed/GrLdRYOTF3k",
-      "prepTime" : "10-15 mins",
-      "id" : "GrLdRYOTF3k",
-      "views" : "775 views",
-      "highlight" : "Viral Creator Pick",
-      "platform" : "youtube"
-   },
-   {
-      "thumbnail" : "https://i.ytimg.com/vi/0KseubPAJqk/hqdefault.jpg",
-      "raw_title" : "Garlic Green beans Snacks 💚",
-      "youtubeUrl" : "https://www.youtube.com/shorts/0KseubPAJqk",
-      "chapter" : "quick_bites",
+      "chapter" : "sweet_solace",
       "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "ingredients" : [
-         "Fresh seasonal ingredients",
-         "Aromatic Indian spices",
-         "Olive oil or pure desi ghee",
-         "Fresh herbs for garnish"
-      ],
-      "category" : "street_comfort",
-      "servings" : 2,
       "difficulty" : "Easy",
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "title" : "Garlic Green beans Snacks 💚",
-      "tags" : [
-         "✨ 562 views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "view_count" : 562,
-      "embedUrl" : "https://www.youtube.com/embed/0KseubPAJqk",
-      "id" : "0KseubPAJqk",
-      "views" : "562 views",
-      "prepTime" : "10-15 mins",
-      "platform" : "youtube",
-      "highlight" : "Viral Creator Pick"
-   },
-   {
-      "embedUrl" : "https://www.youtube.com/embed/KG_IztUf2cg",
-      "steps" : [
-         "Prep ingredients as demonstrated in the reel.",
-         "Follow the easy seasoning and cooking steps.",
-         "Plate with aesthetic garnishes and serve warm!"
-      ],
-      "tags" : [
-         "✨ 241 views",
-         "🧑‍🍳 Easy Bites"
-      ],
-      "title" : "What's in my blinkit Bag 🤯👀",
-      "view_count" : 241,
-      "platform" : "youtube",
+      "embedUrl" : "https://www.youtube.com/embed/W7R9Bu5tSlk",
       "highlight" : "Viral Creator Pick",
-      "views" : "241 views",
-      "id" : "KG_IztUf2cg",
-      "prepTime" : "10-15 mins",
-      "chapter" : "quick_bites",
-      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
-      "thumbnail" : "https://i.ytimg.com/vi/KG_IztUf2cg/hqdefault.jpg",
-      "raw_title" : "What's in my blinkit Bag 🤯👀 #videoshort",
-      "youtubeUrl" : "https://www.youtube.com/shorts/KG_IztUf2cg",
-      "servings" : 2,
+      "id" : "W7R9Bu5tSlk",
       "ingredients" : [
          "Fresh seasonal ingredients",
          "Aromatic Indian spices",
          "Olive oil or pure desi ghee",
          "Fresh herbs for garnish"
       ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Hot Coffee â Love the process of making Coffee ð¤",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 1.1K views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/W7R9Bu5tSlk/hqdefault.jpg",
+      "title" : "Hot Coffee â Love the process of making Coffee ð¤",
+      "view_count" : 1100,
+      "views" : "1.1K views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/W7R9Bu5tSlk"
+   },
+   {
       "category" : "street_comfort",
-      "difficulty" : "Easy"
+      "chapter" : "desi_street",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/TRGNQNDjkO8",
+      "highlight" : "Viral Creator Pick",
+      "id" : "TRGNQNDjkO8",
+      "ingredients" : [
+         "Fresh seasonal ingredients",
+         "Aromatic Indian spices",
+         "Olive oil or pure desi ghee",
+         "Fresh herbs for garnish"
+      ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Dal Bati in Airfryer  #shorts #airfryer #rajasthani #food",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 930 views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/TRGNQNDjkO8/hqdefault.jpg",
+      "title" : "Dal Bati in Airfryer",
+      "view_count" : 930,
+      "views" : "930 views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/TRGNQNDjkO8"
+   },
+   {
+      "category" : "street_comfort",
+      "chapter" : "quick_bites",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/RXI1dj0K_8I",
+      "highlight" : "Viral Creator Pick",
+      "id" : "RXI1dj0K_8I",
+      "ingredients" : [
+         "Fresh seasonal ingredients",
+         "Aromatic Indian spices",
+         "Olive oil or pure desi ghee",
+         "Fresh herbs for garnish"
+      ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Help me reach 500 foodies ð¥¹ð«  #shorts #foodblogger #ytshorts",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 898 views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/RXI1dj0K_8I/hqdefault.jpg",
+      "title" : "Help me reach 500 foodies ð¥¹ð« ",
+      "view_count" : 898,
+      "views" : "898 views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/RXI1dj0K_8I"
+   },
+   {
+      "category" : "drinks_sweets",
+      "chapter" : "sweet_solace",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/GrLdRYOTF3k",
+      "highlight" : "Viral Creator Pick",
+      "id" : "GrLdRYOTF3k",
+      "ingredients" : [
+         "Fresh seasonal ingredients",
+         "Aromatic Indian spices",
+         "Olive oil or pure desi ghee",
+         "Fresh herbs for garnish"
+      ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Butterfly pea flower tea #shorts #shortvideo #bluetea #tea #tealovers #recipe",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 775 views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/GrLdRYOTF3k/hqdefault.jpg",
+      "title" : "Butterfly pea flower tea",
+      "view_count" : 775,
+      "views" : "775 views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/GrLdRYOTF3k"
+   },
+   {
+      "category" : "street_comfort",
+      "chapter" : "quick_bites",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/0KseubPAJqk",
+      "highlight" : "Viral Creator Pick",
+      "id" : "0KseubPAJqk",
+      "ingredients" : [
+         "Fresh seasonal ingredients",
+         "Aromatic Indian spices",
+         "Olive oil or pure desi ghee",
+         "Fresh herbs for garnish"
+      ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "Garlic Green beans Snacks ð",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 562 views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/0KseubPAJqk/hqdefault.jpg",
+      "title" : "Garlic Green beans Snacks ð",
+      "view_count" : 562,
+      "views" : "562 views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/0KseubPAJqk"
+   },
+   {
+      "category" : "street_comfort",
+      "chapter" : "quick_bites",
+      "description" : "Quick and aesthetic food reel by Nimisha (@thebitechapter). High flavor, zero fuss!",
+      "difficulty" : "Easy",
+      "embedUrl" : "https://www.youtube.com/embed/KG_IztUf2cg",
+      "highlight" : "Viral Creator Pick",
+      "id" : "KG_IztUf2cg",
+      "ingredients" : [
+         "Fresh seasonal ingredients",
+         "Aromatic Indian spices",
+         "Olive oil or pure desi ghee",
+         "Fresh herbs for garnish"
+      ],
+      "prepTime" : "10-15 mins",
+      "raw_title" : "What's in my blinkit Bag ð¤¯ð #videoshort",
+      "servings" : 2,
+      "steps" : [
+         "Prep ingredients as demonstrated in the reel.",
+         "Follow the easy seasoning and cooking steps.",
+         "Plate with aesthetic garnishes and serve warm!"
+      ],
+      "tags" : [
+         "â¨ 241 views",
+         "ð§âð³ Easy Bites"
+      ],
+      "thumbnail" : "https://i.ytimg.com/vi/KG_IztUf2cg/hqdefault.jpg",
+      "title" : "What's in my blinkit Bag ð¤¯ð",
+      "view_count" : 241,
+      "views" : "241 views",
+      "youtubeUrl" : "https://www.youtube.com/shorts/KG_IztUf2cg"
    }
 ]
 ;

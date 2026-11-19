@@ -79,27 +79,27 @@ function renderBentoGrid() {
     const bentoContainer = document.getElementById('bento-grid-container');
     if (!bentoContainer) return;
 
+    const aglioOlio = window.REELS_DATA.find(r => r.id === 'HjIfjPZh3Ac') || window.REELS_DATA[0];
     const chutneys = window.REELS_DATA.find(r => r.id === 'rTWw5yVLwnk') || window.REELS_DATA[1];
-    const aglioOlioFB = window.REELS_DATA.find(r => r.id === 'fb_1173242588785480') || window.REELS_DATA[2];
-    const mushroomFB = window.REELS_DATA.find(r => r.id === 'fb_1635838080730020') || window.REELS_DATA[3];
-    const cheela = window.REELS_DATA.find(r => r.id === 'ArtUYX17hjM') || window.REELS_DATA[4];
+    const mushroomPasta = window.REELS_DATA.find(r => r.id === 'yjmDrOIkaG0') || window.REELS_DATA[2];
+    const cheela = window.REELS_DATA.find(r => r.id === 'ArtUYX17hjM') || window.REELS_DATA[3];
 
     const highlights = [
         {
-            ...chutneys,
-            badge: "👑 95K+ Cult Tadka",
+            ...aglioOlio,
+            badge: "👑 700K+ Viral Mega Hit",
             badgeClass: "royal-crown-badge",
-            categorySubtitle: "Charcoal Smoke"
-        },
-        {
-            ...aglioOlioFB,
-            badge: "🌐 700K+ Facebook Mega Hit",
-            badgeClass: "apple-badge bg-blue-50 text-blue-700 border-blue-200",
             categorySubtitle: "10-Min Roman Silk"
         },
         {
-            ...mushroomFB,
-            badge: "🍄 145K+ Facebook Hit",
+            ...chutneys,
+            badge: "🌶️ 95K+ Cult Tadka",
+            badgeClass: "apple-badge bg-rose-50 text-rose-700 border-rose-200",
+            categorySubtitle: "Charcoal Smoke"
+        },
+        {
+            ...mushroomPasta,
+            badge: "🍄 Facebook Viral Favorite",
             badgeClass: "apple-badge bg-amber-50 text-amber-700 border-amber-200",
             categorySubtitle: "Pan-Seared Umami"
         },
@@ -234,12 +234,10 @@ function renderRecipeGrid() {
     let list = [...window.REELS_DATA];
 
     if (currentChapter !== 'all') {
-        if (currentChapter === 'facebook') {
-            list = list.filter(r => r.platform === 'facebook');
-        } else if (currentChapter === 'youtube') {
-            list = list.filter(r => r.platform !== 'facebook');
+        if (currentChapter === 'viral') {
+            list = list.filter(r => r.category === 'viral' || (r.view_count && r.view_count >= 10000));
         } else {
-            list = list.filter(r => r.chapter === currentChapter);
+            list = list.filter(r => r.chapter === currentChapter || r.category === currentChapter);
         }
     }
 
@@ -289,9 +287,9 @@ function renderRecipeGrid() {
                     
                     <div class="absolute top-2.5 left-2.5 right-2.5 flex justify-between items-start z-10">
                         <span class="apple-glass px-2.5 py-1 rounded-full text-[10px] font-bold text-neutral-900 shadow-sm flex items-center gap-1">
-                            ${isFB 
-                                ? '<span class="text-blue-600 font-extrabold">FB</span> • ' + reel.views 
-                                : '<span class="text-red-600 font-extrabold">YT</span> • ' + reel.views}
+                            ${reel.id === 'HjIfjPZh3Ac' 
+                                ? '<span class="text-blue-600 font-extrabold">👑 700K+ Viral</span>' 
+                                : '<span class="text-red-600 font-extrabold">▶</span> ' + reel.views}
                         </span>
                         <button onclick="event.stopPropagation(); toggleBookmark('${reel.id}')" class="w-7 h-7 rounded-full apple-glass text-neutral-800 flex items-center justify-center transition shadow-sm hover:scale-105" title="Save">
                             <svg class="w-3.5 h-3.5 ${isBookmarked ? 'text-red-500 fill-red-500' : 'text-neutral-700'}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -413,43 +411,29 @@ function closeRecipeModal() {
 function renderRecipeModalContent(reel) {
     const iframeContainer = document.getElementById('modal-iframe-container');
     if (iframeContainer) {
-        if (reel.platform === 'facebook') {
-            const fbUrl = encodeURIComponent(reel.facebookUrl || `https://www.facebook.com/reel/${reel.facebookReelId || reel.id}/`);
-            iframeContainer.innerHTML = `
-                <div class="relative w-full h-full bg-black rounded-2xl overflow-hidden flex flex-col justify-between">
-                    <iframe 
-                        src="https://www.facebook.com/plugins/video.php?href=${fbUrl}&show_text=0&autoplay=1" 
-                        title="${reel.title}" 
-                        class="w-full h-full rounded-2xl"
-                        frameborder="0" 
-                        scrolling="no"
-                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
-                        allowfullscreen>
-                    </iframe>
-                    <a href="${reel.facebookUrl || `https://www.facebook.com/reel/${reel.id}/`}" target="_blank" rel="noopener noreferrer" class="absolute bottom-2 left-2 right-2 px-3 py-1.5 rounded-full bg-blue-600/90 hover:bg-blue-600 text-white text-[11px] font-semibold flex items-center justify-center gap-1.5 backdrop-blur-sm shadow-md transition">
-                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        Watch on Facebook ↗
-                    </a>
-                </div>
-            `;
-        } else {
-            iframeContainer.innerHTML = `
-                <div class="relative w-full h-full bg-black rounded-2xl overflow-hidden flex flex-col justify-between">
-                    <iframe 
-                        src="https://www.youtube.com/embed/${reel.id}?autoplay=1&rel=0&modestbranding=1" 
-                        title="${reel.title}" 
-                        class="w-full h-full rounded-2xl"
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                    <a href="${reel.youtubeUrl || `https://www.youtube.com/shorts/${reel.id}`}" target="_blank" rel="noopener noreferrer" class="absolute bottom-2 left-2 right-2 px-3 py-1.5 rounded-full bg-red-600/90 hover:bg-red-600 text-white text-[11px] font-semibold flex items-center justify-center gap-1.5 backdrop-blur-sm shadow-md transition">
+        iframeContainer.innerHTML = `
+            <div class="relative w-full h-full bg-black rounded-2xl overflow-hidden flex flex-col justify-between">
+                <iframe 
+                    src="https://www.youtube.com/embed/${reel.id}?autoplay=1&rel=0&modestbranding=1&enablejsapi=1" 
+                    title="${reel.title}" 
+                    class="w-full h-full rounded-2xl"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+                <div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between gap-2 z-10 pointer-events-auto">
+                    <a href="${reel.youtubeUrl || `https://www.youtube.com/shorts/${reel.id}`}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-full bg-red-600/95 hover:bg-red-600 text-white text-[11px] font-semibold flex items-center justify-center gap-1.5 shadow-md transition">
                         <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        Watch on YouTube ↗
+                        <span>Watch on YouTube ↗</span>
                     </a>
+                    ${reel.id === 'HjIfjPZh3Ac' ? `
+                    <a href="https://www.facebook.com/thebitechapter/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-blue-600/95 hover:bg-blue-600 text-white text-[11px] font-semibold flex items-center justify-center gap-1.5 shadow-md transition">
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        <span>Facebook Page ↗</span>
+                    </a>` : ''}
                 </div>
-            `;
-        }
+            </div>
+        `;
     }
 
     document.getElementById('modal-title').textContent = reel.title;
@@ -459,9 +443,9 @@ function renderRecipeModalContent(reel) {
 
     const tagsContainer = document.getElementById('modal-tags');
     if (tagsContainer) {
-        const platformBadge = reel.platform === 'facebook'
-            ? `<span class="apple-badge bg-blue-50 text-blue-700 border-blue-200 font-bold">🌐 Facebook Reel • ${reel.views}</span>`
-            : `<span class="apple-badge bg-red-50 text-red-700 border-red-200 font-bold">▶️ YouTube Short • ${reel.views}</span>`;
+        const platformBadge = reel.id === 'HjIfjPZh3Ac'
+            ? `<span class="apple-badge bg-blue-50 text-blue-700 border-blue-200 font-bold">👑 700K+ Viral Mega Hit</span>`
+            : `<span class="apple-badge bg-red-50 text-red-700 border-red-200 font-bold">▶️ ${reel.views}</span>`;
 
         tagsContainer.innerHTML = platformBadge + reel.tags.map(t => `
             <span class="apple-badge">

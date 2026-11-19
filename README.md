@@ -8,26 +8,27 @@
 
 ## 🌟 Features Included
 
-1. **Multi-Platform Viral Video Reels Showcase**:
-   - Highlighting top viral hits across YouTube and Facebook:
-     - **163K+ Virat Kohli Steamed / Boiled Veggie Bowl** (YouTube #1 Viral Hit)
-     - **700K+ Authentic Spaghetti Aglio e Olio** (Facebook #1 Viral Mega Hit)
-     - **145K+ Creamy Mushroom Aglio e Olio** (Facebook Viral Hit)
+1. **Viral Video Reels Showcase (100% Authentic Channel Content)**:
+   - Highlighting top viral hits created exclusively by **The Bite Chapter**:
+     - **700K+ Authentic Spaghetti Aglio e Olio** (Facebook & Instagram Viral Mega Hit)
+     - **163K+ Virat Kohli Steamed / Boiled Veggie Bowl** (YouTube #1 Most Popular Hit)
      - **95K+ Rajasthani Doongri Tadka Chutney** (Cult Favorite with live charcoal smoke)
-     - **110K+ Creamy White Sauce Pasta**, **175K+ Street Style Maggi**, **135K+ Sabudana Vada**
+     - **Garlic Butter Mushroom Pasta** (Viral Mushroom Aglio e Olio)
+     - **11K+ Golden Moong Dal Cheela** (18g clean protein)
    - Interactive 3D phone mockup in the hero section with instant play.
    - Live infinite marquee ticker of trending recipes.
 
-2. **Complete 56+ Curated Recipe Library**:
+2. **Complete 48+ Curated Recipe Library**:
    - Instant search by title, ingredient, tag, or category.
-   - Category filtering: *All Bites, Facebook Hits, YouTube Shorts, Viral Legends, High-Protein, Desi Tadka & Street, Pastas & Quick Bites, Sips & Sweets*.
+   - Mood-based chapter filtering: *All Stories, Viral Legends, The Pasta Room, High-Protein Fuel, Desi Tadkas, 10-Min & Maggi, Sweet Solace*.
    - Sort by *Most Viral* or *Quickest (<15 mins)*.
    - Interactive recipe modal with:
-     - Embedded YouTube Short & Facebook Reel player
+     - Real HD YouTube video player with crisp audio & voiceover
+     - Real recipe video thumbnails from the channel (no generic/AI placeholders)
      - **Interactive Portions Scaler** (1x, 2x, 4x) that scales ingredients dynamically
      - **Interactive Checklist** (tap to cross out ingredients as you cook)
      - Step-by-step cooking instructions with timers
-     - Social sharing, YouTube short link, and Facebook post link
+     - Direct links to YouTube shorts and official Facebook community
 
 3. **Debut eBook Launchpad ("The Viral Kitchen Playbook")**:
    - 3D interactive book mockup with tilt and hover effects.
@@ -114,7 +115,7 @@ Cloud Run will automatically build the container using the provided `Dockerfile`
 thebitechapter/
 ├── index.html                   # Modern Gen-Z single-page portfolio & recipe app
 ├── server.py                    # Python server (FastAPI + fallback) with API endpoints
-├── reels_data.json              # Full 56-reel curated database with tags & instructions (YouTube + Facebook)
+├── reels_data.json              # Full 48-reel curated database with tags & instructions (100% authentic channel videos)
 ├── requirements.txt             # Python dependencies
 ├── Dockerfile                   # Cloud Run container definition
 ├── .dockerignore                # Container exclusions
